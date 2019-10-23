@@ -34,12 +34,12 @@ class HomeIndex extends React.Component {
                                 <h3>Our beliefs</h3>
                                 <p>Why and how we do it</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/ourbeliefs" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
-                                <h3>Benefits</h3>
-                                <p>What we do</p>
+                                <h3>Privileges</h3>
+                                <p>Exclusive benefits</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
@@ -79,7 +79,8 @@ class HomeIndex extends React.Component {
                             </header>
                             <p>IMG (International Marketing Group) is a membership platform.  We believe that everyone can become wealthy given the right chance and information.  Together with our partners we provide great benefits for our members around the globe.  Through our offices in the Philippines (Manila, Cebu, Davao, etc.), Hong Kong, Singapore, Macau, Dubai, Taiwan, etc.,  we provide comprehensive and continuous Financial Education programs and guidance for all members and achieve financial independence</p>
                             <ul className="actions">
-                                <li><Link to="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</Link></li>
+                                {/*<li><Link to="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</Link></li>*/}
+                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</a></li>
                             </ul>
                         </div>
                     </section>
