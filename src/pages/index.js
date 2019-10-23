@@ -41,35 +41,35 @@ class HomeIndex extends React.Component {
                                 <h3>Privileges</h3>
                                 <p>Exclusive benefits</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/privileges" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
                                 <h3>Affiliates</h3>
                                 <p>Powerful strategic partners</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/affiliates" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
                                 <h3>Become a member</h3>
                                 <p>Join the campaign</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/becomeamember" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
                                 <h3>Be a financial educator</h3>
                                 <p>an online freelance career</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/financialeducator" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
                                 <h3>Contact</h3>
-                                <p>Need more information?</p>
+                                <p>We are always ready to assist you</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/contact" className="link primary"></Link>
                         </article>
                     </section>
                     <section id="two">
@@ -77,7 +77,12 @@ class HomeIndex extends React.Component {
                             <header className="major">
                                 <h2>About us</h2>
                             </header>
-                            <p>IMG (International Marketing Group) is a membership platform.  We believe that everyone can become wealthy given the right chance and information.  Together with our partners we provide great benefits for our members around the globe.  Through our offices in the Philippines (Manila, Cebu, Davao, etc.), Hong Kong, Singapore, Macau, Dubai, Taiwan, etc.,  we provide comprehensive and continuous Financial Education programs and guidance for all members and achieve financial independence</p>
+                            <p>IMG (International Marketing Group) is a membership platform.
+                                We believe that everyone can become wealthy given the right chance and information.  
+                                Together with our partners we provide great benefits for our members around the globe.  
+                                Through our offices in the Philippines (Manila, Cebu, Davao, etc.), Hong Kong, Singapore, 
+                                Macau, Dubai, Taiwan, etc.,  we provide comprehensive and continuous Financial Education 
+                                programs and guidance for all members and achieve financial independence</p>
                             <ul className="actions">
                                 {/*<li><Link to="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</Link></li>*/}
                                 <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</a></li>
