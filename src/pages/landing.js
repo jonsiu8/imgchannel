@@ -15,7 +15,7 @@ const Landing = (props) => (
             <meta name="description" content="Landing Page" />
         </Helmet>
 
-        <BannerLanding />
+        {/*<BannerLanding />*/}
 
         <div id="main">
             <section id="one">
