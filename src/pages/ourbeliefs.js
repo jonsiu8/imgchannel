@@ -1,83 +1,60 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerLanding from '../components/BannerLanding'
 
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+import pic01 from '../assets/images/pic01.jpg'
+import pic02 from '../assets/images/pic02.jpg'
+import pic03 from '../assets/images/pic03.jpg'
+
 
 const Ourbeliefs = (props) => (
     <Layout>
         <Helmet>
-            <title>Landing - Forty by HTML5 UP</title>
-            <meta name="description" content="Landing Page" />
+            <title>Our beliefs</title>
+            <meta name="description" content="Our beliefs Page" />
         </Helmet>
 
-        {/*<BannerLanding />*/}
+        <div id="main" className="alt">
 
-        <div id="main">
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h2>Our beliefs</h2>
-                    </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+                        <h1>Our beliefs</h1>
+                    </header>                  
+                
+                    <div className="grid-wrapper">                       
+                        <div className="col-7">                                                       
+                            <h2>Everyone can be financially independent</h2>
+                            <p><span className="image left"><img src={pic01} alt="" /></span>
+                            Everyone can be financially independent given the right education, guidance and environment.
+                            </p>                                                                                          
+                        </div>                        
+                    </div>
+
+                    <hr className="major" />
+
+                    <div className="grid-wrapper">                       
+                        <div className="col-7">                                                       
+                            <h2>Everyone deserves a chance </h2>
+                            <p><span className="image left"><img src={pic02} alt="" /></span>
+                            Everyone deserves a chance to improve and change their situation.
+                            </p>                                                                                          
+                        </div>                        
+                    </div>
+
+                    <hr className="major" />
+
+                    <div className="grid-wrapper">                       
+                        <div className="col-7">                                                       
+                            <h2>Everyone can help</h2>
+                            <p><span className="image left"><img src={pic03} alt="" /></span>
+                            Everyone can provide help to anyone who needs it. 
+                            </p>                                                                                          
+                        </div>                        
+                    </div>
                 </div>
             </section>
-            <section id="two" className="spotlights">
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic08} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Orci maecenas</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Rhoncus magna</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Sed nunc ligula</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </section>
         </div>
-
     </Layout>
 )
 

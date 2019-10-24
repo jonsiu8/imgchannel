@@ -1,83 +1,98 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerLanding from '../components/BannerLanding'
+import { Link } from 'gatsby'
 
-import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+
 
 const Privileges = (props) => (
     <Layout>
         <Helmet>
-            <title>Landing - Forty by HTML5 UP</title>
-            <meta name="description" content="Landing Page" />
+            <title>Elements - Forty by HTML5 UP</title>
+            <meta name="description" content="Elements Page" />
         </Helmet>
 
-        {/*<BannerLanding />*/}
+        <div id="main" className="alt">
 
-        <div id="main">
             <section id="one">
                 <div className="inner">
+
                     <header className="major">
-                        <h2>Privileges</h2>
+                        <h1>Privileges</h1>
                     </header>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+
+                    <h2 id="content">Membership Benefits</h2>                    
+                    <p>Enjoy exclusive discounts, freebies, and access to our partners that help our members save and maximize their money.</p>
+                        <div className="grid-wrapper">
+ 
+                        <div className="col-4">
+                            <h3>Financial education</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <Link to="/privileges/financialeducation" className="button special small">Learn more</Link>
+                            <hr className="major" />
+                        </div>
+                        
+                        <div className="col-4">
+                            <h3>Healthcare and Insurance</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <Link to="/privileges/healthcareandinsurance" className="button special small">Learn more</Link>                 
+                            <hr className="major" />
+                        </div>
+                
+                        <div className="col-4">
+                            <h3>Investments</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <a href="#" className="button special small">Learn more</a>
+                            <hr className="major" />
+                        </div>
+
+                        </div>
+
+                        <div className="grid-wrapper">
+ 
+                        <div className="col-3">
+                            <h3>Exclusive discounts</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <a href="#" className="button special small">Learn more</a>
+                            <hr className="major" />
+                        </div>
+                        
+                        <div className="col-3">
+                            <h3>Freebies</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <a href="#" className="button special small">Learn more</a>
+                            <hr className="major" />
+                        </div>
+                
+                        <div className="col-3">
+                            <h3>Career and Business</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <a href="#" className="button special small">Learn more</a>
+                            <hr className="major" />
+                        </div>
+
+                        <div className="col-3">
+                            <h3>Services</h3>
+                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                            <a href="#" className="button special small">Learn more</a>
+                            <hr className="major" />
+                        </div>
+
+                        </div>
                 </div>
             </section>
-            <section id="two" className="spotlights">
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic08} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Orci maecenas</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic09} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Rhoncus magna</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Link to="/generic" className="image">
-                        <img src={pic10} alt="" />
-                    </Link>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Sed nunc ligula</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </div>
 
+            
+
+        </div>
     </Layout>
 )
 
