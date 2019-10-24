@@ -4,6 +4,9 @@ import Layout from '../components/layout'
 import { Link } from 'gatsby'
 
 import pic09 from '../assets/images/pic09.jpg'
+import pic01 from '../assets/images/pic01.jpg'
+import education from '../assets/images/education.jpg'
+
 
 
 const Privileges = (props) => (
@@ -28,9 +31,9 @@ const Privileges = (props) => (
  
                         <div className="col-4">
                             <h3>Financial education</h3>
-                            <span className="image left"><img src={pic09} alt="" /></span>
+                            <span className="image left"><img src={education} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <Link to="/privileges/financialeducation" className="button special small">Learn more</Link>
+                            <Link to="/privileges/financialeducation" className="button small">Learn more</Link>
                             <hr className="major" />
                         </div>
                         
@@ -38,7 +41,7 @@ const Privileges = (props) => (
                             <h3>Healthcare and Insurance</h3>
                             <span className="image left"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <Link to="/privileges/healthcareandinsurance" className="button special small">Learn more</Link>                 
+                            <Link to="/privileges/healthcareandinsurance" className="button small">Learn more</Link>                 
                             <hr className="major" />
                         </div>
                 
@@ -46,7 +49,7 @@ const Privileges = (props) => (
                             <h3>Investments</h3>
                             <span className="image left"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Learn more</a>
+                            <a href="#" className="button small">Learn more</a>
                             <hr className="major" />
                         </div>
 
@@ -58,7 +61,7 @@ const Privileges = (props) => (
                             <h3>Exclusive discounts</h3>
                             <span className="image left"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Learn more</a>
+                            <a href="#" className="button small">Learn more</a>
                             <hr className="major" />
                         </div>
                         
@@ -66,7 +69,7 @@ const Privileges = (props) => (
                             <h3>Freebies</h3>
                             <span className="image left"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Learn more</a>
+                            <a href="#" className="button small">Learn more</a>
                             <hr className="major" />
                         </div>
                 
@@ -74,7 +77,7 @@ const Privileges = (props) => (
                             <h3>Career and Business</h3>
                             <span className="image left"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Learn more</a>
+                            <a href="#" className="button small">Learn more</a>
                             <hr className="major" />
                         </div>
 
@@ -82,7 +85,7 @@ const Privileges = (props) => (
                             <h3>Services</h3>
                             <span className="image left"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Learn more</a>
+                            <a href="#" className="button small">Learn more</a>
                             <hr className="major" />
                         </div>
 
