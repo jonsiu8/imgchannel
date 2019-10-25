@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
+import { Link } from 'gatsby'
 
 import pic09 from '../../assets/images/pic09.jpg'
 import webinars from '../../assets/images/webinars.png'

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from "styled-components"
 
-/*const Container = styled.div`
+const Container = styled.div`
     color:white;
     
      .button{
@@ -11,9 +11,10 @@ import styled from "styled-components"
         color:white;     
     }  
   `
-*/
+
 const Menu = (props) => (    
     <nav id="menu">
+        <Container>
         <div className="inner">
             <ul className="links">
                 <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
@@ -29,6 +30,7 @@ const Menu = (props) => (
                 {/*<li><a href="#" className="button fit">Log In</a></li>*/}
             </ul>
         </div>
+        </Container>
         <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
     </nav>
 )

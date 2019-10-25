@@ -85,10 +85,10 @@ const Privileges = (props) => (
                         <div className="grid-wrapper"> 
                             <div className="col-4">
                             <ContainerCard>
-                                <h3>Discounts and Freebies</h3>
+                                <h3>Freebies and Discounts</h3>
                                 <span className="image left"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button small">Learn more</a>
+                                <Link to="/privileges/freebies" className="button special small">Learn more</Link>
                             </ContainerCard>
                             </div>                            
                                          
@@ -97,7 +97,7 @@ const Privileges = (props) => (
                                 <h3>Career and Business</h3>
                                 <span className="image left"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button small">Learn more</a>
+                                <Link to="/privileges/career" className="button special small">Learn more</Link>
                             </ContainerCard>    
                             </div>
                             <div className="col-4">
@@ -105,7 +105,7 @@ const Privileges = (props) => (
                                 <h3>Services</h3>
                                 <span className="image left"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Learn more</a>
+                                <Link to="/privileges/services" className="button special small">Learn more</Link>
                             </ContainerCard>
                             </div>
                         </div>

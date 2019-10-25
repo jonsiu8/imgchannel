@@ -3,9 +3,10 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
+import BannerAffiliates from '../components/BannerAffiliates'
 
 import pic09 from '../assets/images/pic09.jpg'
-import education from '../assets/images/education.jpg'
+import Affiliate01 from '../assets/images/Affiliate01.png'
 
 const Container = styled.div`  
     background-color: white;  
@@ -36,98 +37,41 @@ const Affiliates = (props) => (
     <Layout>
         <Helmet>
             <title>Affiliates</title>
-            <meta name="description" content="Elements Page" />
+            <meta name="description" content="Affiliates Page" />
         </Helmet>
+
+        <BannerAffiliates />
 
         <div id="main" className="alt">
 
             <section id="one">
                 <div className="inner">
-
-                    <header className="major">
-                        <h1>Affiliates</h1>
-                    </header>
-
-                    <h2 id="content">Powerful strategic partners</h2>                    
-                    <p>Enjoy exclusive discounts, freebies, and access to our partners that help our members save and maximize their money.</p>
+                    <h2 id="content">Our Powerful Strategic Partners</h2>
                         <Container>
                         <div className="grid-wrapper"> 
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
+                            <div className="col-4">
+                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
                             </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
+                            <div className="col-4">
+                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
                             </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
+                            <div className="col-4">
+                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
+                            </div>                         
+                        </div>
+                        <div className="grid-wrapper"> 
+                            <div className="col-4">
+                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
                             </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
+                            <div className="col-4">
+                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
                             </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>            
+                            <div className="col-4">
+                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
+                            </div>                         
                         </div>
                         
-                        <div className="grid-wrapper"> 
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>            
-                        </div>
-
-                        <div className="grid-wrapper"> 
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>
-
-                            <div className="col-2">
-                                <span className="image fit"><img src={education} alt="" /></span>
-                            </div>            
-                        </div>
+                       
                         </Container>
                 </div>
             </section>

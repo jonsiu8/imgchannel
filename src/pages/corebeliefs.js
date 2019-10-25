@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
 import BannerBeliefs from '../components/BannerBeliefs'
+import { Link } from 'gatsby'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -66,8 +67,13 @@ const Corebeliefs = (props) => (
                             </p>
                             <hr className="line1" />                                                                                         
                         </div>                                                
-                    </div>            
+                    </div>      
 
+                    <div className="grid-wrapper">                       
+                        <div className="col-12">                                                       
+                        <Link to="/becomeamember" className="button special small">become a member</Link>                                                                          
+                        </div>                                                                
+                    </div>           
                     </Container>
                 </div>
             </section>
