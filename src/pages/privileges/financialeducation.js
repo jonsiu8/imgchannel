@@ -38,7 +38,7 @@ const ContainerCard = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 25px;   
+    margin: 1px;   
   `
 
 
@@ -60,20 +60,21 @@ const Financialeducation = (props) => (
                     <Container>
                     <h2>Webinars, Workshops, e-books + more</h2>
                         <div className="grid-wrapper"> 
-                            <div className="col-8">                            
+                            <div className="col-6">                            
                                 <span className="image fit"><img src={webinars} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                                 <a href="#" className="button special small">Sign up</a>
-                                <hr className="major" />
-                            </div>             
-                            <div className="col-4">
+                                <hr className="line1" />
+                            </div>     
+                                    
+                            <div className="col-6">
                             <ContainerCard>
                                 <h3>Get your FREE e-book</h3>
                                 <span className="image right"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                                 <a href="#" className="button special small">Send my copy</a>
-                                <hr className="line1" />
-                                </ContainerCard>
+                      
+                            </ContainerCard>
                             </div>
                         </div>
                     </Container>
@@ -81,19 +82,18 @@ const Financialeducation = (props) => (
                     <Container>
                     <h2>Financial checkup</h2>
                         <div className="grid-wrapper"> 
-                            <div className="col-8">                            
+                            <div className="col-6">                            
                                 <span className="image fit"><img src={financialcheckup} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Start now</a>
-                                <hr className="major" />
+            
                             </div>             
-                            <div className="col-4">
+                            <div className="col-6">
                             <ContainerCard>
                                 <h3>Free financial checkup</h3>
                                 <span className="image right"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                                 <a href="#" className="button special small">Sign up</a>
-                                <hr className="line1" />
+                       
                             </ContainerCard>
                             </div>
                         </div>
@@ -102,19 +102,18 @@ const Financialeducation = (props) => (
                     <Container>
                     <h2>Associate financial planner program</h2>
                         <div className="grid-wrapper"> 
-                            <div className="col-8">                            
+                            <div className="col-6">                            
                                 <span className="image fit"><img src={afp} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                
-                                <hr className="major" />
+                    
                             </div>             
-                            <div className="col-4">
+                            <div className="col-6">
                             <ContainerCard>
                                 <h3>Get certified</h3>
                                 <span className="image right"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
                                 <a href="#" className="button special small">Become an IMG member now</a>
-                                <hr className="line1" />
+                    
                                 </ContainerCard>
                             </div>
                         </div>
