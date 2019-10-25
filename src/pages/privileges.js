@@ -8,11 +8,11 @@ import pic09 from '../assets/images/pic09.jpg'
 import education from '../assets/images/education.jpg'
 
 const Container = styled.div`  
-    background-color: white;  
+    background-color:white;  
     h3{color:black};    
     color: black;
     .button{
-        background-color:#221D71;
+        background-color:#3277B3;
         color:white;     
     }
     hr.line1 {border-top: 1px solid black;}    
