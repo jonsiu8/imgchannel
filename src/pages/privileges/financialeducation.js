@@ -1,15 +1,51 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
+import styled from "styled-components"
 
 import pic09 from '../../assets/images/pic09.jpg'
 import webinars from '../../assets/images/webinars.png'
+import financialcheckup from '../../assets/images/FinancialCheckup.png'
+import afp from '../../assets/images/AFP.png'
+
+const Container = styled.div`  
+    background-color:white;  
+    h2{color:black};    
+    color: black;
+    .button{
+        background-color:#3277B3;
+        color:white;     
+    }
+    hr.line1 {border-top: 1px solid black;}    
+    box-shadow: 5px 5px 5px #1E1E1E;
+    padding: 25px;
+    margin: 3rem auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  `
+
+const ContainerCard = styled.div`  
+    background-color:#DCE1E5;  
+    h3{color:black};
+    color: black;
+    .button{
+        background-color:#3277B3;
+        color:white;     
+    }
+    hr.line1 {border-top: 1px solid black;}    
+    box-shadow: 5px 5px 5px #1E1E1E;
+    padding: 25px;
+    margin: 25px;   
+  `
 
 
 const Financialeducation = (props) => (
     <Layout>
         <Helmet>
-            <title>Elements - Forty by HTML5 UP</title>
+            <title>Financial education</title>
             <meta name="description" content="Elements Page" />
         </Helmet>
 
@@ -17,38 +53,72 @@ const Financialeducation = (props) => (
 
             <section id="one">
                 <div className="inner">
-
+                    
                     <header className="major">
                         <h1>Financial Education</h1>
                     </header>
+                    <Container>
+                    <h2>Webinars, Workshops, e-books + more</h2>
+                        <div className="grid-wrapper"> 
+                            <div className="col-8">                            
+                                <span className="image fit"><img src={webinars} alt="" /></span>
+                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <a href="#" className="button special small">Sign up</a>
+                                <hr className="major" />
+                            </div>             
+                            <div className="col-4">
+                            <ContainerCard>
+                                <h3>Get your FREE e-book</h3>
+                                <span className="image right"><img src={pic09} alt="" /></span>
+                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <a href="#" className="button special small">Send my copy</a>
+                                <hr className="line1" />
+                                </ContainerCard>
+                            </div>
+                        </div>
+                    </Container>
 
-                        <div className="grid-wrapper">
- 
-                        <div className="col-4">
-                            <h3>Webinars, workshops, e-books, and events</h3>
-                            <span className="image left"><img src={webinars} alt="" /></span>
-                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Start now</a>
-                            <hr className="major" />
+                    <Container>
+                    <h2>Financial checkup</h2>
+                        <div className="grid-wrapper"> 
+                            <div className="col-8">                            
+                                <span className="image fit"><img src={financialcheckup} alt="" /></span>
+                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <a href="#" className="button special small">Start now</a>
+                                <hr className="major" />
+                            </div>             
+                            <div className="col-4">
+                            <ContainerCard>
+                                <h3>Free financial checkup</h3>
+                                <span className="image right"><img src={pic09} alt="" /></span>
+                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <a href="#" className="button special small">Sign up</a>
+                                <hr className="line1" />
+                            </ContainerCard>
+                            </div>
                         </div>
-                        
-                        <div className="col-4">
-                            <h3>Financial checkup</h3>
-                            <span className="image left"><img src={pic09} alt="" /></span>
-                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Start now</a>
-                            <hr className="major" />
-                        </div>
-                
-                        <div className="col-4">
-                            <h3>Associate financial planner program</h3>
-                            <span className="image left"><img src={pic09} alt="" /></span>
-                            <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <a href="#" className="button special small">Start now</a>
-                            <hr className="major" />
-                        </div>
+                    </Container>
 
+                    <Container>
+                    <h2>Associate financial planner program</h2>
+                        <div className="grid-wrapper"> 
+                            <div className="col-8">                            
+                                <span className="image fit"><img src={afp} alt="" /></span>
+                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                
+                                <hr className="major" />
+                            </div>             
+                            <div className="col-4">
+                            <ContainerCard>
+                                <h3>Get certified</h3>
+                                <span className="image right"><img src={pic09} alt="" /></span>
+                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <a href="#" className="button special small">Become an IMG member now</a>
+                                <hr className="line1" />
+                                </ContainerCard>
+                            </div>
                         </div>
+                    </Container>
                 </div>
             </section>
 

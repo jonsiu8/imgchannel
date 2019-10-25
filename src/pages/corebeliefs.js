@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
+import BannerBeliefs from '../components/BannerBeliefs'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -27,25 +28,24 @@ const Container = styled.div`
   `
 
 
-const Ourbeliefs = (props) => (
+const Corebeliefs = (props) => (
     <Layout>
         <Helmet>
-            <title>Our beliefs</title>
+            <title>Core beliefs</title>
             <meta name="description" content="Our beliefs Page" />
         </Helmet>
+
+        <BannerBeliefs/>
 
         <div id="main" className="alt">
 
             <section id="one">
-                <div className="inner">
-                    <header className="major">
-                        <h1>Our beliefs</h1>
-                    </header>                  
+                <div className="inner">                 
                 <Container>
                     <div className="grid-wrapper">                       
                         <div className="col-4">                                                       
                             <h2>Everyone can be financially independent</h2>
-                            <p><span className="image left"><img src={pic01} alt="" /></span>
+                            <p><span className="image fit"><img src={pic01} alt="" /></span>
                             Everyone can be financially independent given the right education, guidance and environment.
                             </p>  
                             <hr className="line1" />                                                                                        
@@ -53,7 +53,7 @@ const Ourbeliefs = (props) => (
                         
                         <div className="col-4">                                                       
                             <h2>Everyone deserves a chance </h2>
-                            <p><span className="image left"><img src={pic02} alt="" /></span>
+                            <p><span className="image fit"><img src={pic02} alt="" /></span>
                             Everyone deserves a chance to improve and change their situation.
                             </p>  
                             <hr className="line1" />                                                                                        
@@ -61,7 +61,7 @@ const Ourbeliefs = (props) => (
                            
                         <div className="col-4">                                                       
                             <h2>Everyone can help</h2>
-                            <p><span className="image left"><img src={pic03} alt="" /></span>
+                            <p><span className="image fit"><img src={pic03} alt="" /></span>
                             Everyone can provide help to anyone who needs it. 
                             </p>
                             <hr className="line1" />                                                                                         
@@ -75,4 +75,4 @@ const Ourbeliefs = (props) => (
     </Layout>
 )
 
-export default Ourbeliefs
+export default Corebeliefs

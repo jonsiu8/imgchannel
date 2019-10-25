@@ -31,10 +31,10 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
-                                <h3>Our beliefs</h3>
+                                <h3>Core beliefs</h3>
                                 <p>Why and how we do it</p>
                             </header>
-                            <Link to="/ourbeliefs" className="link primary"></Link>
+                            <Link to="/corebeliefs" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
