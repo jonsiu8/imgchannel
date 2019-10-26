@@ -44,8 +44,8 @@ const Container = styled.div`
 const Privileges = (props) => (
     <Layout>
         <Helmet>
-            <title>Elements - Forty by HTML5 UP</title>
-            <meta name="description" content="Elements Page" />
+            <title>Privileges by IMG Channel</title>
+            <meta name="description" content="Privileges Page" />
         </Helmet>
 
         <BannerPrivileges />
