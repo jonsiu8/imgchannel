@@ -113,7 +113,8 @@ const Financialeducation = (props) => (
                                 <h3>Get certified</h3>
                                 <span className="image right"><img src={pic09} alt="" /></span>
                                 <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Become an IMG member now</a>
+                                
+                                <Link to="/becomeamember" className="button special small">become an img member now</Link>   
                     
                                 </ContainerCard>
                             </div>

@@ -5,9 +5,6 @@ import styled from "styled-components"
 import { Link } from 'gatsby'
 
 import pic09 from '../../assets/images/pic09.jpg'
-import webinars from '../../assets/images/webinars.png'
-import financialcheckup from '../../assets/images/FinancialCheckup.png'
-import afp from '../../assets/images/AFP.png'
 
     const ContainerCardHealth = styled.div`  
         background-color:white;  

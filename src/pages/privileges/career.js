@@ -64,7 +64,8 @@ const Career = (props) => (
                             <ContainerCard>                
                             <span className="image right"><img src={pic09} alt="" /></span>
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                            <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Become a financial educator now</Link>
+                            
+                            <Link to="/becomeamember" className="button special small">become a financial educator</Link>   
                             </ContainerCard>
                         </div>
                     </div>

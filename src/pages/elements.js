@@ -98,7 +98,7 @@ const Elements = (props) => (
 
                                         <h4>Icons</h4>
                                         <ul className="icons">
-                                            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+                                            <li><a href="#" className="icon fa-check"><span className="label">Twitter</span></a></li>
                                             <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
                                             <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
                                             <li><a href="#" className="icon fa-github"><span className="label">Github</span></a></li>
