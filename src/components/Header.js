@@ -5,11 +5,11 @@ import styled from "styled-components";
 import logo from "./logo.svg"
 
 const Logo = styled.img`
-  width: 35px;
-  margin-top: 10px;
+  width: 160px;
+  margin-top: 15px;
 
   @media (max-width: 736px) {
-    width: 28px;
+    width: 90px;
   }
 `;
 

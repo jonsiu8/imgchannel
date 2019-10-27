@@ -7,8 +7,7 @@ const BannerPrivileges = (props) => (
                 <h1>Privileges</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros.</p>
+                <p>Benefits of being an IMG member</p>
             </div>
         </div>
     </section>

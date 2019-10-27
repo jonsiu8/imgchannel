@@ -7,8 +7,7 @@ const BannerBeliefs = (props) => (
                 <h1>Core beliefs</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros.</p>
+                <p>Find something you believe in and put your life into it</p>
             </div>
         </div>
     </section>
