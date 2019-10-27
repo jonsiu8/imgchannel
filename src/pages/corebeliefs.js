@@ -5,9 +5,9 @@ import styled from "styled-components"
 import BannerBeliefs from '../components/BannerBeliefs'
 import { Link } from 'gatsby'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
+import pic01 from '../assets/images/corebelief01.jpg'
+import pic02 from '../assets/images/corebelief02.jpg'
+import pic03 from '../assets/images/corebelief03.jpg'
 
 const Container = styled.div`  
     background-color:white;  
@@ -61,7 +61,7 @@ const Corebeliefs = (props) => (
                         </div>  
                            
                         <div className="col-4">                                                       
-                            <h2>Everyone can help</h2>
+                            <h2>Everyone can help anyone</h2>
                             <p><span className="image fit"><img src={pic03} alt="" /></span>
                             Everyone can provide help to anyone who needs it. 
                             </p>
