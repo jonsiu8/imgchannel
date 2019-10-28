@@ -5,7 +5,8 @@ import styled from "styled-components"
 import { Link } from 'gatsby'
 
 import pic09 from '../../assets/images/pic09.jpg'
-import webinars from '../../assets/images/webinars.png'
+import ssbyfbook from '../../assets/images/ssbyfbook.jpg'
+import webinars from '../../assets/images/financialeduc01.jpg'
 import financialcheckup from '../../assets/images/FinancialCheckup.png'
 import afp from '../../assets/images/AFP.png'
 
@@ -63,16 +64,20 @@ const Financialeducation = (props) => (
                         <div className="grid-wrapper"> 
                             <div className="col-6">                            
                                 <span className="image fit"><img src={webinars} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <p>Qualified trainers and speakers conduct webinars, workshops, training, and seminars around the globe.  Online tools including books are also provided.</p>
                                 <a href="#" className="button special small">Sign up</a>
                                 <hr className="line1" />
                             </div>     
                                     
                             <div className="col-6">
                             <ContainerCard>
-                                <h3>Get your FREE e-book</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <h3>Get your FREE e-book!</h3>
+                                <span className="image left"><img src={ssbyfbook} alt="" /></span>
+                                <p>Start your journey now. <br/><br/>
+                                Get the first 2 chapters of "The Secret to Saving and Building Your Future". <br/><br/>
+                                <em>"This book will upgrade your financial life."</em><br/>
+                                -Bro. Bo Sanchez
+                                </p>
                                 <a href="#" className="button special small">Send my copy</a>
                       
                             </ContainerCard>

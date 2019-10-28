@@ -9,6 +9,9 @@ import BannerPrivileges from '../components/BannerPrivileges'
 import pic01 from '../assets/images/privileges01.jpg'
 import pic02 from '../assets/images/privileges02.jpg'
 import pic03 from '../assets/images/privileges03.jpg'
+import pic04 from '../assets/images/privileges04.jpg'
+import pic05 from '../assets/images/privileges05.jpg'
+import pic06 from '../assets/images/privileges06.jpg'
 
 
 const Container = styled.div`  
@@ -89,8 +92,8 @@ const Privileges = (props) => (
                             <div className="col-4">
                             <ContainerCard>
                                 <h3>Freebies and Discounts</h3>
-                                <span className="image fit"><img src={pic02} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={pic04} alt="" /></span>
+                                <p>Enjoy exclusive discounts and free products and services.</p>
                                 <Link to="/privileges/freebies" className="button special small">Learn more</Link>
                             </ContainerCard>
                             </div>                            
@@ -98,16 +101,16 @@ const Privileges = (props) => (
                             <div className="col-4">
                             <ContainerCard>
                                 <h3>Career and Business</h3>
-                                <span className="image fit"><img src={pic02} alt="" /></span>
-                                <p>umsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={pic05} alt="" /></span>
+                                <p>Start your financial educator career and be in the financial industry business. </p>
                                 <Link to="/privileges/career" className="button special small">Learn more</Link>
                             </ContainerCard>    
                             </div>
                             <div className="col-4">
                             <ContainerCard>
                                 <h3>Services</h3>
-                                <span className="image fit"><img src={pic02} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={pic06} alt="" /></span>
+                                <p>Avail of these other services provided by our partners.</p>
                                 <Link to="/privileges/services" className="button special small">Learn more</Link>
                             </ContainerCard>
                             </div>
