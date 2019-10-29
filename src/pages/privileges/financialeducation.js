@@ -115,9 +115,9 @@ const Financialeducation = (props) => (
                                 <span className="image left"><img src={rx} alt="" /></span>
                                 <p>Learn ways to improve your current financial plan.</p>
                                 <div>
-                                    <form name="financial" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="financialcheckup" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
                                         <input type="hidden" name="bot-field" />
-                                        <input type="hidden" name="form-name" value="financial-checkup" /> 
+                                        <input type="hidden" name="form-name" value="financialcheckup" /> 
                                         <div className="field">
                                             {/*<label for="name">Name</label>*/}
                                             <h5>Name</h5>
