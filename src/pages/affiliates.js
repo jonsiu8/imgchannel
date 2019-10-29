@@ -24,7 +24,6 @@ const Container = styled.div`
     padding: 25px;
     margin: 3rem auto;
     max-width: 1200px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -46,7 +45,7 @@ const Affiliates = (props) => (
             <section id="one">
                 <div className="inner">
                     <h2 id="content">Our Powerful Strategic Partners</h2>
-                        <Container>
+                    <Container>
                         <div className="grid-wrapper"> 
                             <div className="col-4">
                                 <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
@@ -79,9 +78,8 @@ const Affiliates = (props) => (
                             <div className="col-4">
                                 <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
                             </div>                         
-                        </div>
-                       
-                        </Container>
+                        </div>                       
+                    </Container>
                 </div>
             </section>
         </div>
@@ -94,7 +92,7 @@ export default Affiliates
 export const fluidImage = graphql`
 fragment fluidImage on File {
   childImageSharp {
-    fluid(maxWidth: 600) {
+    fluid(maxWidth: 1000) {
       ...GatsbyImageSharpFluid
     }
   }
