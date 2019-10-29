@@ -4,7 +4,8 @@ import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
 import BannerPrivileges from '../components/BannerPrivileges'
-
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 import pic01 from '../assets/images/privileges01.jpg'
 import pic02 from '../assets/images/privileges02.jpg'

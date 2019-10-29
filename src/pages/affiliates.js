@@ -4,16 +4,8 @@ import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
 import BannerAffiliates from '../components/BannerAffiliates'
-
-import Affiliate01 from '../assets/images/Affiliate01.png'
-import Affiliate02 from '../assets/images/Affiliate02.png'
-import Affiliate03 from '../assets/images/Affiliate03.png'
-import Affiliate04 from '../assets/images/Affiliate04.png'
-import Affiliate05 from '../assets/images/Affiliate05.png'
-import Affiliate06 from '../assets/images/Affiliate06.png'
-import Affiliate07 from '../assets/images/Affiliate07.png'
-import Affiliate08 from '../assets/images/Affiliate08.png'
-import Affiliate09 from '../assets/images/Affiliate09.png'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const Container = styled.div`  
     background-color: white;  
@@ -57,35 +49,35 @@ const Affiliates = (props) => (
                         <Container>
                         <div className="grid-wrapper"> 
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate01} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate02} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate03} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             </div>                         
                         </div>
                         <div className="grid-wrapper"> 
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate04} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate05} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate06} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
                             </div>                         
                         </div>
                         <div className="grid-wrapper"> 
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate07} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image07.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate08} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image08.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-4">
-                                <span className="image fit"><img src={Affiliate09} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
                             </div>                         
                         </div>
                        
@@ -97,3 +89,46 @@ const Affiliates = (props) => (
 )
 
 export default Affiliates
+
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 600) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "Affiliate01.png" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "Affiliate02.png" }) {
+        ...fluidImage
+    }
+    image03: file(relativePath: { eq: "Affiliate03.png" }) {
+        ...fluidImage
+    }
+    image04: file(relativePath: { eq: "Affiliate04.png" }) {
+        ...fluidImage
+    }
+    image05: file(relativePath: { eq: "Affiliate05.png" }) {
+        ...fluidImage
+    }
+    image06: file(relativePath: { eq: "Affiliate06.png" }) {
+        ...fluidImage
+    }
+    image07: file(relativePath: { eq: "Affiliate07.png" }) {
+        ...fluidImage
+    }
+    image08: file(relativePath: { eq: "Affiliate08.png" }) {
+        ...fluidImage
+    }
+    image09: file(relativePath: { eq: "Affiliate09.png" }) {
+        ...fluidImage
+    }
+  }
+  `
