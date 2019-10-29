@@ -6,9 +6,12 @@ import BannerContact from '../components/BannerContact'
 import pic03 from '../assets/images/pic03.jpg'
 
 const Container = styled.div`  
-    background-color:#0B258F;  
+    background-color:#3277B3;  
     h2{color:black};    
     color: black; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 
     input:invalid {
         border: 2px solid red;
@@ -64,31 +67,38 @@ const Contact = (props) => (
                                 <input type="hidden" name="form-name" value="contact" /> 
 
                                 <div className="field half first">
-                                    <label htmlFor="name">Name</label>
+                                    <label htmlFor="name">Name
                                     <input type="text" name="name" id="name" required/>
+                                    </label>                                    
                                 </div>
 
                                 <div className="field half">
-                                    <label htmlFor="email">Email</label>
+                                    <label htmlFor="email">Email
                                     <input type="text" name="email" id="email" required/>
+                                    </label>
+                                    
                                 </div>
 
                                 <div className="field">
-                                    <label htmlFor="location">Location</label>
+                                    <label htmlFor="location">Location
                                     <input type="text" name="location" id="location" required/>
+                                    </label>
+                                    
                                 </div>
 
                                 <div className="field">
-                                    <label htmlFor="message">Message</label>
-                                    <textarea name="message" id="message" rows="6" required/>
+                                    <label htmlFor="message">Message
+                                    <textarea name="message" id="message" rows="2" required/>
+                                    </label>
+                                    
                                 </div>
 
                                 <ul className="actions">
                                     <li>
-                                        <input type="submit" value="Send Message" className="special" />
+                                        <input type="submit" value="Send Message" className="button small" />
                                     </li>
                                     <li>
-                                        <input type="reset" value="Clear" />
+                                        <input type="reset" value="Clear" className="button small"/>
                                     </li>
                                 </ul>
                             </form>   
