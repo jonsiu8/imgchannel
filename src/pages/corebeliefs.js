@@ -4,10 +4,8 @@ import Layout from '../components/layout'
 import styled from "styled-components"
 import BannerBeliefs from '../components/BannerBeliefs'
 import { Link } from 'gatsby'
-
-import pic01 from '../assets/images/corebelief01.jpg'
-import pic02 from '../assets/images/corebelief02.jpg'
-import pic03 from '../assets/images/corebelief03.jpg'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const Container = styled.div`  
     background-color:white;  
@@ -21,7 +19,7 @@ const Container = styled.div`
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
     margin: 3rem auto;
-    max-width: 1600px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +44,7 @@ const Corebeliefs = (props) => (
                     <div className="grid-wrapper">                       
                         <div className="col-4">                                                       
                             <h2>Everyone can be financially independent</h2>
-                            <p><span className="image fit"><img src={pic01} alt="" /></span>
+                            <p><span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             Everyone can be financially independent given the right education, guidance and environment.
                             </p>  
                             <hr className="line1" />                                                                                        
@@ -54,7 +52,7 @@ const Corebeliefs = (props) => (
                         
                         <div className="col-4">                                                       
                             <h2>Everyone deserves a chance </h2>
-                            <p><span className="image fit"><img src={pic02} alt="" /></span>
+                            <p><span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             Everyone deserves a chance to improve and change their situation.
                             </p>  
                             <hr className="line1" />                                                                                        
@@ -62,7 +60,7 @@ const Corebeliefs = (props) => (
                            
                         <div className="col-4">                                                       
                             <h2>Everyone can help anyone</h2>
-                            <p><span className="image fit"><img src={pic03} alt="" /></span>
+                            <p><span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             Everyone can provide help to anyone who needs it. 
                             </p>
                             <hr className="line1" />                                                                                         
@@ -82,3 +80,27 @@ const Corebeliefs = (props) => (
 )
 
 export default Corebeliefs
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "corebelief01.jpg" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "corebelief02.jpg" }) {
+        ...fluidImage
+    }
+    image03: file(relativePath: { eq: "corebelief03.jpg" }) {
+        ...fluidImage
+    }
+  }
+  `

@@ -3,12 +3,12 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
 import { Link } from 'gatsby'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 import ssbyfbook from '../../assets/images/ssbyfbook.jpg'
-import webinars from '../../assets/images/financialeduc01.jpg'
-import financialcheckup from '../../assets/images/financialeduc02.jpg'
 import rx from '../../assets/images/rx.jpg'
-import afp from '../../assets/images/financialeduc03.jpg'
+
 
 const Container = styled.div`  
     background-color:white;  
@@ -80,7 +80,7 @@ const Financialeducation = (props) => (
                     <h2>Webinars, Workshops, e-books + more</h2>
                         <div className="grid-wrapper"> 
                             <div className="col-6">                            
-                                <span className="image fit"><img src={webinars} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                                 <p>Qualified trainers and speakers conduct webinars, workshops, training, and seminars around the globe.  Online tools including books are also provided.</p>
                             </div>
                             <div className="col-6">
@@ -119,7 +119,7 @@ const Financialeducation = (props) => (
                     <h2>Financial Checkup</h2>
                         <div className="grid-wrapper"> 
                             <div className="col-6">                            
-                                <span className="image fit"><img src={financialcheckup} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                                 <p>Know where you are and where you're heading.</p>
                             </div>             
                             <div className="col-6">
@@ -158,7 +158,7 @@ const Financialeducation = (props) => (
                     <h2>Associate Financial Planner Program</h2>
                         <div className="grid-wrapper"> 
                             <div className="col-6">                            
-                                <span className="image fit"><img src={afp} alt="" /></span>
+                                <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                                 <p> Our Associate Financial Planner Certification Program allows you have more knowledge and credibility in the financial industry.<br/>
                                     After qualifying all the requirements and exams, you may attach the AFP designation after your name.
                                 </p>
@@ -202,3 +202,33 @@ const Financialeducation = (props) => (
 )
 
 export default Financialeducation
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "financialeduc01.jpg" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "ssbyfbook.jpg" }) {
+        ...fluidImage
+    }
+    image03: file(relativePath: { eq: "financialeduc02.jpg" }) {
+        ...fluidImage
+    }
+    image04: file(relativePath: { eq: "rx.jpg" }) {
+        ...fluidImage
+    }
+    image05: file(relativePath: { eq: "financialeduc03.png" }) {
+        ...fluidImage
+    }
+  }
+  `

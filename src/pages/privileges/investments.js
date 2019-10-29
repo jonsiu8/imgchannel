@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
 import { Link } from 'gatsby'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 import mutualfund from '../../assets/images/mutualfund.jpg'
 import stocktrading from '../../assets/images/stocktrading.jpg'
@@ -42,7 +44,7 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Mutual Funds</h3>
-                            <span className="image fit"><img src={mutualfund} alt="" /></span>                               
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                               
                             <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>                              
                         </ContainerCard>                            
                         </div>
@@ -50,7 +52,7 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Stock Market</h3>
-                            <span className="image fit"><img src={stocktrading} alt="" /></span>
+                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
                         </ContainerCard>                            
                         </div>
@@ -58,7 +60,7 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Real Estate</h3>
-                            <span className="image fit"><img src={realestate} alt="" /></span>
+                            <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
                         </ContainerCard>
                         </div>
@@ -69,3 +71,27 @@ const Investments = (props) => (
     </Layout>
 )
 export default Investments
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "mutualfund.jpg" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "stocktrading.jpg" }) {
+        ...fluidImage
+    }
+    image03: file(relativePath: { eq: "realestate.jpg" }) {
+        ...fluidImage
+    }
+  }
+  `
