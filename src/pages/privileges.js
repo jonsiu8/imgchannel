@@ -13,26 +13,6 @@ import pic04 from '../assets/images/privileges04.jpg'
 import pic05 from '../assets/images/privileges05.jpg'
 import pic06 from '../assets/images/privileges06.jpg'
 
-
-const Container = styled.div`  
-    background-color:white;  
-    h3{color:black};    
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 3rem auto;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  `
-
   const ContainerCard = styled.div`  
     background-color:white;  
     h3{color:black};    
@@ -44,7 +24,7 @@ const Container = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 3rem auto;
+    margin: 2rem auto;
    
   `
 const Privileges = (props) => (

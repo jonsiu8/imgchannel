@@ -22,7 +22,7 @@ const Container = styled.div`
         border: 2px solid red;
       }
       
-      input:valid {
+      textarea:valid {
         border: 2px solid green;
       }
 
@@ -33,7 +33,7 @@ const Container = styled.div`
   
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 3rem auto;
+    margin: 2rem auto;
     max-width: 800px;
     display: flex;
     flex-direction: column;
