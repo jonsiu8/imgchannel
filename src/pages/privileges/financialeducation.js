@@ -87,7 +87,7 @@ const Financialeducation = (props) => (
                             <ContainerCard>
                                 <h3>Get your FREE e-book!</h3>
                                 <span className="image left"><img src={ssbyfbook} alt="" /></span>
-                                <p>Get the first 2 chapters of "The Secret to Saving and Building Your Future". <br/><br/>
+                                <p>Get the first 2 chapters of "The Secret to Saving and Building Your Future" book when you sign up.<br/><br/>
                                 <em>"This book will upgrade your financial life."</em><br/>
                                 -Bro. Bo Sanchez
                                 </p>

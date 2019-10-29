@@ -4,127 +4,68 @@ import Layout from '../../components/layout'
 import styled from "styled-components"
 import { Link } from 'gatsby'
 
-import pic09 from '../../assets/images/pic09.jpg'
-import webinars from '../../assets/images/webinars.png'
-import financialcheckup from '../../assets/images/FinancialCheckup.png'
-import afp from '../../assets/images/AFP.png'
+import mutualfund from '../../assets/images/mutualfund.jpg'
+import stocktrading from '../../assets/images/stocktrading.jpg'
+import realestate from '../../assets/images/realestate.jpg'
 
-const Container = styled.div`  
-    background-color:white;  
-    h2{color:black};    
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 3rem auto;
-    max-width: 1600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  `
+    const ContainerCard = styled.div`  
+        background-color:white;  
+        h3{color:#046880};
+        color: black;
+        .button{
+            background-color:#3277B3;
+            color:white;     
+        }
 
-const ContainerCard = styled.div`  
-    background-color:#DCE1E5;  
-    h3{color:black};
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;   
-  `
+        hr.line1 {border-top: 1px solid white;}    
+        box-shadow: 5px 5px 5px #1E1E1E;
+        padding: 25px;
+        margin: 1rem auto;
+    `
 
 
 const Investments = (props) => (
     <Layout>
         <Helmet>
             <title>Investments</title>
-            <meta name="description" content="Elements Page" />
+            <meta name="description" content="Investments - IMG Channel" />
         </Helmet>
 
         <div id="main" className="alt">
 
             <section id="one">
-                <div className="inner">
-                    
+                <div className="inner">                    
                     <header className="major">
                         <h1>Investments</h1>
                     </header>
-                    <Container>
-                    <h2>Mutual funds</h2>
-                        <div className="grid-wrapper"> 
-                            <div className="col-6">                            
-                                <span className="image fit"><img src={webinars} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <hr className="line1" />
-                            </div>     
-                                    
-                            <div className="col-6">
-                            <ContainerCard>
-                                <h3>Get your FREE e-book</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Send my copy</a>
-                      
-                            </ContainerCard>
-                            </div>
+                    <div className="grid-wrapper">              
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Mutual Funds</h3>
+                            <span className="image fit"><img src={mutualfund} alt="" /></span>                               
+                            <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>                              
+                        </ContainerCard>                            
                         </div>
-                    </Container>
 
-                    <Container>
-                    <h2>Stock market trading</h2>
-                        <div className="grid-wrapper"> 
-                            <div className="col-6">                            
-                                <span className="image fit"><img src={financialcheckup} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-            
-                            </div>             
-                            <div className="col-6">
-                            <ContainerCard>
-                                <h3>Free financial checkup</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Sign up</a>
-                       
-                            </ContainerCard>
-                            </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Stock Market</h3>
+                            <span className="image fit"><img src={stocktrading} alt="" /></span>
+                            <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
+                        </ContainerCard>                            
                         </div>
-                    </Container>
 
-                    <Container>
-                    <h2>Real estate</h2>
-                        <div className="grid-wrapper"> 
-                            <div className="col-6">                            
-                                <span className="image fit"><img src={afp} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                    
-                            </div>             
-                            <div className="col-6">
-                            <ContainerCard>
-                                <h3>Get certified</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Become an IMG member now</a>
-                    
-                                </ContainerCard>
-                            </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Real Estate</h3>
+                            <span className="image fit"><img src={realestate} alt="" /></span>
+                            <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
+                        </ContainerCard>
                         </div>
-                    </Container>
+                    </div>          
                 </div>
             </section>
-
-            
-
         </div>
     </Layout>
 )
-
 export default Investments

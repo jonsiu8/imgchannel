@@ -8,16 +8,17 @@ import pic09 from '../../assets/images/pic09.jpg'
 
 const ContainerCard = styled.div`  
     background-color:white;  
-    h3{color:black};
+    h3{color:#046880};
     color: black;
     .button{
         background-color:#3277B3;
         color:white;     
     }
-    hr.line1 {border-top: 1px solid black;}    
+
+    hr.line1 {border-top: 1px solid white;}    
     box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 20px;
-    margin: 10px;   
+    padding: 25px;
+    margin: 1rem auto;  
     `
 
 const Freebies = (props) => (
@@ -37,63 +38,50 @@ const Freebies = (props) => (
                     </header>
                     
                     <h2>Freebies</h2>
-                        <div className="grid-wrapper">              
-                            <div className="col-4">
-                            <ContainerCard>
-                                <h3>Free doctor's consultation</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>
-                                </ContainerCard>
-                            </div>
-
-                            <div className="col-4">
-                            <ContainerCard>
-                                <h3>Free frames</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
-                            </ContainerCard>
-                            </div>
-                            <div className="col-4">
-                            <ContainerCard>
-                                <h3>Digital marketing tools</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
-                            </ContainerCard>
-                            </div>
+                    <div className="grid-wrapper">              
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>FREE Doctor's Consultation</h3>
+                            <span className="image fit"><img src={pic09} alt="" /></span>                              
+                        </ContainerCard>                            
                         </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>FREE Eyeglasses Frames</h3>
+                            <span className="image fit"><img src={pic09} alt="" /></span>
+                        </ContainerCard>                            
+                        </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Online Marketing Tools</h3>
+                            <span className="image fit"><img src={pic09} alt="" /></span>
+                        </ContainerCard>
+                        </div>
+                    </div>
                     
                     <hr className="major" />
                 
                     <h2>Discounts</h2>
                     <div className="grid-wrapper">              
-                            <div className="col-4">
-                            <ContainerCard>
-                                <h3>Non-life insurance</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <Link to="/privileges/healthcareandinsurance/termlife" className="button special small">Learn more</Link>
-                            </ContainerCard>
-                            </div>
-                            <div className="col-4">
-                            <ContainerCard>
-                                <h3>Auto program</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <Link to="/privileges/healthcareandinsurance/grouplife" className="button special small">Get a quote</Link>
-                            </ContainerCard>
-                            </div>
-                            <div className="col-4">
-                            <ContainerCard>
-                                <h3>Course fees</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <Link to="/privileges/healthcareandinsurance/grouplife" className="button special small">Get a quote</Link>
-                            </ContainerCard>
-                            </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Non-Life Insurance</h3>
+                            <span className="image fit"><img src={pic09} alt="" /></span>                              
+                        </ContainerCard>                            
                         </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Auto Program</h3>
+                            <span className="image fit"><img src={pic09} alt="" /></span>
+                        </ContainerCard>                            
+                        </div>
+                        <div className="col-4">
+                        <ContainerCard>
+                            <h3>Course Fees</h3>
+                            <span className="image fit"><img src={pic09} alt="" /></span>
+                        </ContainerCard>
+                        </div>
+                    </div>
                   
                 </div>
             </section>

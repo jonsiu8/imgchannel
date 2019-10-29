@@ -4,7 +4,13 @@ import Layout from '../../components/layout'
 import styled from "styled-components"
 import { Link } from 'gatsby'
 
-import pic09 from '../../assets/images/pic09.jpg'
+import ltc from '../../assets/images/product-long-term.jpg'
+import shortterm from '../../assets/images/product-short-term.jpg'
+import seniorcare from '../../assets/images/product-senior.jpg'
+import terminsurance from '../../assets/images/terminsurance.jpg'
+import groupinsurance from '../../assets/images/groupinsurance.jpg'
+
+
 
     const ContainerCardHealth = styled.div`  
         background-color:white;  
@@ -17,8 +23,8 @@ import pic09 from '../../assets/images/pic09.jpg'
 
         hr.line1 {border-top: 1px solid white;}    
         box-shadow: 5px 5px 5px #1E1E1E;
-        padding: 20px;
-        margin: 10px;   
+        padding: 25px;
+        margin: 1rem auto;
     `
     const ContainerCardLife = styled.div`  
         background-color:white;  
@@ -31,8 +37,8 @@ import pic09 from '../../assets/images/pic09.jpg'
 
         hr.line1 {border-top: 1px solid white;}    
         box-shadow: 5px 5px 5px #1E1E1E;
-        padding: 20px;
-        margin: 10px;   
+        padding: 25px;
+        margin: 1rem auto;   
     `
 
 
@@ -57,8 +63,7 @@ const Healthcareandinsurance = (props) => (
                             <div className="col-4">
                             <ContainerCardHealth>
                                 <h3>Long-term care</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={ltc} alt="" /></span>                               
                                 <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>                              
                             </ContainerCardHealth>                            
                             </div>
@@ -66,8 +71,7 @@ const Healthcareandinsurance = (props) => (
                             <div className="col-4">
                             <ContainerCardHealth>
                                 <h3>Short-term care</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={shortterm} alt="" /></span>
                                 <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
                             </ContainerCardHealth>                            
                             </div>
@@ -75,8 +79,7 @@ const Healthcareandinsurance = (props) => (
                             <div className="col-4">
                             <ContainerCardHealth>
                                 <h3>Senior care</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={seniorcare} alt="" /></span>
                                 <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
                             </ContainerCardHealth>
                             </div>
@@ -89,16 +92,14 @@ const Healthcareandinsurance = (props) => (
                             <div className="col-6">
                             <ContainerCardLife>
                                 <h3>Term life insurance</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={terminsurance} alt="" /></span>
                                 <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>
                             </ContainerCardLife>
                             </div>
                             <div className="col-6">
                             <ContainerCardLife>
                                 <h3>Group life insurance</h3>
-                                <span className="image right"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+                                <span className="image fit"><img src={groupinsurance} alt="" /></span>
                                 <Link to="/privileges/healthcareandinsurance/grouplife" className="button small">Get a quote</Link>
                             </ContainerCardLife>
                             </div>
