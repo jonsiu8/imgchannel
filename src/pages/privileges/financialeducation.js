@@ -78,7 +78,7 @@ const Financialeducation = (props) => (
                                 -Bro. Bo Sanchez
                                 </p>
                                 <div>
-                                    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="ssbyfbook" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="ssbyfbook" /> 
                                         <div className="field">
@@ -115,7 +115,7 @@ const Financialeducation = (props) => (
                                 <span className="image left"><img src={rx} alt="" /></span>
                                 <p>Learn ways to improve your current financial plan.</p>
                                 <div>
-                                    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="financial" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="financial-checkup" /> 
                                         <div className="field">
