@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
 import { Link } from 'gatsby'
-
-import pic09 from '../../assets/images/pic09.jpg'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
     const ContainerCard = styled.div`  
         background-color:white;  
@@ -28,7 +28,6 @@ const Services = (props) => (
         </Helmet>
 
         <div id="main" className="alt">
-
             <section id="one">
                 <div className="inner">                    
                     <header className="major">
@@ -38,25 +37,14 @@ const Services = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Asset Preservation Service</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>                               
-                            <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>                              
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                         
                         </ContainerCard>                            
                         </div>
-
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Exclusive Memorial Service</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>
-                            <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
+                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </ContainerCard>                            
-                        </div>
-
-                        <div className="col-4">
-                        <ContainerCard>
-                            <h3>Other Products & Services</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>
-                            <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
-                        </ContainerCard>
                         </div>
                     </div>          
                 </div>
@@ -65,3 +53,24 @@ const Services = (props) => (
     </Layout>
 )
 export default Services
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "assetpreservation.png" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "everest.png" }) {
+        ...fluidImage
+    }
+  }
+  `

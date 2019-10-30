@@ -79,13 +79,13 @@ const Affiliates = (props) => (
                                 <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-3">
-                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                                <span className="image fit"><Img fluid={props.data.image10.childImageSharp.fluid} /></span>
                             </div>
                             <div className="col-3">
-                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                                <span className="image fit"><Img fluid={props.data.image11.childImageSharp.fluid} /></span>
                             </div>      
                             <div className="col-3">
-                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                                <span className="image fit"><Img fluid={props.data.image12.childImageSharp.fluid} /></span>
                             </div>                    
                         </div>                       
                     </Container>
@@ -135,6 +135,15 @@ export const pageQuery = graphql`
         ...fluidImage
     }
     image09: file(relativePath: { eq: "Affiliate09.png" }) {
+        ...fluidImage
+    }
+    image10: file(relativePath: { eq: "Affiliate10.png" }) {
+        ...fluidImage
+    }
+    image11: file(relativePath: { eq: "Affiliate11.png" }) {
+        ...fluidImage
+    }
+    image12: file(relativePath: { eq: "Affiliate12.png" }) {
         ...fluidImage
     }
   }

@@ -76,21 +76,18 @@ const Contact = (props) => (
                                     <label htmlFor="email">Email
                                     <input type="text" name="email" id="email" required/>
                                     </label>
-                                    
                                 </div>
 
                                 <div className="field">
                                     <label htmlFor="location">Location
                                     <input type="text" name="location" id="location" required/>
                                     </label>
-                                    
                                 </div>
 
                                 <div className="field">
                                     <label htmlFor="message">Message
                                     <textarea name="message" id="message" rows="2" required/>
                                     </label>
-                                    
                                 </div>
 
                                 <ul className="actions">
