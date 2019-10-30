@@ -83,14 +83,14 @@ const Healthcareandinsurance = (props) => (
                 
                     <h2>Life Insurance</h2>
                     <div className="grid-wrapper">              
-                            <div className="col-6">
+                            <div className="col-4">
                             <ContainerCardLife>
                                 <h3>Term life insurance</h3>
                                 <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
                                 <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>
                             </ContainerCardLife>
                             </div>
-                            <div className="col-6">
+                            <div className="col-4">
                             <ContainerCardLife>
                                 <h3>Group life insurance</h3>
                                 <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>

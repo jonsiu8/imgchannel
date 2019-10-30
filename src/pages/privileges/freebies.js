@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { Link } from 'gatsby'
 
 import pic09 from '../../assets/images/pic09.jpg'
+import consultdoctor from '../../assets/images/consultdoctor.jpg'
+
 
 const ContainerCard = styled.div`  
     background-color:white;  
@@ -42,7 +44,7 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>FREE Doctor's Consultation</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>                              
+                            <span className="image fit"><img src={consultdoctor} alt="" /></span>                              
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">

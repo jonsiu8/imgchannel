@@ -6,10 +6,6 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
-import mutualfund from '../../assets/images/mutualfund.jpg'
-import stocktrading from '../../assets/images/stocktrading.jpg'
-import realestate from '../../assets/images/realestate.jpg'
-
     const ContainerCard = styled.div`  
         background-color:white;  
         h3{color:#046880};
