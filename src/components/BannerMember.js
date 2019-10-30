@@ -7,8 +7,7 @@ const BannerMember = (props) => (
                 <h1>Become a Member</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros.</p>
+                <p>Join the campaign for financial literacy and start your journey to financial freedom.</p>
             </div>
         </div>
     </section>

@@ -3,10 +3,8 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
 import { Link } from 'gatsby'
-
-import pic09 from '../../assets/images/pic09.jpg'
-import consultdoctor from '../../assets/images/consultdoctor.jpg'
-
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const ContainerCard = styled.div`  
     background-color:white;  
@@ -44,19 +42,19 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>FREE Doctor's Consultation</h3>
-                            <span className="image fit"><img src={consultdoctor} alt="" /></span>                              
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                              
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
                         <ContainerCard>
                             <h3>FREE Eyeglasses Frames</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>
+                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Online Marketing Tools</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>
+                            <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                         </ContainerCard>
                         </div>
                     </div>
@@ -68,19 +66,19 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Non-Life Insurance</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>                              
+                            <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>                              
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Auto Program</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>
+                            <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Course Fees</h3>
-                            <span className="image fit"><img src={pic09} alt="" /></span>
+                            <span className="image fit"><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
                         </ContainerCard>
                         </div>
                     </div>
@@ -91,3 +89,36 @@ const Freebies = (props) => (
     </Layout>
 )
 export default Freebies
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "consultdoctor.jpg" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "eyeglasses.jpg" }) {
+        ...fluidImage
+    }
+    image03: file(relativePath: { eq: "onlinemarketing.jpg" }) {
+        ...fluidImage
+    }
+    image04: file(relativePath: { eq: "nonlife.jpg" }) {
+        ...fluidImage
+    }
+    image05: file(relativePath: { eq: "autoprogram.jpg" }) {
+        ...fluidImage
+    }
+    image06: file(relativePath: { eq: "coursefee.jpg" }) {
+        ...fluidImage
+    }
+  }
+  `

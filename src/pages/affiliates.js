@@ -44,40 +44,49 @@ const Affiliates = (props) => (
 
             <section id="one">
                 <div className="inner">
-                    <h2 id="content">Our Powerful Strategic Partners</h2>
+                    {/*<h2 id="content">Our Powerful Strategic Partners</h2>*/}
                     <Container>
                         <div className="grid-wrapper"> 
-                            <div className="col-4">
+                            <div className="col-3">
                                 <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                            </div>                         
+                            </div>     
+                            <div className="col-3">
+                                <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                            </div>                      
                         </div>
                         <div className="grid-wrapper"> 
-                            <div className="col-4">
-                                <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
-                            </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                             </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <span className="image fit"><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
-                            </div>                         
+                            </div>
+                            <div className="col-3">
+                                <span className="image fit"><Img fluid={props.data.image07.childImageSharp.fluid} /></span>
+                            </div>      
+                            <div className="col-3">
+                                <span className="image fit"><Img fluid={props.data.image08.childImageSharp.fluid} /></span>
+                            </div>                    
                         </div>
                         <div className="grid-wrapper"> 
-                            <div className="col-4">
-                                <span className="image fit"><Img fluid={props.data.image07.childImageSharp.fluid} /></span>
-                            </div>
-                            <div className="col-4">
-                                <span className="image fit"><Img fluid={props.data.image08.childImageSharp.fluid} /></span>
-                            </div>
-                            <div className="col-4">
+                            <div className="col-3">
                                 <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
-                            </div>                         
+                            </div>
+                            <div className="col-3">
+                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                            </div>
+                            <div className="col-3">
+                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                            </div>      
+                            <div className="col-3">
+                                <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                            </div>                    
                         </div>                       
                     </Container>
                 </div>

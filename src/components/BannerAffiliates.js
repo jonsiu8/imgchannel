@@ -7,8 +7,7 @@ const BannerAffiliates = (props) => (
                 <h1>Affiliates</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros.</p>
+                <p>Our Powerful Strategic Partners</p>
             </div>
         </div>
     </section>
