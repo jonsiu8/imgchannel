@@ -2,13 +2,53 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import styled from "styled-components"
 
+import bannerpic from '../assets/images/bannerhome.jpg'
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
+
+const BannerContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #0695a4;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const HeroBanner = styled.div`
+  padding: 20px 50px;
+
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    text-align: center;
+  }
+`;
+
+const HeroBannerParag = styled.p`
+  font-size: 22px;
+  color: white;
+`;
+
+const HeroBannerTitle = styled.h2`
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 48px;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+`;
 
 class HomeIndex extends React.Component {
     render() {
@@ -23,6 +63,22 @@ class HomeIndex extends React.Component {
                     ]}
                 >
                 </Helmet>
+
+                <div>
+                    <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
+                    <HeroBanner>
+                        <HeroBannerTitle>Welcome to the IMG Channel</HeroBannerTitle>
+                        <HeroBannerParag>Financial Literacy is for everyone</HeroBannerParag>                        
+                       
+                        <ul className="actions">
+                            <li><a href="#one" className="button next scrolly">Learn More</a></li>
+                         </ul>
+                    </HeroBanner>
+                    {/*<Img sizes={data.imageBannerBg.childImageSharp.sizes} />*/}
+                    </BannerContainer>
+                </div>
+
+
                 {/*<Banner />*/}        
                 <div id="main">
                     <section id="one" className="tiles">
