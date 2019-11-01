@@ -46,32 +46,34 @@ const Corebeliefs = (props) => (
                             <h2>Everyone can be financially independent</h2>
                             <p><span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             Everyone can be financially independent given the right education, guidance and environment.
-                            </p>  
-                            <hr className="line1" />                                                                                        
+                            </p>                                                                                       
                         </div>  
                         
                         <div className="col-4">                                                       
                             <h2>Everyone deserves a chance </h2>
                             <p><span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                            Everyone deserves a chance to improve and change their situation.
-                            </p>  
-                            <hr className="line1" />                                                                                        
+                            Everyone deserves a chance to improve and change their situation.<br/>
+                            </p>                                                                                        
                         </div>  
                            
                         <div className="col-4">                                                       
                             <h2>Everyone can help anyone</h2>
                             <p><span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                            Everyone can provide help to anyone who needs it. 
-                            </p>
-                            <hr className="line1" />                                                                                         
+                            Everyone can provide help to anyone who needs it.<br/>
+                            </p>                                                                                       
                         </div>                                                
                     </div>      
-
+                    </Container>
+                    <Container>
                     <div className="grid-wrapper">                       
-                        <div className="col-12">                                                       
-                        <Link to="/becomeamember" className="button special small">become a member</Link>                                                                          
-                        </div>                                                                
-                    </div>           
+                        <div className="col-4">                                                     
+                            <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>                       
+                        </div>
+                        <div className="col-4">                                                       
+                            <h2>Join our global campaign for financial literacy.</h2>                                              
+                            <Link to="/becomeamember" className="button special small">Join the campaign</Link>                                                                   
+                        </div>                              
+                    </div>         
                     </Container>
                 </div>
             </section>
@@ -100,6 +102,9 @@ export const pageQuery = graphql`
         ...fluidImage
     }
     image03: file(relativePath: { eq: "corebelief03.jpg" }) {
+        ...fluidImage
+    }
+    image04: file(relativePath: { eq: "globalcampaign.png" }) {
         ...fluidImage
     }
   }

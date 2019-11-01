@@ -60,6 +60,11 @@ const ContainerCard = styled.div`
     margin: 0rem auto;   
   `
 
+  const Ulist = styled.ul`  
+  list-style-type: none;
+  color:black;
+`
+
 
 const Financialeducation = (props) => (
     <Layout>
@@ -80,13 +85,21 @@ const Financialeducation = (props) => (
                         <div className="grid-wrapper"> 
                             <div className="col-6">                            
                                 <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                                <p>Qualified trainers and speakers conduct webinars, workshops, training, and seminars around the globe.  Online tools including books are also provided.</p>
+                                <Ulist>                                
+                                    <li className="icon fa-check-square-o"> Increasing Cash Flow</li> 
+                                    <li className="icon fa-check-square-o"> Managing Debts</li> 
+                                    <li className="icon fa-check-square-o"> Saving for Emergencies</li> 
+                                    <li className="icon fa-check-square-o"> Protecting your Family</li> 
+                                    <li className="icon fa-check-square-o"> Investing for your Future</li>
+                                    <li className="icon fa-check-square-o"> Building a Business</li>
+                                </Ulist>
                             </div>
                             <div className="col-6">
                             <ContainerCard>
                                 <h3>Get your FREE e-book!</h3>
                                 <span className="image left"><img src={ssbyfbook} alt="" /></span>
-                                <p>Get the first 2 chapters of "The Secret to Saving and Building Your Future" book when you sign up.<br/><br/>
+                                <p>Get the first 2 chapters of "The Secret to Saving and Building Your Future" book.<br/><br/>
+                                Become your own financial educator.<br/><br/>
                                 <em>"This book will upgrade your financial life."</em><br/>
                                 -Bro. Bo Sanchez
                                 </p>
@@ -119,17 +132,22 @@ const Financialeducation = (props) => (
                         <div className="grid-wrapper"> 
                             <div className="col-6">                            
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                                <p>Know where you are and where you're heading.</p>
+                                <Ulist>                                
+                                    <li className="icon fa-check-square-o"> Evaluate</li> 
+                                    <li className="icon fa-check-square-o"> Analyze</li> 
+                                    <li className="icon fa-check-square-o"> Create</li> 
+                                    <li className="icon fa-check-square-o"> Execute</li> 
+                                </Ulist>
                             </div>             
                             <div className="col-6">
                             <ContainerCard>
-                                <h3>Have your FREE financial checkup</h3>
+                                <h3>FREE financial checkup</h3>
                                 <div>
                                     <span className="image left"><img src={rx} alt="" /></span>
                                     <p>Learn ways to improve your current financial plan.</p>
                                 </div>  
                                 <div>
-                                <p>One-on-one Personal, One-on-one Online, Group Class, Webinar</p>
+                                <p>One-on-one Personal, One-on-one Online, Group Class, Webinar Class</p>
                                 </div>
                                     <form name="financialcheckup" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
                                         <input type="hidden" name="bot-field" />
