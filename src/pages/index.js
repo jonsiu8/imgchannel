@@ -33,20 +33,24 @@ const HeroBanner = styled.div`
 `;
 
 const HeroBannerParag = styled.p`
-  font-size: 22px;
+  font-size: 20px;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const HeroBannerTitle = styled.h2`
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
   padding-bottom: 0;
   border-bottom: none;
-  font-size: 48px;
+  font-size: 54px;
   color: white;
 
   @media (max-width: 768px) {
-    font-size: 32px;
+    font-size: 36px;
   }
 `;
 
@@ -59,7 +63,7 @@ class HomeIndex extends React.Component {
                     title="IMG Channel"
                     meta={[
                         { name: 'description', content: 'Tools, Reference, Information' },
-                        { name: 'keywords', content: 'sample, something' },
+                        { name: 'keywords', content: 'img, benefits' },
                     ]}
                 >
                 </Helmet>
@@ -67,12 +71,11 @@ class HomeIndex extends React.Component {
                 <div>
                     <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
                     <HeroBanner>
-                        <HeroBannerTitle>The IMG Channel</HeroBannerTitle>
-                        <HeroBannerParag>Financial Literacy for everyone</HeroBannerParag>                        
-                       
-                        <ul className="actions">
+                        <HeroBannerTitle>Welcome!</HeroBannerTitle>
+                        <HeroBannerParag>FINANCIAL LITERACY FOR EVERYONE</HeroBannerParag>                       
+                        {/*<ul className="actions">
                             <li><a href="#one" className="button next scrolly">Learn More</a></li>
-                         </ul>
+                        </ul>*/}
                     </HeroBanner>
                     {/*<Img sizes={data.imageBannerBg.childImageSharp.sizes} />*/}
                     </BannerContainer>
@@ -84,7 +87,7 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
-                                <h3>Core beliefs</h3>
+                                <h3>Core Beliefs</h3>
                                 <p>Why and how we do it</p>
                             </header>
                             <Link to="/corebeliefs" className="link primary"></Link>
@@ -105,14 +108,14 @@ class HomeIndex extends React.Component {
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
-                                <h3>Become a member</h3>
+                                <h3>Become a Member</h3>
                                 <p>Join the campaign</p>
                             </header>
                             <Link to="/becomeamember" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
-                                <h3>Be a financial educator</h3>
+                                <h3>Be a Financial Educator</h3>
                                 <p>an online freelance career</p>
                             </header>
                             <Link to="/financialeducator" className="link primary"></Link>
@@ -128,17 +131,14 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>About us</h2>
+                                <h2>About Us</h2>
                             </header>
-                            <p>IMG (International Marketing Group) is a membership platform.
-                                We believe that everyone can become wealthy given the right chance and information.  
-                                Together with our partners we provide great benefits for our members around the globe.  
-                                Through our offices in the Philippines (Manila, Cebu, Davao, etc.), Hong Kong, Singapore, 
-                                Macau, Dubai, Taiwan, etc.,  we provide comprehensive and continuous Financial Education 
-                                programs and guidance for all members and achieve financial independence</p>
-                            <ul className="actions">
-                                {/*<li><Link to="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</Link></li>*/}
-                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</a></li>
+                            <h4>IMG Mission</h4>
+                            <p>To help create wealth for families.  To make a difference for families so there will be No family left behind.</p>
+                            <h4>IMG Vision</h4>
+                            <p>To build a new Financial Industry, where everyone is able to earn what the wealthy are earning by bringing the secrets of the wealthy to all.</p>
+                            <ul className="actions">                                
+                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button next">Join now</a></li>
                             </ul>
                         </div>
                     </section>

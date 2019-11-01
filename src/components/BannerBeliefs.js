@@ -4,10 +4,10 @@ const BannerBeliefs = (props) => (
     <section id="banner" className="style1">
         <div className="inner">
             <header className="major">
-                <h1>Core beliefs</h1>
+                <h1>Core Beliefs</h1>
             </header>
             <div className="content">
-                <p>Find something you believe in and put your life into it</p>
+                <p>Fight only for something you really believe in</p>
             </div>
         </div>
     </section>
