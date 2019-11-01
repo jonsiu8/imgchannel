@@ -16,7 +16,7 @@ const BannerContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background-color: #0695a4;
+  background-color: #3277B3;
 
   @media (max-width: 768px) {
     display: block;
@@ -46,7 +46,7 @@ const HeroBannerTitle = styled.h2`
   color: white;
 
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 32px;
   }
 `;
 
@@ -67,8 +67,8 @@ class HomeIndex extends React.Component {
                 <div>
                     <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
                     <HeroBanner>
-                        <HeroBannerTitle>Welcome to the IMG Channel</HeroBannerTitle>
-                        <HeroBannerParag>Financial Literacy is for everyone</HeroBannerParag>                        
+                        <HeroBannerTitle>The IMG Channel</HeroBannerTitle>
+                        <HeroBannerParag>Financial Literacy for everyone</HeroBannerParag>                        
                        
                         <ul className="actions">
                             <li><a href="#one" className="button next scrolly">Learn More</a></li>
