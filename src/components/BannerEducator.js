@@ -7,8 +7,7 @@ const BannerEducator = (props) => (
                 <h1>Be a Financial Educator</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros.</p>
+                <p>Become a fellow campaigner for financial literacy</p>
             </div>
         </div>
     </section>

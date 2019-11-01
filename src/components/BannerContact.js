@@ -7,8 +7,7 @@ const BannerContact = (props) => (
                 <h1>Contact</h1>
             </header>
             <div className="content">
-                <p>Lorem ipsum dolor sit amet nullam consequat<br />
-                sed veroeros.</p>
+                <p>For More Information and Inquiries</p>
             </div>
         </div>
     </section>

@@ -72,6 +72,21 @@ class HomeIndex extends React.Component {
 
                 <Banner/>
 
+                
+                <div>
+                    <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
+                    <HeroBanner>
+                        <HeroBannerTitle>Welcome!</HeroBannerTitle>
+                        <HeroBannerParag>FINANCIAL LITERACY FOR EVERYONE</HeroBannerParag>                       
+                        {/*<ul className="actions">
+                            <li><a href="#one" className="button next scrolly">Learn More</a></li>
+                        </ul>*/}
+                    </HeroBanner>
+                    {/*<Img sizes={data.imageBannerBg.childImageSharp.sizes} />*/}
+                    </BannerContainer>
+                </div>
+
+
                 {/*<Banner />*/}        
                 <div id="main">
                     <section id="one" className="tiles">
@@ -120,34 +135,16 @@ class HomeIndex extends React.Component {
                     </section>
                     <section id="two">
                         <div className="inner">
-                            <div className="grid-wrapper">
-                                <div className="col-6">
-                                    <header className="major">
-                                    <h2>About IMG</h2>
-                                    </header>
-                                    <h4>IMG Mission</h4>
-                                    <p>To help create wealth for families.  To make a difference for families so there will be No family left behind.</p>
-                                    <h4>IMG Vision</h4>
-                                    <p>To build a new Financial Industry, where everyone is able to earn what the wealthy are earning by bringing the secrets of the wealthy to all.</p>
-                                    <hr className="major"/>
-                                </div>
-                                <div className="col-6">
-                                    <p>This website is operated by Jon Siu and his team.  They are independent representatives of International Marketing Group (IMG),
-                                    Headquarters: 9th Flr, King's Court Bldg 1, 2129 Chino Roces Ave, Makati City, Philippines.  Telephone: (02) 812-2551 / Fax: (02) 811-2327
-                                    </p>                             
-                                    <p>The purpose of this site is to give IMG Members easy access information online about IMG anytime and anywhere.  
-                                        It can be used to show some of the main benefits and privileges of being a member.
-                                    </p>
-                                    <p>
-                                        All IMG members are welcome to use this site for reference but be reminded that all information here are subject to
-                                        change anytime without any prior notice.  For the official IMG corporate website please visit www.img-corp.com
-                                    </p>
-                                    <ul className="actions">                                
-                                        <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button next">Join now</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                           
+                            <header className="major">
+                                <h2>About Us</h2>
+                            </header>
+                            <h4>IMG Mission</h4>
+                            <p>To help create wealth for families.  To make a difference for families so there will be No family left behind.</p>
+                            <h4>IMG Vision</h4>
+                            <p>To build a new Financial Industry, where everyone is able to earn what the wealthy are earning by bringing the secrets of the wealthy to all.</p>
+                            <ul className="actions">                                
+                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button next">Join now</a></li>
+                            </ul>
                         </div>
                     </section>
                 </div>

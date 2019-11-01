@@ -83,30 +83,30 @@ const Financialeducator = (props) => (
                             {/* <Link to="/becomeamember" className="button small">Start my Career</Link>    */}
                             </ContainerCard>
                         </div>            
-                        <div className="col-8">                    
-                            <h3>Enjoy all privileges of being a member.<br/>
-                                Here are some of them:</h3>                          
+                        <div className="col-8">
+                            <h3>We believe that financial literacy is the key to financial freedom.</h3>
+                            <h3>Help make a difference for familes.</h3>                          
                                 <div className="grid-wrapper">
                                 <div className="col-6">
                                     <Ulist>
-                                        <p><b>Privileges</b></p>
-                                        <li className="icon fa-thumbs-up"> Be guided by qualified mentors</li> 
-                                        <li className="icon fa-thumbs-up"> Build your financial foundation</li> 
-                                        <li className="icon fa-thumbs-up"> Get exclusive benefits</li> 
-                                        <li className="icon fa-thumbs-up"> Earn a good part time income</li> 
-                                        <li className="icon fa-thumbs-up"> Excellent support system</li>
-                                        <li className="icon fa-thumbs-up"> NO QUOTAS</li>   
-                                    </Ulist>    
-                                </div>
-                                <div className="col-6">
-                                    <Ulist>
-                                        <p><b>Responsibilities</b></p>
+                                    <p><b>Responsibilities</b></p>
                                         <li className="icon fa-thumbs-up"> Attend workshops & training</li> 
                                         <li className="icon fa-thumbs-up"> Campaign for financial literacy</li> 
                                         <li className="icon fa-thumbs-up"> Join webinars & meetings</li> 
                                         <li className="icon fa-thumbs-up"> Have your financial checkup</li> 
                                         <li className="icon fa-thumbs-up"> Work with the team</li>
-                                        <li className="icon fa-thumbs-up"> Enjoy!</li>   
+                                        <li className="icon fa-thumbs-up"> Enjoy!</li>
+                                    </Ulist>    
+                                </div>
+                                <div className="col-6">
+                                    <Ulist>
+                                    <p><b>Privileges</b></p>
+                                        <li className="icon fa-thumbs-up"> Be guided by qualified mentors</li> 
+                                        <li className="icon fa-thumbs-up"> Build your financial foundation</li> 
+                                        <li className="icon fa-thumbs-up"> Get exclusive benefits</li> 
+                                        <li className="icon fa-thumbs-up"> Earn a good part time income</li> 
+                                        <li className="icon fa-thumbs-up"> Excellent support system</li>
+                                        <li className="icon fa-thumbs-up"> NO QUOTAS</li> 
                                     </Ulist>                       
                                 </div>
                             </div>
