@@ -72,7 +72,13 @@ const Career = (props) => (
                         <h1>Career and Business</h1>
                     </header>                    
                     <Container>
-                    <div className="grid-wrapper">              
+                    <div className="grid-wrapper">    
+                        <div className="col-4">    
+                            <ContainerCard>                
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <Link to="/financialeducator" className="button small">become a financial educator</Link>   
+                            </ContainerCard>
+                        </div>          
                         <div className="col-8">
                             <h2>Financial Educator Career</h2>                        
                             <h4>Join our growing team of financial educators and be part of a great campaign.</h4>
@@ -101,12 +107,7 @@ const Career = (props) => (
                                 </div>
                             </div>                              
                         </div>
-                        <div className="col-4">    
-                            <ContainerCard>                
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <Link to="/becomeamember" className="button small">become a financial educator</Link>   
-                            </ContainerCard>
-                        </div>
+                        
                     </div>
                     </Container>                  
        

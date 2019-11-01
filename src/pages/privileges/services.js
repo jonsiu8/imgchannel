@@ -36,13 +36,16 @@ const Services = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Asset Preservation Service</h3>
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                         
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <p>Preserve your wealth and don't let a lifetime of savings be devoured by taxes.</p>
+                     
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Exclusive Memorial Service</h3>
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                            <p>Convenience and peace of mind... when your family need it the most.</p>
                         </ContainerCard>                            
                         </div>
                     </div>          

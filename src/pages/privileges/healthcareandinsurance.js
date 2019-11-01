@@ -57,8 +57,9 @@ const Healthcareandinsurance = (props) => (
                             <div className="col-4">
                             <ContainerCardHealth>
                                 <h3>Long-term care</h3>
-                                <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                               
-                                <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>                              
+                                <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>   
+                                <p>Health Savings Program with Invesments to cover your retirement years.</p>                            
+                                {/* <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>*/}
                             </ContainerCardHealth>                            
                             </div>
 
@@ -66,7 +67,8 @@ const Healthcareandinsurance = (props) => (
                             <ContainerCardHealth>
                                 <h3>Short-term care</h3>
                                 <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                                <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
+                                <p>Healthcare coverage for you and your family while you're still employed.</p>
+                                {/* <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link> */}
                             </ContainerCardHealth>                            
                             </div>
 
@@ -74,7 +76,8 @@ const Healthcareandinsurance = (props) => (
                             <ContainerCardHealth>
                                 <h3>Senior care</h3>
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                                <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
+                                <p>Healthcare coverage for seniors from 61-100 years of age.</p>
+                                {/* <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link> */}
                             </ContainerCardHealth>
                             </div>
                         </div>
@@ -87,14 +90,16 @@ const Healthcareandinsurance = (props) => (
                             <ContainerCardLife>
                                 <h3>Term life insurance</h3>
                                 <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
-                                <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>
+                                <p>Most affordable income replacement while building your future.</p>
+                                {/* <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>*/}
                             </ContainerCardLife>
                             </div>
                             <div className="col-4">
                             <ContainerCardLife>
                                 <h3>Group life insurance</h3>
                                 <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
-                                <Link to="/privileges/healthcareandinsurance/grouplife" className="button small">Get a quote</Link>
+                                <p>Life and Accident Insurance for your organization.</p>
+                                {/* <Link to="/privileges/healthcareandinsurance/grouplife" className="button small">Get a quote</Link> */}
                             </ContainerCardLife>
                             </div>
                         </div>

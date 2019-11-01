@@ -69,7 +69,7 @@ const Corebeliefs = (props) => (
                         <div className="col-4">                                                     
                             <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>                       
                         </div>
-                        <div className="col-4">                                                       
+                        <div className="col-3">                                                       
                             <h2>Join our global campaign for financial literacy.</h2>                                              
                             <Link to="/becomeamember" className="button special small">Join the campaign</Link>                                                                   
                         </div>                              

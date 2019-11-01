@@ -133,10 +133,10 @@ const Financialeducation = (props) => (
                             <div className="col-6">                            
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                                 <Ulist>                                
-                                    <li className="icon fa-check-square-o"> Evaluate</li> 
-                                    <li className="icon fa-check-square-o"> Analyze</li> 
-                                    <li className="icon fa-check-square-o"> Create</li> 
-                                    <li className="icon fa-check-square-o"> Execute</li> 
+                                    <li className="icon fa-check-square-o"> Evaluate your financial situation</li> 
+                                    <li className="icon fa-check-square-o"> Analyze the strengths and weaknesses</li> 
+                                    <li className="icon fa-check-square-o"> Create a simple and clear plan</li> 
+                                    <li className="icon fa-check-square-o"> Execute and sustain</li> 
                                 </Ulist>
                             </div>             
                             <div className="col-6">
@@ -171,6 +171,7 @@ const Financialeducation = (props) => (
                         </div>
                     </Container>
 
+                    {/*
                     <Container>
                     <h2>Associate Financial Planner Program</h2>
                         <div className="grid-wrapper"> 
@@ -212,6 +213,7 @@ const Financialeducation = (props) => (
                             </div>
                         </div>
                     </Container>
+                    */}
                 </div>
             </section>          
         </div>

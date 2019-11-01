@@ -3,7 +3,8 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
 import BannerContact from '../components/BannerContact'
-import pic03 from '../assets/images/pic03.jpg'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const Container = styled.div`  
     background-color:#3277B3;  
@@ -101,9 +102,10 @@ const Contact = (props) => (
                             </form>   
                             </Container>            
                         </div>
-                      
+                        <div className="col-6">                    
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                      
+                        </div>
                     </div>
-                   
                 </div>
             </section>
         </div>
@@ -111,3 +113,21 @@ const Contact = (props) => (
 )
 
 export default Contact
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "contact.jpg" }) {
+      ...fluidImage
+    }
+  }
+  `

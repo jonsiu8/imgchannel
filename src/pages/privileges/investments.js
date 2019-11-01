@@ -40,8 +40,9 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Mutual Funds</h3>
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                               
-                            <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>                              
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <p>Stress-free investing with great long term growth potential.</p>                            
+                            {/* <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>*/}
                         </ContainerCard>                            
                         </div>
 
@@ -49,7 +50,8 @@ const Investments = (props) => (
                         <ContainerCard>
                             <h3>Stock Market</h3>
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                            <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
+                            <p>Stock market investing right at your fingertips.</p>
+                            {/* <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link> */}
                         </ContainerCard>                            
                         </div>
 
@@ -57,7 +59,8 @@ const Investments = (props) => (
                         <ContainerCard>
                             <h3>Real Estate</h3>
                             <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                            <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
+                            <p>Expand your investment portfolio with properties.</p>
+                            {/* <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link> */}
                         </ContainerCard>
                         </div>
                     </div>          

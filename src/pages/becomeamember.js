@@ -86,12 +86,15 @@ const Becomeamember = (props) => (
                                 <li className="icon fa-thumbs-up"> Freelance Business</li>
                                 <li className="icon fa-thumbs-up"> and many more...</li>   
                             </Ulist>
-                            <Link to="/privileges" className="button small">Learn more</Link>   
+                            <Link to="/privileges" className="button small">more privileges here</Link>   
                         </div>
                         <div className="col-6">    
                             <ContainerCard>                
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <Link to="/becomeamember" className="button small">Become an IMG Member Now</Link>   
+                            <ul className="actions">                                
+                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button small">Become an IMG Member Now</a></li>
+                            </ul>
+                            {/* <Link to="/becomeamember" className="button small">Become an IMG Member Now</Link>*/}
                             </ContainerCard>
                         </div>
                     </div>
