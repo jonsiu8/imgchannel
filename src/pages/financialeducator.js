@@ -58,6 +58,10 @@ const Container = styled.div`
   const Ulist = styled.ul`  
   list-style-type: none;
   color:black;
+  font-size: 21px;
+    @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 const Financialeducator = (props) => (
     <Layout>
@@ -90,23 +94,23 @@ const Financialeducator = (props) => (
                                 <div className="col-6">
                                     <Ulist>
                                     <p><b>Responsibilities</b></p>
-                                        <li className="icon fa-thumbs-up"> Attend workshops & training</li> 
-                                        <li className="icon fa-thumbs-up"> Campaign for financial literacy</li> 
-                                        <li className="icon fa-thumbs-up"> Join webinars & meetings</li> 
-                                        <li className="icon fa-thumbs-up"> Have your financial checkup</li> 
-                                        <li className="icon fa-thumbs-up"> Work with the team</li>
-                                        <li className="icon fa-thumbs-up"> Enjoy!</li>
+                                        <li className="icon fa-check-square-o"> Attend workshops & training</li> 
+                                        <li className="icon fa-check-square-o"> Campaign for financial literacy</li> 
+                                        <li className="icon fa-check-square-o"> Join webinars & meetings</li> 
+                                        <li className="icon fa-check-square-o"> Have your financial checkup</li> 
+                                        <li className="icon fa-check-square-o"> Work with the team</li>
+                                        <li className="icon fa-check-square-o"> Enjoy!</li>
                                     </Ulist>    
                                 </div>
                                 <div className="col-6">
                                     <Ulist>
                                     <p><b>Privileges</b></p>
-                                        <li className="icon fa-thumbs-up"> Be guided by qualified mentors</li> 
-                                        <li className="icon fa-thumbs-up"> Build your financial foundation</li> 
-                                        <li className="icon fa-thumbs-up"> Get exclusive benefits</li> 
-                                        <li className="icon fa-thumbs-up"> Earn a good part time income</li> 
-                                        <li className="icon fa-thumbs-up"> Excellent support system</li>
-                                        <li className="icon fa-thumbs-up"> NO QUOTAS</li> 
+                                        <li className="icon fa-check-square-o"> Be guided by qualified mentors</li> 
+                                        <li className="icon fa-check-square-o"> Build your financial foundation</li> 
+                                        <li className="icon fa-check-square-o"> Get exclusive benefits</li> 
+                                        <li className="icon fa-check-square-o"> Earn a good part time income</li> 
+                                        <li className="icon fa-check-square-o"> Excellent support system</li>
+                                        <li className="icon fa-check-square-o"> NO QUOTAS</li> 
                                     </Ulist>                       
                                 </div>
                             </div>

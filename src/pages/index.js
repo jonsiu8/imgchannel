@@ -5,14 +5,14 @@ import Layout from '../components/layout'
 import styled from "styled-components"
 import Banner from '../components/Banner'
 
-import bannerpic from '../assets/images/bannerhome.jpg'
+// import bannerpic from '../assets/images/bannerhome.jpg'
+// import BannerEducator from '../components/BannerEducator'
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
-import BannerEducator from '../components/BannerEducator'
 
 const BannerContainer = styled.div`
   display: grid;

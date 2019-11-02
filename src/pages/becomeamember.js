@@ -58,6 +58,10 @@ const Container = styled.div`
   const Ulist = styled.ul`  
   list-style-type: none;
   color:black;
+  font-size: 26px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `
 const Becomeamember = (props) => (
     <Layout>
@@ -78,13 +82,13 @@ const Becomeamember = (props) => (
                             <h3>Enjoy all privileges of being a member.<br/>
                                 Here are some of them:</h3>                          
                             <Ulist>                                
-                                <li className="icon fa-thumbs-up"> Financial Education</li> 
-                                <li className="icon fa-thumbs-up"> Free Financial Checkup</li> 
-                                <li className="icon fa-thumbs-up"> Access to Financial Services</li> 
-                                <li className="icon fa-thumbs-up"> Freebies and Discounts</li> 
-                                <li className="icon fa-thumbs-up"> Mutual Fund Investments</li>
-                                <li className="icon fa-thumbs-up"> Freelance Business</li>
-                                <li className="icon fa-thumbs-up"> and many more...</li>   
+                                <li className="icon fa-check-square-o"> Financial Education</li> 
+                                <li className="icon fa-check-square-o"> Free Financial Checkup</li> 
+                                <li className="icon fa-check-square-o"> Access to Financial Services</li> 
+                                <li className="icon fa-check-square-o"> Freebies and Discounts</li> 
+                                <li className="icon fa-check-square-o"> Mutual Fund Investments</li>
+                                <li className="icon fa-check-square-o"> Freelance Business</li>
+                                <li className="icon fa-check-square-o"> and many more...</li>   
                             </Ulist>
                             <Link to="/privileges" className="button small">more privileges here</Link>   
                         </div>
@@ -100,7 +104,7 @@ const Becomeamember = (props) => (
                     </div>
                     </Container>                  
        
-                    <Container>
+                    {/* <Container>
                         <div className="grid-wrapper">              
                             <div className="col-4">
                                 <h3>Personal Finance Mastery</h3>
@@ -121,7 +125,7 @@ const Becomeamember = (props) => (
                                 <hr className="line1"/>
                             </div>
                         </div>
-                    </Container>
+                    </Container> */}
                 </div>
             </section>
         </div>
