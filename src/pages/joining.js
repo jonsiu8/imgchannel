@@ -3,14 +3,13 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
-import BannerMember from '../components/BannerMember'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
 const ContainerCard = styled.div`  
-    background-color:#3277B3;  
-    h2{color:black}; 
-    color: black;
+    background-color:#DCE1E5;  
+    color:black;
+
     .button{
         background-color:#3277B3;
         color:white;     
@@ -54,15 +53,6 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
   `
-
-  const Ulist = styled.ul`  
-  list-style-type: none;
-  color:black;
-  font-size: 26px;
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`
 const Joining = (props) => (
     <Layout>
         <Helmet>
@@ -77,48 +67,77 @@ const Joining = (props) => (
                     <Container>                         
                     <div className="grid-wrapper">              
                             <div className="col-12">
-                                <h3>Step 1</h3>
-                                <p>Click the "REGISTER" button and you will open another window to the IMG registration site.</p>                              
+                                <h3>Step 1 - Registration Site</h3>
+                                <p>Click the "REGISTER" button and it will open another window to the IMG registration site.</p>                           
                                 <ul className="actions">                                
                                     <li><a href="https://img-corp.net/register.php?agentcode=6110hk" 
-                                        target="_blank" rel="noopener noreferrer" className="button small">Register</a>
+                                        target="_blank" rel="noopener noreferrer" className="button special next">Register</a>
                                     </li>
                                 </ul>
-                                <p>If you're in the Philippines the page will look like this...<br/>
-                                    Zoom in if you need to.
-                                </p>
-                                <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                         
-                                
-                                <hr className="line1"/>
+                                <div className="grid-wrapper">              
+                                    <div className="col-6">
+                                        <ContainerCard>
+                                            <p> If you're based in the PHILIPPINES the page will look like this <i className="icon fa-arrow-down"/></p >
+                                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                                         </ContainerCard>                                               
+                                    </div>
+                                    <div className="col-6">
+                                        <ContainerCard>
+                                            <p> If you're ABROAD it's like this <i className="icon fa-arrow-down"/></p>
+                                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                                         </ContainerCard>                                               
+                                    </div>
+                                </div>                                                      
+                            </div>                    
+                        </div>
+                    </Container>
+                    <Container>                         
+                    <div className="grid-wrapper">              
+                            <div className="col-6">
+                                <h3>Step 2 - Sponsor's Name Confirmation</h3>
+                                <p>Check the "AGENT" name below.  That should be your Sponsor's name.</p>                               
+                                <ContainerCard>
+                                    <p>If your SPONSOR is Jon Fredrich Siu, then go ahead to step 4<br/></p>
+                                    <p>If it's someone else, skip to Step 3.</p>
+                                    <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                                </ContainerCard>                              
                             </div>
-                            {/* <div className="col-6">    
-                                <h3>Rewards & Travel Incentives</h3>         
-                                <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                                <p>Travel around the world and be recognized for your efforts.</p>
-                                <hr className="line1"/>
-                            </div> */}
+                            <div className="col-6">
+                                <h3>Step 3 - Change Agent's Name</h3>
+                                <p>Note: If your Agent Name is correctly displayed, skip to step 4.</p>                        
+                                <ContainerCard>
+                                    <p>Click "change agent" (located at the bottom).</p>
+                                    <p>You will be asked to input your Sponsor's AgentCode then submit.</p>                                    
+                                    <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                                </ContainerCard>                              
+                            </div>                    
                         </div>
-                    </Container>                  
-       
-                    {/* <Container>
-                        <div className="col-6">    
-                            <ContainerCard>                
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <ul className="actions">                                
-                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button small">Register</a></li>
-                            </ul>                  
-                            </ContainerCard>
+                    </Container>
+                    <Container>                         
+                    <div className="grid-wrapper">              
+                            <div className="col-6">
+                                <h3>Step 4 - Sponsor's Name Confirmation</h3>
+                                <p>Check the "AGENT" name below.  That should be your Sponsor's name.</p>                               
+                                <ContainerCard>
+                                    <p>If your SPONSOR is Jon Fredrich Siu, then go ahead to step 4<br/></p>
+                                    <p>If it's someone else, skip to Step 3.</p>
+                                    <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                                </ContainerCard>                              
+                            </div>
+                            <div className="col-6">
+                                <h3>Step 5 - Change Agent's Name</h3>
+                                <p>Note: If your Agent Name is correctly displayed, skip to step 4.</p>                        
+                                <ContainerCard>
+                                    <p>Click "change agent" (located at the bottom).</p>
+                                    <p>You will be asked to input your Sponsor's AgentCode then submit.</p>                                    
+                                    <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                                </ContainerCard>                              
+                            </div>                    
                         </div>
-                        
-                    </Container> */}
+                    </Container>              
                 </div>
             </section>
         </div>
-
-
-
-
     </Layout>
 )
 
@@ -139,13 +158,16 @@ export const pageQuery = graphql`
     image01: file(relativePath: { eq: "RegisterIntl.png" }) {
       ...fluidImage
     }
-    image02: file(relativePath: { eq: "personalfinancemastery.jpg" }) {
+    image02: file(relativePath: { eq: "RegisterIntl.png" }) {
         ...fluidImage
     }
-    image03: file(relativePath: { eq: "travel.jpg" }) {
+    image03: file(relativePath: { eq: "Step3.png" }) {
         ...fluidImage
     }
-    image04: file(relativePath: { eq: "buildbiz.jpg" }) {
+    image04: file(relativePath: { eq: "Step3.png" }) {
+        ...fluidImage
+    }
+    image05: file(relativePath: { eq: "Step3.png" }) {
         ...fluidImage
     }
   }
