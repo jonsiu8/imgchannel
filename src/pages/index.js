@@ -132,7 +132,7 @@ class HomeIndex extends React.Component {
                                     <hr className="major"/>
                                 </div>
                                 <div className="col-6">
-                                    <p>This website is operated by Jon Siu and his team.  They are independent representatives of International Marketing Group (IMG),
+                                    <p>This website is operated by Jon Siu and team.  They are independent representatives of International Marketing Group (IMG),
                                     Headquarters: 9th Flr, King's Court Bldg 1, 2129 Chino Roces Ave, Makati City, Philippines.  Telephone: (02) 812-2551 / Fax: (02) 811-2327
                                     </p>                             
                                     <p>The purpose of this site is to give IMG Members easy access information online about IMG anytime and anywhere.  
@@ -140,10 +140,10 @@ class HomeIndex extends React.Component {
                                     </p>
                                     <p>
                                         All IMG members are welcome to use this site for reference but be reminded that all information here are subject to
-                                        change anytime without any prior notice.  For the official IMG corporate website please visit www.img-corp.com
+                                        change anytime without any prior notice.  For the official IMG website please visit www.img-corp.com
                                     </p>
                                     <ul className="actions">                                
-                                        <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button next">Join now</a></li>
+                                        <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</a></li>
                                     </ul>
                                 </div>
                             </div>

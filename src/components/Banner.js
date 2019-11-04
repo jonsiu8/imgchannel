@@ -4,10 +4,10 @@ const Banner = (props) => (
     <section id="banner" className="major">
         <div className="inner">
             <header className="major">
-                <h1>Welcome</h1>
+                <h1>A Campaign for Financial Literacy</h1>
             </header>
             <div className="content">
-                <p>financial education for everyone</p>
+                <p>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></p>
          
             </div>
         </div>

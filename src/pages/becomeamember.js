@@ -79,8 +79,7 @@ const Becomeamember = (props) => (
                     <Container>
                     <div className="grid-wrapper">              
                         <div className="col-6">                    
-                            <h3>Enjoy all privileges of being a member.<br/>
-                                Here are some of them:</h3>                          
+                            <h3>Enjoy the privileges of being a member.</h3>                          
                             <Ulist>                                
                                 <li className="icon fa-check-square-o"> Financial Education</li> 
                                 <li className="icon fa-check-square-o"> Free Financial Checkup</li> 
@@ -95,9 +94,10 @@ const Becomeamember = (props) => (
                         <div className="col-6">    
                             <ContainerCard>                
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <ul className="actions">                                
-                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button small">Become an IMG Member Now</a></li>
-                            </ul>
+                            <Link to="/joining" className="button small">Become an IMG Member now</Link>
+                            {/* <ul className="actions">                                
+                                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button small">Become an IMG Member Now</a></li>
+                            </ul> */}
                             {/* <Link to="/becomeamember" className="button small">Become an IMG Member Now</Link>*/}
                             </ContainerCard>
                         </div>

@@ -21,7 +21,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 600,
             },
           },
           "gatsby-remark-copy-linked-files",
@@ -32,7 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `red`,
+        color: `white`,
         // Disable the loading spinner.
         showSpinner: true,
       },
@@ -43,11 +43,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'IMG Channel',
+        short_name: 'IMG Channel',
         start_url: '/',
-        background_color: '#FE890A',
-        theme_color: '#663399',
+        background_color: '#DCE1E5',
+        theme_color: '#3277B3',
         display: 'minimal-ui',
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
