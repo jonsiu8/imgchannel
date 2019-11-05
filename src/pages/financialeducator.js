@@ -81,10 +81,10 @@ const Financialeducator = (props) => (
                     <div className="col-4">    
                             <ContainerCard>                
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <ul className="actions">                                
+                            {/* <ul className="actions">                                
                                 <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button small">Start my Career</a></li>
-                            </ul>
-                            {/* <Link to="/becomeamember" className="button small">Start my Career</Link>    */}
+                            </ul> */}
+                            <Link to="/joining" className="button">Start my Career</Link>
                             </ContainerCard>
                         </div>            
                         <div className="col-8">
@@ -148,7 +148,7 @@ const Financialeducator = (props) => (
 
                             <div className="col-6">
                                 <h3>Compensation</h3>
-                                <p>Once your coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
+                                <p>Once you're coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
                                     by serving people through financial education.</p>
                                 <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                                 <hr className="line1"/>

@@ -25,7 +25,10 @@ const Container = styled.div`
         color:black;
         margin: 1rem auto;
     }
-    h3{color:black};
+    h3{
+        color:black;
+        margin: 1rem auto;
+    }
     h4{
         color:black;
         margin:5px;
@@ -47,7 +50,7 @@ const Container = styled.div`
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
     margin: 3rem auto;
-    max-width: 1600px;
+    max-width: 1080;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,79 +68,87 @@ const Joining = (props) => (
                 <div className="inner">              
                     <h2>How to Join</h2>                                  
                     <Container>                         
-                    <div className="grid-wrapper">              
-                            <div className="col-12">
+                        <div className="grid-wrapper">              
+                            <div className="col-6">
                                 <h3>Step 1 - Registration Site</h3>
-                                <p>Click the "REGISTER" button and it will open another window to the IMG registration site.</p>                           
-                                <ul className="actions">                                
+                                <p>Click the "REGISTER" button and it will open another window to the IMG registration site.  <a href="https://img-corp.net/register.php?agentcode=6110hk" 
+                                        target="_blank" rel="noopener noreferrer" className="button next">Register</a></p>                           
+                                {/* <ul className="actions">                                
                                     <li><a href="https://img-corp.net/register.php?agentcode=6110hk" 
-                                        target="_blank" rel="noopener noreferrer" className="button special next">Register</a>
+                                        target="_blank" rel="noopener noreferrer" className="button next">Register</a>
                                     </li>
-                                    <li><a href="http://img-corp.net/register.php" 
-                                        target="_blank" rel="noopener noreferrer" className="button special next">Register</a>
-                                    </li>
-                                </ul>
-                                <div className="grid-wrapper">              
-                                    <div className="col-6">
-                                        <ContainerCard>
-                                            <p> If you're based in the PHILIPPINES the page will look like this <i className="icon fa-arrow-down"/></p >
-                                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                                         </ContainerCard>                                               
-                                    </div>
-                                    <div className="col-6">
-                                        <ContainerCard>
-                                            <p> If you're ABROAD it's like this <i className="icon fa-arrow-down"/></p>
-                                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                                         </ContainerCard>                                               
-                                    </div>
-                                </div>                                                      
-                            </div>                    
-                        </div>
-                    </Container>
-                    <Container>                         
-                    <div className="grid-wrapper">              
-                            <div className="col-6">
-                                <h3>Step 2 - Sponsor's Name Confirmation</h3>
-                                <p>Check the "AGENT" name below.  That should be your Sponsor's name.</p>                               
+                                </ul> */}
                                 <ContainerCard>
-                                    <p>If your SPONSOR is Jon Fredrich Siu, then go ahead to step 4<br/></p>
-                                    <p>If it's someone else, skip to Step 3.</p>
-                                    <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                                </ContainerCard>                              
+                                    <p>It defaults in your current country.</p >
+                                    <p>Choose PH if you're based in the Philippines.</p>
+                                    <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
                             </div>
                             <div className="col-6">
-                                <h3>Step 3 - Change Agent's Name</h3>
-                                <p>Note: If your Agent Name is correctly displayed, skip to step 4.</p>                        
+                                <h3>Step 2 - Confirm Agent's Name</h3>
+                                <p>Check the "AGENT" name below - this should be your Sponsor's name.   Change agent if necessary.</p>
+                                <p><i>Note: The default AGENT is SIU, JON FREDRICH.</i></p>
                                 <ContainerCard>
-                                    <p>Click "change agent" (located at the bottom).</p>
-                                    <p>You will be asked to input your Sponsor's AgentCode then submit.</p>                                    
-                                    <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
-                                </ContainerCard>                              
-                            </div>                    
-                        </div>
-                    </Container>
-                    <Container>                         
-                    <div className="grid-wrapper">              
-                            <div className="col-6">
-                                <h3>Step 4 - Sponsor's Name Confirmation</h3>
-                                <p>Check the "AGENT" name below.  That should be your Sponsor's name.</p>                               
+                                    {/* <p> If you're ABROAD it's like this <i className="icon fa-arrow-down"/></p> */}
+                                    <p>If you are referred by another, ask for your Sponsor's AgentCode and change agent accordingly.</p>
+                                    <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+                            <div className="col-12">
+                                <h3>Step 3 - Fill up the Form </h3>
+                                <p>Carefully and Accurately fillup the form</p>                               
                                 <ContainerCard>
-                                    <p>If your SPONSOR is Jon Fredrich Siu, then go ahead to step 4<br/></p>
-                                    <p>If it's someone else, skip to Step 3.</p>
                                     <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                                    <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                                    <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                                 </ContainerCard>                              
                             </div>
-                            <div className="col-6">
-                                <h3>Step 5 - Change Agent's Name</h3>
-                                <p>Note: If your Agent Name is correctly displayed, skip to step 4.</p>                        
+                            <div className="col-4">
+                                <h3>Step 4 - Choose Payment Method</h3>
                                 <ContainerCard>
-                                    <p>Click "change agent" (located at the bottom).</p>
-                                    <p>You will be asked to input your Sponsor's AgentCode then submit.</p>                                    
-                                    <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
-                                </ContainerCard>                              
-                            </div>                    
-                        </div>
-                    </Container>              
+                                    <p>Payment through Bank Deposit or Paypal is recomended.</p>
+                                    <span className="image fit"><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+                            <div className="col-4">
+                                <h3>Step 5 - Checkout</h3>                                
+                                <ContainerCard>
+                                    <p>Fillup the billing information then click next.</p>
+                                    <span className="image fit"><Img fluid={props.data.image07.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+                            <div className="col-4">
+                                <h3>Step 6 - Choose Bank for Bank Deposit Payment</h3>                                
+                                <ContainerCard>
+                                    <p></p>
+                                    <span className="image fit"><Img fluid={props.data.image08.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+
+                            <div className="col-4">
+                                <h3>Step 7 - Send Proof of Verification</h3>
+                                <p>If the Deposit has been done then you may send the proof to this link.</p>
+                                <ContainerCard>
+                                    <p>Note: Same link is received on new member's email allowing to proceed (if deposit is not done yet).</p>
+                                    <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+                            <div className="col-4">
+                                <h3>Step 8 - Confirm Your Deposit</h3>                                
+                                <ContainerCard>
+                                    <span className="image fit"><Img fluid={props.data.image10.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+                            <div className="col-4">
+                                <h3>Step 9 - Success</h3>                   
+                                <p>Congratulations</p>             
+                                <ContainerCard>
+                                    <p></p>
+                                    <span className="image fit"><Img fluid={props.data.image11.childImageSharp.fluid} /></span>
+                                </ContainerCard>                                               
+                            </div>
+                        </div>                                                                       
+                    </Container>
                 </div>
             </section>
         </div>
@@ -158,19 +169,37 @@ fragment fluidImage on File {
 
 export const pageQuery = graphql`
   query {
-    image01: file(relativePath: { eq: "RegisterIntl.png" }) {
+    image01: file(relativePath: { eq: "Registercountry.png" }) {
       ...fluidImage
     }
-    image02: file(relativePath: { eq: "RegisterIntl.png" }) {
+    image02: file(relativePath: { eq: "Registeragent.png" }) {
         ...fluidImage
     }
-    image03: file(relativePath: { eq: "Step3.png" }) {
+    image03: file(relativePath: { eq: "signup-01.png" }) {
         ...fluidImage
     }
-    image04: file(relativePath: { eq: "Step3.png" }) {
+    image04: file(relativePath: { eq: "signup-02.png" }) {
         ...fluidImage
     }
-    image05: file(relativePath: { eq: "Step3.png" }) {
+    image05: file(relativePath: { eq: "signup-03.png" }) {
+        ...fluidImage
+    }
+    image06: file(relativePath: { eq: "paymentoption.png" }) {
+        ...fluidImage
+    }
+    image07: file(relativePath: { eq: "checkout.png" }) {
+        ...fluidImage
+    }
+    image08: file(relativePath: { eq: "choosebank.png" }) {
+        ...fluidImage
+    }
+    image09: file(relativePath: { eq: "sendproof.png" }) {
+        ...fluidImage
+    }
+    image10: file(relativePath: { eq: "confirmdeposit.png" }) {
+        ...fluidImage
+    }
+    image11: file(relativePath: { eq: "success.png" }) {
         ...fluidImage
     }
   }
