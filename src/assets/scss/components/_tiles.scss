@@ -30,8 +30,8 @@
 			background-size: cover;
 			cursor: default;
 			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
+			max-height: 30em;
+			min-height: 15em;
 			overflow: hidden;
 			position: relative;
 			width: 40%;
@@ -92,7 +92,7 @@
 
 			&:hover {
 				&:before {
-					opacity: 0;
+					opacity: 0.25;
 				}
 			}
 
@@ -162,9 +162,9 @@
 		@include breakpoint(small) {
 			article {
 				@include padding(3em, 1.5em);
-				height: 16em;
-				max-height: none;
-				min-height: 0;
+				height: 12em;
+				max-height: 12em;
+				min-height: 10em;
 
 				h3 {
 					font-size: 1.5em;

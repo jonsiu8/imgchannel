@@ -73,6 +73,9 @@ const Joining = (props) => (
                                     <li><a href="https://img-corp.net/register.php?agentcode=6110hk" 
                                         target="_blank" rel="noopener noreferrer" className="button special next">Register</a>
                                     </li>
+                                    <li><a href="http://img-corp.net/register.php" 
+                                        target="_blank" rel="noopener noreferrer" className="button special next">Register</a>
+                                    </li>
                                 </ul>
                                 <div className="grid-wrapper">              
                                     <div className="col-6">

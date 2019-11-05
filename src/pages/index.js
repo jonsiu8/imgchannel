@@ -142,9 +142,10 @@ class HomeIndex extends React.Component {
                                         All IMG members are welcome to use this site for reference but be reminded that all information here are subject to
                                         change anytime without any prior notice.  For the official IMG website please visit www.img-corp.com
                                     </p>
-                                    <ul className="actions">                                
+                                    <Link to="/becomeamember" className="button next">Become an IMG Member</Link>
+                                    {/* <ul className="actions">                                
                                         <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button next">Join now</a></li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                            
