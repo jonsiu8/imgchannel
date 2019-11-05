@@ -47,7 +47,7 @@ module.exports = {
         short_name: 'IMG Channel',
         start_url: '/',
         background_color: '#DCE1E5',
-        theme_color: '#3277B3',
+        theme_color: '#070F29',
         display: 'minimal-ui',
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },

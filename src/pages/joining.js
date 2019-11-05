@@ -71,8 +71,8 @@ const Joining = (props) => (
                         <div className="grid-wrapper">              
                             <div className="col-6">
                                 <h3>Step 1 - Registration Site</h3>
-                                <p>Click the "REGISTER" button and it will open another window to the IMG registration site.  <a href="https://img-corp.net/register.php?agentcode=6110hk" 
-                                        target="_blank" rel="noopener noreferrer" className="button next">Register</a></p>                           
+                                <p>Click the "REGISTER" button and it will open another window to the IMG registration site. 
+                                    <a href="https://img-corp.net/register.php" target="_blank" rel="noopener noreferrer" className="button next">Register</a></p>                           
                                 {/* <ul className="actions">                                
                                     <li><a href="https://img-corp.net/register.php?agentcode=6110hk" 
                                         target="_blank" rel="noopener noreferrer" className="button next">Register</a>
@@ -87,16 +87,15 @@ const Joining = (props) => (
                             <div className="col-6">
                                 <h3>Step 2 - Confirm Agent's Name</h3>
                                 <p>Check the "AGENT" name below - this should be your Sponsor's name.   Change agent if necessary.</p>
-                                <p><i>Note: The default AGENT is SIU, JON FREDRICH.</i></p>
                                 <ContainerCard>
                                     {/* <p> If you're ABROAD it's like this <i className="icon fa-arrow-down"/></p> */}
-                                    <p>If you are referred by another, ask for your Sponsor's AgentCode and change agent accordingly.</p>
+                                    <p>Ask for your Sponsor's AgentCode and <b>change agent</b> accordingly.</p>
                                     <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                                 </ContainerCard>                                               
                             </div>
                             <div className="col-12">
                                 <h3>Step 3 - Fill up the Form </h3>
-                                <p>Carefully and Accurately fillup the form</p>                               
+                                <p>Carefully and Accurately fill up the form</p>                               
                                 <ContainerCard>
                                     <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                                     <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
@@ -113,12 +112,13 @@ const Joining = (props) => (
                             <div className="col-4">
                                 <h3>Step 5 - Checkout</h3>                                
                                 <ContainerCard>
-                                    <p>Fillup the billing information then click next.</p>
+                                    <p>Fill up the billing information then click next.</p>
                                     <span className="image fit"><Img fluid={props.data.image07.childImageSharp.fluid} /></span>
                                 </ContainerCard>                                               
                             </div>
                             <div className="col-4">
-                                <h3>Step 6 - Choose Bank for Bank Deposit Payment</h3>                                
+                                <h3>Step 6 - For Bank Deposit Payment</h3>
+                                <p>Choose Your Bank</p>                             
                                 <ContainerCard>
                                     <p></p>
                                     <span className="image fit"><Img fluid={props.data.image08.childImageSharp.fluid} /></span>
@@ -127,7 +127,7 @@ const Joining = (props) => (
 
                             <div className="col-4">
                                 <h3>Step 7 - Send Proof of Verification</h3>
-                                <p>If the Deposit has been done then you may send the proof to this link.</p>
+                                <p>If the Deposit has been made you may send the proof to this link.</p>
                                 <ContainerCard>
                                     <p>Note: Same link is received on new member's email allowing to proceed (if deposit is not done yet).</p>
                                     <span className="image fit"><Img fluid={props.data.image09.childImageSharp.fluid} /></span>

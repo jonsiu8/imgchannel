@@ -132,7 +132,7 @@ class HomeIndex extends React.Component {
                                     <hr className="major"/>
                                 </div>
                                 <div className="col-6">
-                                    <p>This website is operated by Jon Siu and team.  They are independent representatives of International Marketing Group (IMG),
+                                    <p>This website is operated by JFS and team.  They are independent representatives of International Marketing Group (IMG),
                                     Headquarters: 9th Flr, King's Court Bldg 1, 2129 Chino Roces Ave, Makati City, Philippines.  Telephone: (02) 812-2551 / Fax: (02) 811-2327
                                     </p>                             
                                     <p>The purpose of this site is to give IMG Members easy access information online about IMG anytime and anywhere.  

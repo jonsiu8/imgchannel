@@ -36,12 +36,16 @@ const ContainerCard = styled.div`
     padding: 25px;
     margin: 1px;   
     `
-
+    const Ulist = styled.ul`  
+    list-style-type: none;
+    color:white;
+  `
+    
 const Longterm = (props) => (
     <Layout>
         <Helmet>
-            <title>Long term care</title>
-            <meta name="description" content="Healthcare and Insurance Page" />
+            <title>Long Term Care</title>
+            <meta name="description" content="Long Term Care - IMG Channel" />
         </Helmet>
         <div id="main" className="alt">
             <section id="one">
@@ -49,15 +53,34 @@ const Longterm = (props) => (
                     <header className="major">
                         <h1>Long term care</h1>
                     </header>
+                    <p>The Ultimate Kaiser Health Builder plan brings together the best features of</p>
+                    <Ulist>                                 
+                        <li className="icon fa-check-square-o"> Long Term Health Coverage</li> 
+                        <li className="icon fa-check-square-o"> Life Insurance</li> 
+                        <li className="icon fa-check-square-o"> and Investment</li> 
+                    </Ulist>
                     <ContainerHealth>
-                    <h2>Ultimate Kaiser Health Builder</h2>
+                    <h2>How it Works</h2>
                         <div className="grid-wrapper">              
-                            <div className="col-12">
+                            <div className="col-3">
                             <ContainerCard>
-                                <h3>Long-term care</h3>
+                                <h3>Saving Period</h3>
+                                <p>7 Years to Save</p>
                                 <span className="image fit"><img src={pic09} alt="" /></span>
-                                <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                                <a href="#" className="button special small">Start now</a>
+                            </ContainerCard>
+                            </div>
+                            <div className="col-6">
+                            <ContainerCard>
+                                <h3>Extended Period</h3>
+                                <p>13 years to Wait</p>
+                                <span className="image fit"><img src={pic09} alt="" /></span>                                
+                            </ContainerCard>
+                            </div>
+                            <div className="col-3">
+                            <ContainerCard>
+                                <h3>Maturity</h3>
+                                <p>Option to get cash value</p>
+                                <span className="image fit"><img src={pic09} alt="" /></span>
                                 </ContainerCard>
                             </div>
                         </div>
