@@ -94,7 +94,7 @@ const Becomeamember = (props) => (
                         <div className="col-6">    
                             <ContainerCard>                
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <Link to="/joining" className="button small">Become an IMG Member now</Link>
+                            <Link to="/joining" className="button">Become an IMG Member now</Link>
                             {/* <ul className="actions">                                
                                 <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button small">Become an IMG Member Now</a></li>
                             </ul> */}

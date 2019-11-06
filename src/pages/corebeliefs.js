@@ -71,7 +71,7 @@ const Corebeliefs = (props) => (
                         </div>
                         <div className="col-3">                                                       
                             <h2>Join our global campaign for financial literacy.</h2>                                              
-                            <Link to="/becomeamember" className="button special small">Join the campaign</Link>                                                                   
+                            <Link to="/becomeamember" className="button">Join the campaign</Link>                                                                   
                         </div>                              
                     </div>         
                     </Container>

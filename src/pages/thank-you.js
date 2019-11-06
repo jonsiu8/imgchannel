@@ -2,7 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
-import thankyou from '../assets/images/thank-you.jpg'
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const Container = styled.div`  
     background-color: #DCE1E5;  
@@ -14,10 +15,10 @@ const Container = styled.div`
         background-color:#221D71;
         color:white;     
     }
-    padding: 0px 0px 0px 0px;
+    padding: 15px;
     margin: 3rem auto;
-    max-width: 650px;
-    display: flex;
+    max-width: 800px;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -36,9 +37,9 @@ const Thankyou = (props) => (
                 <div className="inner">                           
                     <div className="grid-wrapper">                 
                         <div className="col-12">                                                      
-                            <h1><center>Message Sent!</center></h1>
-                            <span className="image fit"><img src={thankyou} alt="" /></span>
-                            <h2><center>Thank you very much.</center></h2>
+                            <h1>Submit Successful!</h1>
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <h2>Thank you very much.</h2>
                         </div>                    
                     </div>             
                 </div>
@@ -49,3 +50,21 @@ const Thankyou = (props) => (
 )
 
 export default Thankyou
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "thank-you.jpg" }) {
+      ...fluidImage
+    }
+  }
+  `
