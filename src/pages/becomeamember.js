@@ -47,7 +47,7 @@ const Container = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 3rem auto;
+    margin: 2rem auto;
     max-width: 1600px;
     display: flex;
     flex-direction: column;
@@ -102,37 +102,10 @@ const Becomeamember = (props) => (
                             </ContainerCard>
                         </div>
                     </div>
-                    </Container>                  
-       
-                    {/* <Container>
-                        <div className="grid-wrapper">              
-                            <div className="col-4">
-                                <h3>Personal Finance Mastery</h3>
-                                <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                                <p>Gain knowledge and financial wisdom while having a freelance career.</p>
-                                <hr className="line1"/>
-                            </div>
-                            <div className="col-4">    
-                                <h3>Rewards & Travel Incentives</h3>         
-                                <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                                <p>Travel around the world and be recognized for your efforts.</p>
-                                <hr className="line1"/>
-                            </div>
-                            <div className="col-4">    
-                                <h3>Build a Big Business</h3>         
-                                <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
-                                <p>Make a difference and leave a legacy through entrepreneurship.</p>
-                                <hr className="line1"/>
-                            </div>
-                        </div>
-                    </Container> */}
+                    </Container>
                 </div>
             </section>
         </div>
-
-
-
-
     </Layout>
 )
 
