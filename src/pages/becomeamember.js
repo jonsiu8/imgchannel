@@ -20,7 +20,7 @@ const ContainerCard = styled.div`
     padding: 25px;
     margin: 1rem auto;    
     `
-const Container = styled.div`  
+    const Container = styled.div`  
     background-color:white; 
     h2{
         color:black;
@@ -47,7 +47,7 @@ const Container = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     max-width: 1600px;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,7 @@ const Becomeamember = (props) => (
                         <div className="col-6">    
                             <ContainerCard>                
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <Link to="/joining" className="button">Become an IMG Member now</Link>
+                            <Link to="/joining" className="button small">Become an IMG Member now</Link>
                             {/* <ul className="actions">                                
                                 <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button small">Become an IMG Member Now</a></li>
                             </ul> */}
