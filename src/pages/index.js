@@ -43,15 +43,15 @@ const HeroBannerParag = styled.p`
 `;
 
 const HeroBannerTitle = styled.h2`
-  margin-top: 0;
-  margin-bottom: 0px;
-  padding-bottom: 0;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
   border-bottom: none;
-  font-size: 42px;
+  font-size: 41px;
   color: white;
 
   @media (max-width: 800px) {
-    font-size: 33px;
+    font-size: 34px;
   }
 `;
 
@@ -73,7 +73,7 @@ class HomeIndex extends React.Component {
                     <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
                     <HeroBanner>
                         <HeroBannerTitle>A Campaign for Financial Literacy</HeroBannerTitle>
-                        <p></p>  
+                 
                         <HeroBannerParag>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></HeroBannerParag>                    
                         {/*<ul className="actions">
                             <li><a href="#one" className="button next scrolly">Learn More</a></li>
