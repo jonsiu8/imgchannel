@@ -51,7 +51,7 @@ const HeroBannerTitle = styled.h2`
   color: white;
 
   @media (max-width: 800px) {
-    font-size: 34px;
+    font-size: 35px;
   }
 `;
 
@@ -69,7 +69,7 @@ class HomeIndex extends React.Component {
                 >
                 </Helmet>
 
-                <div>
+         
                     <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
                     <HeroBanner>
                         <HeroBannerTitle>A Campaign for Financial Literacy</HeroBannerTitle>
@@ -81,7 +81,7 @@ class HomeIndex extends React.Component {
                     </HeroBanner>
                     {/*<Img sizes={data.imageBannerBg.childImageSharp.sizes} />*/}
                     </BannerContainer>
-                </div>
+           
 
                 {/*<Banner />*/}        
                 <div id="main">

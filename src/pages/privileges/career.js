@@ -118,7 +118,7 @@ const Career = (props) => (
                     <Container>
                         <div className="grid-wrapper">              
                             <div className="col-4">
-                                <h3>Personal Finance Mastery</h3>
+                                <h3>Personal Finance Proficiency</h3>
                                 <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                                 <p>Gain knowledge and financial wisdom while having a freelance career.</p>
                                 <hr className="line1"/>

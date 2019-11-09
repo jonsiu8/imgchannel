@@ -53,35 +53,66 @@ const Longterm = (props) => (
                     <header className="major">
                         <h1>Long term care</h1>
                     </header>
-                    <p>The Ultimate Kaiser Health Builder plan brings together the best features of</p>
+                    <p>The Ultimate Kaiser Health Builder plan brings together the best features of a</p>
                     <Ulist>                                 
                         <li className="icon fa-check-square-o"> Long Term Health Coverage</li> 
                         <li className="icon fa-check-square-o"> Life Insurance</li> 
                         <li className="icon fa-check-square-o"> and Investment</li> 
                     </Ulist>
+                    
+                    <ContainerHealth>
+                    <h2>Benefits</h2>
+                        <div className="grid-wrapper">              
+                            <div className="col-4">
+                            <ContainerCard>
+                                <h3>Health Coverage</h3>
+                                <span className="image left"><img src={pic09} alt="" /></span>
+                                <p>Covers hospitalization and other medical needs even beyond age 60. 
+                                    While most traditional healthcare only covers you while working, 
+                                    this takes care of your healthcare needs even after retirement.</p>
+                                
+                            </ContainerCard>
+                            </div>
+                            <div className="col-4">
+                            <ContainerCard>
+                                <h3>Life Insurance</h3>
+                                <span className="image left"><img src={pic09} alt="" /></span>
+                                <p>Protects against loss of life.  Gives you peace of mind with a four-way insurance coverage: 
+                                    Term Life, Accidental and Dismemberment, Waiver of Installment Due to Death or Total Disabilty. </p>
+                            </ContainerCard>
+                            </div>
+                            <div className="col-4">
+                            <ContainerCard>
+                                <h3>Investment</h3>
+                                <span className="image left"><img src={pic09} alt="" /></span>
+                                <p>A portion of your funds are invested in shares of stocks and it will be managed by professional fund managers.  
+                                    Your money will earn at an average interest of 10% per year through the stock market.</p>
+                                </ContainerCard>
+                            </div>
+                        </div>
+                    </ContainerHealth>
+
                     <ContainerHealth>
                     <h2>How it Works</h2>
                         <div className="grid-wrapper">              
-                            <div className="col-3">
+                            <div className="col-4">
                             <ContainerCard>
-                                <h3>Saving Period</h3>
-                                <p>7 Years to Save</p>
-                                <span className="image fit"><img src={pic09} alt="" /></span>
+                                <h3>7 Years to Pay</h3>
+                                <span className="image left"><img src={pic09} alt="" /></span>
+                                <p>Covers hospitalization and other medical needs even beyond age 60. 
+                                    While most traditional healthcare only covers you while working, 
+                                    this takes care of your healthcare needs even after retirement.</p>
+                                
                             </ContainerCard>
                             </div>
-                            <div className="col-6">
+                            <div className="col-8">
                             <ContainerCard>
-                                <h3>Extended Period</h3>
-                                <p>13 years to Wait</p>
-                                <span className="image fit"><img src={pic09} alt="" /></span>                                
+                                <h3>Life Insurance</h3>
+                                <span className="image left"><img src={pic09} alt="" /></span>
+                                <p>Protects against loss of life.  Gives you peace of mind with a four-way insurance coverage: 
+                                    Term Life, Accidental and Dismemberment, Waiver of Installment Due to Death or Total Disabilty. </p>
+                                {/* <span className="image fit"><img src={pic09} alt="" /></span>*/}
                             </ContainerCard>
-                            </div>
-                            <div className="col-3">
-                            <ContainerCard>
-                                <h3>Maturity</h3>
-                                <p>Option to get cash value</p>
-                                <span className="image fit"><img src={pic09} alt="" /></span>
-                                </ContainerCard>
                             </div>
                         </div>
                     </ContainerHealth>

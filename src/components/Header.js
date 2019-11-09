@@ -9,7 +9,7 @@ const Logo = styled.img`
   margin-top: 15px;
 
   @media (max-width: 736px) {
-    width: 90px;
+    width: 95px;
   }
 `;
 

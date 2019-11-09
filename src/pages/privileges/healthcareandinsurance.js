@@ -59,7 +59,7 @@ const Healthcareandinsurance = (props) => (
                                 <h3>Long-term care</h3>
                                 <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>   
                                 <p>Health Savings Program with Invesments to cover your retirement years.</p>                            
-                                {/* <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>*/}
+                                <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>
                             </ContainerCardHealth>                            
                             </div>
 
