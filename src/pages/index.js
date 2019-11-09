@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import styled from "styled-components"
 import Banner from '../components/Banner'
 
-// import bannerpic from '../assets/images/bannerhome.jpg'
+import bannerpic from '../assets/images/bannerhome.jpg'
 // import BannerEducator from '../components/BannerEducator'
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -16,7 +16,6 @@ import pic06 from '../assets/images/pic06.jpg'
 
 const BannerContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   background-color: #3277B3;
 
@@ -26,11 +25,11 @@ const BannerContainer = styled.div`
 `;
 
 const HeroBanner = styled.div`
-  padding: 20px 50px;
+  padding: 60px 50px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -39,7 +38,7 @@ const HeroBannerParag = styled.p`
   color: white;
 
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
@@ -48,11 +47,11 @@ const HeroBannerTitle = styled.h2`
   margin-bottom: 0px;
   padding-bottom: 0;
   border-bottom: none;
-  font-size: 54px;
+  font-size: 42px;
   color: white;
 
-  @media (max-width: 768px) {
-    font-size: 36px;
+  @media (max-width: 800px) {
+    font-size: 33px;
   }
 `;
 
@@ -70,7 +69,19 @@ class HomeIndex extends React.Component {
                 >
                 </Helmet>
 
-                <Banner/>
+                <div>
+                    <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
+                    <HeroBanner>
+                        <HeroBannerTitle>A Campaign for Financial Literacy</HeroBannerTitle>
+                        <p></p>  
+                        <HeroBannerParag>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></HeroBannerParag>                    
+                        {/*<ul className="actions">
+                            <li><a href="#one" className="button next scrolly">Learn More</a></li>
+                        </ul>*/}
+                    </HeroBanner>
+                    {/*<Img sizes={data.imageBannerBg.childImageSharp.sizes} />*/}
+                    </BannerContainer>
+                </div>
 
                 {/*<Banner />*/}        
                 <div id="main">

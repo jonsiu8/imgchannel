@@ -17,7 +17,7 @@ const ContainerHealth = styled.div`
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
     margin: 3rem auto;
-    max-width: 1600px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
