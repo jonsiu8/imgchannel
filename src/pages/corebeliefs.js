@@ -9,7 +9,8 @@ import Img from 'gatsby-image'
 
 const Container = styled.div`  
     background-color:white;  
-    h2{color:black};    
+    h2{color:black};
+    h3{color:black};    
     color: black;
     .button{
         background-color:#3277B3;
@@ -43,23 +44,23 @@ const Corebeliefs = (props) => (
                 <Container>
                     <div className="grid-wrapper">                       
                         <div className="col-4">                                                       
-                            <h2>Everyone can be financially independent</h2>
+                            <h2>Everyone Can Be Financially Independent</h2>
                             <p><span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             Everyone can be financially independent given the right education, guidance and environment.
                             </p>                                                                                       
                         </div>  
                         
                         <div className="col-4">                                                       
-                            <h2>Everyone deserves a chance </h2>
+                            <h2>Everyone Deserves a Chance </h2>
                             <p><span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                            Everyone deserves a chance to improve and change their situation.<br/>
+                            Everyone deserves a chance to improve and change for the better.<br/>
                             </p>                                                                                        
                         </div>  
                            
                         <div className="col-4">                                                       
-                            <h2>Everyone can help anyone</h2>
+                            <h2>Everyone Can Help or Serve</h2>
                             <p><span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                            Everyone can provide help to anyone who needs it.<br/>
+                            Everyone can help or serve one person at a time.<br/>
                             </p>                                                                                       
                         </div>                                                
                     </div>      
@@ -70,7 +71,8 @@ const Corebeliefs = (props) => (
                             <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>                       
                         </div>
                         <div className="col-3">                                                       
-                            <h2>Join our global campaign for financial literacy.</h2>                                              
+                            <h2>Join our global campaign for financial literacy.</h2>
+                            <h3>Be part of the movement.</h3>                                              
                             <Link to="/becomeamember" className="button">Join the campaign</Link>                                                                   
                         </div>                              
                     </div>         
