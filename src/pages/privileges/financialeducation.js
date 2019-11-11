@@ -141,13 +141,13 @@ const Financialeducation = (props) => (
                             </div>             
                             <div className="col-6">
                             <ContainerCard>
-                                <h3>FREE financial checkup</h3>
+                                <h3>FREE Financial Checkup</h3>
                                 <div>
                                     <span className="image left"><img src={rx} alt="" /></span>
                                     <p>Learn ways to improve your current financial plan.</p>
                                 </div>  
                                 <div>
-                                <p>One-on-one Personal, One-on-one Online, Group Class, Webinar Class</p>
+                                <p>Join our Free Financial Checkup Webinar from your mobile devices.  Sign up and get your invite and link. </p>
                                 </div>
                                     <form name="financialcheckup" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
                                         <input type="hidden" name="bot-field" />

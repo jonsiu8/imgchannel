@@ -32,7 +32,7 @@ const Corebeliefs = (props) => (
     <Layout>
         <Helmet>
             <title>Core beliefs</title>
-            <meta name="description" content="Our beliefs Page" />
+            <meta name="description" content="Our Beliefs - IMG Channel" />
         </Helmet>
 
         <BannerBeliefs/>
@@ -40,7 +40,8 @@ const Corebeliefs = (props) => (
         <div id="main" className="alt">
 
             <section id="one">
-                <div className="inner">                 
+                <div className="inner"> 
+                <h2>We Believe...</h2>             
                 <Container>
                     <div className="grid-wrapper">                       
                         <div className="col-4">                                                       

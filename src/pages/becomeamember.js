@@ -89,7 +89,7 @@ const Becomeamember = (props) => (
                                 <li className="icon fa-check-square-o"> Freelance Business</li>
                                 <li className="icon fa-check-square-o"> and many more...</li>   
                             </Ulist>
-                            <Link to="/privileges" className="button small">more privileges here</Link>   
+                            <Link to="/privileges" className="button small">more privileges...</Link>   
                         </div>
                         <div className="col-6">    
                             <ContainerCard>                

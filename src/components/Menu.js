@@ -15,8 +15,9 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/financialeducator">Be a financial educator</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/contact">Contact</Link></li>
             </ul>
-            <ul className="actions vertical">
-                <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button fit">Join now</a></li>
+            <ul className="actions vertical">            
+                <Link to="/becomeamember" className="button fit">Join the campaign</Link> 
+                {/* <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button fit">Join now</a></li> */}
                 {/*<li><a href="#" className="button fit">Log In</a></li>*/}
             </ul>
         </div>
