@@ -77,7 +77,7 @@ const Healthcareandinsurance = (props) => (
                                 <h3>Senior care</h3>
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                                 <p>Healthcare coverage for seniors from 61-100 years of age.</p>
-                                {/* <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link> */}
+                                <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
                             </ContainerCardHealth>
                             </div>
                         </div>

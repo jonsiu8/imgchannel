@@ -204,6 +204,7 @@ const Shortterm = (props) => (
                                 <p><b>*Major Hospitals:</b> Makati Medical Center, Saint Luke Medical Center, The Medical City, 
                                     Cardinal Santos Medical Center and Asian Hospital Medical Center</p>
                                 <p>Family and Group plans are also available, go to Kaiser site for more info.</p>
+                                <p>Note: <i>Effective rates as of June 15, 2019. The company reserves the exclusive right to change, update and revise prices at any given time.</i></p>
                             </div>
                         </div>
                 </div>
