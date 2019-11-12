@@ -7,10 +7,10 @@ import Img from 'gatsby-image'
 
 const ContainerHealth = styled.div`  
     background-color:white;  
-    h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    h1{color:#046880};  
+    h4{color:#0B258F};  
+    h3{color:#0B258F};
+    h2{color:#0B258F};
+    h1{color:#0B258F};  
     color: black;
     b{color:black};
     th{color:black};
@@ -27,32 +27,34 @@ const ContainerHealth = styled.div`
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     `
-const ContainerCard = styled.div`  
-    background-color:white;
-    h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;  
-    `
+
     const ContainerForm = styled.div`  
     background-color:#0B258F;
     h4{color:white};  
     h3{color:white};
     h2{color:white};
     color: white;
+    input:invalid {
+        border: 1px solid red;
+      }
+      
+      input:valid {
+        border: 1px solid green;
+      }
+
+      textarea:invalid {
+        border: 1px solid red;
+      }
+      
+      textarea:valid {
+        border: 1px solid green;
+      }
+
     .button{
-        background-color:#13778F;
+        background-color:#0B258F;
         color:white;     
     }
     hr.line1 {border-top: 1px solid black;}    
@@ -64,20 +66,15 @@ const ContainerCard = styled.div`
     const Ulist = styled.ul`  
     list-style-type: none;
     color:black;
-    padding-left:0px;
-    font-size:20px;
-    
-    p{  font-size: 22px;
-        padding-left:0px;
+    font-size: 18px;
+    p{  font-size: 20px;
+        padding-bottom:20px;
         margin:0px
     };
     b{color:black};
 
     @media (max-width: 768px) {
-        font-size: 16px;
-        p{  font-size: 18px;
-            padding-left:0px;
-            margin:0px
+        font-size: 15px;
       }
   `
     
@@ -94,110 +91,147 @@ const Termlife = (props) => (
                         <h1>Term Life Insurance</h1>
                     </header>
                     <div className="grid-wrapper">              
-                        <div className="col-2">
+                        <div className="col-3">
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </div>
                         <div className="col-6">
-                        <h2>M.O.S.T.18 - Multiple Option Super Term</h2>
+                        <h1>M.O.S.T.18</h1>
+                        <h2>Multiple Option Super Term</h2>
                         </div>
                     </div> 
                         <div className="grid-wrapper">    
-
                             <div className="col-8">
+                                
                             <ContainerHealth>
+                                 <h2>Features and Benefits</h2>
+                                <h4>MOST18 is a term life insurance with PDF (Premium Deposit Fund).</h4>
                                 <Ulist>
-                                    <h3>Features and Benefits</h3>
-                                    {/*<span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>*/}
-                                    <li className="icon fa-check-square-o"> Medical healthcare plan especially designed for those ages 61 years of age and up.</li>
-                                    <li className="icon fa-check-square-o"> Reimbursement of actual hospitalization expenses based on coverage. Reimbursement may be done
-                                                                            midway of hospitalization provided confinement is coverable and required documents submitted.</li> 
-                                    <li className="icon fa-check-square-o"> Patient’s choice for doctor, hospital and specialist.</li> 
-                                    <li className="icon fa-check-square-o"> Comprehensive range of Medical Healthcare Benefits with a maximum coverage limit of up to
-                                                                            Php1,000,000.00</li> 
-                                    <li className="icon fa-check-square-o"> Member to shoulder the 1st P10,000.00 from the total bill plus an additional 10% of the claimable
-                                                                            amount. The remaining 90% of the claimable amount shall be shouldered by Kaiser.</li>
-                                    <li className="icon fa-check-square-o"> Surgical Cases are based on PhilHealth RUVs to calculate the maximum amount payable to the
-                                                                            surgeon for the surgical procedure. This means that the payment received from Kaiser may be less
-                                                                            than the professional fee charged by the surgeon.</li>
-                                    <li className="icon fa-check-square-o"> Coverage is one (1) year upon effectivity of the plan.</li>
-                                    <li className="icon fa-check-square-o"> Renewal is guaranteed up to age 100. However, KAISER reserves the right to adjust premiums and
-                                                                            other policy conditions upon written advice of 45 days prior to renewal.</li>
+                                    
+                                    <li className="icon fa-check-square-o"> <b>Affordable</b> - Get higher face amount for your money</li>
+                                    <li className="icon fa-check-square-o"> <b>Higher fund value</b> - PDF allows higher growth of funds</li>
+                                    <li className="icon fa-check-square-o"> <b>Premium flexibility</b> - Settle your contribution on a schedule that fits your lifestyle</li>
+                                    <li className="icon fa-check-square-o"> <b>Withdrawal advantage</b> - Withdraw your savings anytime without penalty</li>
+                                    <li className="icon fa-check-square-o"> <b>Level coverage risk</b> - Your cash value is added to your coverage</li>
+                                    <li className="icon fa-check-square-o"> <b>Emergency fund advantage</b> - Cash value even on the first year</li>
+                                    <li className="icon fa-check-square-o"> <b>Investment flexibility</b> - You decide where to invest</li>
+                                    <li className="icon fa-check-square-o"> <b>Early maturity</b> - Maturity after 5/10/15/18 years</li>
+                                    <li className="icon fa-check-square-o"> <b>Issue age is 5 to 60</b> - Insure your whole family</li>
+                                    <li className="icon fa-check-square-o"> <b>Addresses various financial needs</b> - Retirement, education, investment, etc.</li>                                    
+                                    <li className="icon fa-check-square-o"> <b>Convertible</b> - Option to convert to a permanent policy</li>
+                                    <li className="icon fa-check-square-o"> <b>Low chance of lapsation</b> - Premiums may be settled from your PDF earnings</li>
                                 </Ulist>
-                                <p><b>Additional Info:</b><br/>
-                                Premiums are inclusive of all applicable taxes.<br/>
-                                Premiums may change subject to the result of medical evaluation of applicable form.<br/>
-                                Hospitalization & treatment outside the Philippines is not covered</p>
-                                {/* <p>For more info & options please visit the Kaiser International Healthgroup page.</p>
-                                <a href="https://kaiserhealthgroup.com/#products" target="_blank" 
-                                rel="noopener noreferrer" className="button small special">Go to Kaiser site</a> */}
+                                <h4>Advantages of PDF (Premium Deposit Fund)</h4>
+                                <div className="grid-wrapper">              
+                                    <div className="col-6">
+                                        <Ulist>                              
+                                        <li className="icon fa-circle"> Very competitive rate of return</li>
+                                        <li className="icon fa-circle"> Partial or full withdrawal can be made anytime</li>
+                                        <li className="icon fa-circle"> Maximum total deposit of 100% of the Face Amount, excluding interest earnings</li>
+                                        <li className="icon fa-circle"> Payable to the beneficiaries upon death of the insured</li>
+                                        </Ulist>
+                                    </div>
+                                    <div className="col-6">
+                                        <Ulist>                               
+                                        <li className="icon fa-circle"> PDF has higher growth and doesn't go negative</li>
+                                        <li className="icon fa-circle"> Premium that will fall due may be deducted from the PDF, the client will not 
+                                                                        need to shell out additional payment (assuming that the PDF amount will suffice)</li> 
+                                        </Ulist>
+                                    </div>
+                                </div>
                             </ContainerHealth>
                             </div>
 
                             <div className="col-4">
                             <ContainerHealth>
                             <div className="table-wrapper">
-                            <h3>Rates</h3>
+                            <h2>Sample Rates</h2>
                                 <table>
                                     <thead>
                                         <tr>
                                             <th>Age</th>
-                                            <th>Plan 250K</th>
-                                            <th>Plan 500K</th>
-                                            <th>Plan 1M</th>
+                                            <th>Insurance Coverage</th>
+                                            <th>Annual Premium</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>61-70</td>
-                                            <td>25,300</td>
-                                            <td>39,600</td>
-                                            <td>68,200</td>
+                                            <td>20</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 5,380</td>                                 
                                         </tr>
                                         <tr>
-                                            <td>71-75</td>
-                                            <td>30,800</td>
-                                            <td>47,300</td>
-                                            <td>80,300</td>
+                                            <td>25</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 5,590</td>                                 
                                         </tr>
                                         <tr>
-                                            <td>76-80</td>
-                                            <td>42,900</td>
-                                            <td>68,200</td>
-                                            <td>113,300</td>
+                                            <td>30</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 5,710</td>                                 
                                         </tr>
                                         <tr>
-                                            <td>81-85</td>
-                                            <td>77,000</td>
-                                            <td>123,200</td>
-                                            <td>205,700</td>
+                                            <td>35</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 6,800</td>                                 
                                         </tr>
                                         <tr>
-                                            <td>86-90</td>
-                                            <td>129,800</td>
-                                            <td>210,100</td>
-                                            <td>352,000</td>
+                                            <td>40</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 9,070</td>                                 
                                         </tr>
                                         <tr>
-                                            <td>91-100</td>
-                                            <td>162,800</td>
-                                            <td>279,400</td>
-                                            <td>588,500</td>
+                                            <td>45</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 12,530</td>                                 
+                                        </tr>
+                                        <tr>
+                                            <td>50</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 18,180</td>                                 
+                                        </tr>
+                                        <tr>
+                                            <td>55</td>
+                                            <td>P 1 Million</td>
+                                            <td>P 26,040</td>                                 
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p>The Member/Owner must pay a Co Payment fee equivalent to the first Php 10, 000 AND 10% of the final
-                                    hospital bill.</p>
                                 </div>
-                                {/* <p>For more details please visit the Kaiser International <a href="https://kaiserhealthgroup.com/#products">page</a>.</p> */}
-                                <p>For more details please visit the Kaiser International page.</p>
-                                <a href="https://kaiserhealthgroup.com/#products" target="_blank" 
-                                rel="noopener noreferrer" className="button small special">Go to Kaiser site</a>
+                                <p>Note: <i>The company reserves the exclusive right to change, update and revise prices at any given time.</i></p>
                             </ContainerHealth>
                             </div>
 
-                            <div className="col-12">
-                                <p>Note: <i>Effective rates as of June 15, 2019. The company reserves the exclusive right to change, update and revise prices at any given time.</i></p>
+                            <div className="col-6">
+                            <ContainerForm>
+                                <h3>Ask for a Quotation</h3>                            
+                                <div>
+                                    <form name="most18" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                        <input type="hidden" name="bot-field" />
+                                        <input type="hidden" name="form-name" value="most18" /> 
+                                        <div className="field half first">
+                                            <label htmlFor="name">Name
+                                            <input type="text" name="name" id="name" required/>
+                                            </label>                                            
+                                        </div>
+                                        <div className="field half">
+                                            <label htmlFor="age">Age
+                                            <input type="text" name="age" id="age" required/>
+                                            </label>                                            
+                                        </div>
+                                        <div className="field">
+                                            <label htmlFor="email">Email
+                                            <input type="text" name="email" id="email" required/>
+                                            </label>
+                                        </div>                                   
+                                        <ul className="actions">                                            
+                                            <input type="submit" value="Send my Free Quote" className="button small" />                                                                      
+                                        </ul>
+                                    </form>   
+                                </div>        
+                                                     
+                            </ContainerForm>
                             </div>
+
                         </div>
                 </div>
             </section>
@@ -222,7 +256,7 @@ export const pageQuery = graphql`
     image01: file(relativePath: { eq: "kaiser-card.jpg" }) {
       ...fluidImage
     }
-    image02: file(relativePath: { eq: "kaiser-banner.png" }) {
+    image02: file(relativePath: { eq: "mblife-banner.png" }) {
         ...fluidImage
       }
   }

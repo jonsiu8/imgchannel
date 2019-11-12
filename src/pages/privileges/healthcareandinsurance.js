@@ -99,7 +99,7 @@ const Healthcareandinsurance = (props) => (
                                 <h3>Group life insurance</h3>
                                 <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                                 <p>Life and Accident Insurance for your organization.</p>
-                                {/* <Link to="/privileges/healthcareandinsurance/grouplife" className="button small">Get a quote</Link> */}
+                                <Link to="/privileges/healthcareandinsurance/grouplife" className="button small">Learn more</Link>
                             </ContainerCardLife>
                             </div>
                         </div>
