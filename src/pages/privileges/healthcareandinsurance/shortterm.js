@@ -90,12 +90,18 @@ const Shortterm = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
-                    <header className="major">
-                        <h1>Short Term Care</h1>
-                    </header>
-                    <h2>The Kaiser HealthCard</h2>
-                        <div className="grid-wrapper">    
-
+                    <header className="major">                    
+                        <h1>Short Term Care</h1>                        
+                    </header>  
+                    <div className="grid-wrapper">              
+                        <div className="col-2">
+                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                        </div>
+                        <div className="col-3">
+                            <h2>The Kaiser HealthCard</h2>  
+                        </div>
+                    </div>               
+                        <div className="grid-wrapper">
                             <div className="col-4">
                             <ContainerHealth>
                                 <Ulist>
@@ -230,5 +236,8 @@ export const pageQuery = graphql`
     image01: file(relativePath: { eq: "kaiser-card.jpg" }) {
       ...fluidImage
     }
+    image02: file(relativePath: { eq: "kaiser-banner.png" }) {
+        ...fluidImage
+      }
   }
   `

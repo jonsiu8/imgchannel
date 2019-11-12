@@ -91,7 +91,7 @@ const Healthcareandinsurance = (props) => (
                                 <h3>Term life insurance</h3>
                                 <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
                                 <p>Most affordable income replacement while building your future.</p>
-                                {/* <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>*/}
+                                <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>
                             </ContainerCardLife>
                             </div>
                             <div className="col-4">

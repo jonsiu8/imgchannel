@@ -2,10 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../../components/layout'
 import styled from "styled-components"
+import { graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 import pic01 from '../../../assets/images/healthicon.png'
 import pic02 from '../../../assets/images/lifeinsicon.png'
 import pic03 from '../../../assets/images/investmenticon.png'
+import kaiserbanner from '../../../assets/images/kaiser-banner.png'
 
 const ContainerHealth = styled.div`  
     background-color:white;  
@@ -28,29 +31,30 @@ const ContainerHealth = styled.div`
     align-items: center;
     justify-content: center;
     `
-const ContainerCard = styled.div`  
-    background-color:white;
-    h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;  
-    `
     const ContainerForm = styled.div`  
-    background-color:#0B258F;
+    background-color:#3277B3;
     h4{color:white};  
     h3{color:white};
     h2{color:white};
     color: white;
+    input:invalid {
+        border: 1px solid red;
+      }
+      
+      input:valid {
+        border: 1px solid green;
+      }
+
+      textarea:invalid {
+        border: 1px solid red;
+      }
+      
+      textarea:valid {
+        border: 1px solid green;
+      }
+
     .button{
-        background-color:#13778F;
+        background-color:#3277B3;
         color:white;     
     }
     hr.line1 {border-top: 1px solid black;}    
@@ -86,7 +90,14 @@ const Longterm = (props) => (
                     <header className="major">
                         <h1>Long Term Care</h1>
                     </header>
-                    <h2>The ULTIMATE KAISER HEALTH BUILDER brings together 3 great features:</h2>                    
+                    <div className="grid-wrapper">              
+                        <div className="col-2">
+                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                        </div>
+                        <div className="col-6">
+                            <h2>The ULTIMATE KAISER HEALTH BUILDER brings together 3 great features:</h2>  
+                        </div>
+                    </div>                  
                     <ContainerHealth>
                         <div className="grid-wrapper">              
                             <div className="col-4">
@@ -193,3 +204,21 @@ const Longterm = (props) => (
     </Layout>
 )
 export default Longterm
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "kaiser-banner.png" }) {
+      ...fluidImage
+    }
+  }
+  `

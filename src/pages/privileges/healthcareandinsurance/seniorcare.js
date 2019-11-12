@@ -93,7 +93,14 @@ const Seniorcare = (props) => (
                     <header className="major">
                         <h1>Senior Care</h1>
                     </header>
-                    <h2>Kaiser Healthcare Plan for Seniors from 61-100 years old</h2>
+                    <div className="grid-wrapper">              
+                        <div className="col-2">
+                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                        </div>
+                        <div className="col-5">
+                        <h2>Kaiser Healthcare Plan for Seniors from 61-100 years old</h2>  
+                        </div>
+                    </div> 
                         <div className="grid-wrapper">    
 
                             <div className="col-8">
@@ -215,5 +222,8 @@ export const pageQuery = graphql`
     image01: file(relativePath: { eq: "kaiser-card.jpg" }) {
       ...fluidImage
     }
+    image02: file(relativePath: { eq: "kaiser-banner.png" }) {
+        ...fluidImage
+      }
   }
   `

@@ -15,19 +15,19 @@ const Container = styled.div`
     border-color: black;
 
     input:invalid {
-        border: 2px solid red;
+        border: 1.5px solid red;
       }
       
       input:valid {
-        border: 2px solid green;
+        border: 1.5px solid green;
       }
 
       textarea:invalid {
-        border: 2px solid red;
+        border: 1.5px solid red;
       }
       
       textarea:valid {
-        border: 2px solid green;
+        border: 1.5px solid green;
       }
 
     .button{
