@@ -94,9 +94,9 @@ const Termlife = (props) => (
                         <div className="col-3">
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </div>
-                        <div className="col-6">
-                        <h1>M.O.S.T.18</h1>
-                        <h2>Multiple Option Super Term</h2>
+                        <div className="col-9">
+                        <h1>M.O.S.T.18 - Multiple Option Super Term</h1>
+                        <h3>Buy Term and Invest the Difference to maximize your investments</h3>
                         </div>
                     </div> 
                         <div className="grid-wrapper">    
@@ -104,7 +104,7 @@ const Termlife = (props) => (
                                 
                             <ContainerHealth>
                                  <h2>Features and Benefits</h2>
-                                <h4>MOST18 is a term life insurance with PDF (Premium Deposit Fund).</h4>
+                                <h4>MOST18 is a level term life insurance with PDF (Premium Deposit Fund).</h4>
                                 <Ulist>
                                     
                                     <li className="icon fa-check-square-o"> <b>Affordable</b> - Get higher face amount for your money</li>

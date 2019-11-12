@@ -30,37 +30,6 @@ const ContainerHealth = styled.div`
     align-items: center;
     justify-content: center;
     `
-const ContainerCard = styled.div`  
-    background-color:white;
-    h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;  
-    `
-    const ContainerForm = styled.div`  
-    background-color:#0B258F;
-    h4{color:white};  
-    h3{color:white};
-    h2{color:white};
-    color: white;
-    .button{
-        background-color:#13778F;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;   
-    `
-
     const Ulist = styled.ul`  
     list-style-type: none;
     color:black;
@@ -103,7 +72,7 @@ const Seniorcare = (props) => (
                     </div> 
                         <div className="grid-wrapper">    
 
-                            <div className="col-8">
+                            <div className="col-7">
                             <ContainerHealth>
                                 <Ulist>
                                     <h3>Features and Benefits</h3>
@@ -126,17 +95,14 @@ const Seniorcare = (props) => (
                                 <p><b>Additional Info:</b><br/>
                                 Premiums are inclusive of all applicable taxes.<br/>
                                 Premiums may change subject to the result of medical evaluation of applicable form.<br/>
-                                Hospitalization & treatment outside the Philippines is not covered</p>
-                                {/* <p>For more info & options please visit the Kaiser International Healthgroup page.</p>
-                                <a href="https://kaiserhealthgroup.com/#products" target="_blank" 
-                                rel="noopener noreferrer" className="button small special">Go to Kaiser site</a> */}
+                                Hospitalization & treatment outside the Philippines is not covered.</p>
                             </ContainerHealth>
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-5">
                             <ContainerHealth>
                             <div className="table-wrapper">
-                            <h3>Rates</h3>
+                            <h3>Rates*</h3>
                                 <table>
                                     <thead>
                                         <tr>
@@ -189,14 +155,11 @@ const Seniorcare = (props) => (
                                     hospital bill.</p>
                                 </div>
                                 {/* <p>For more details please visit the Kaiser International <a href="https://kaiserhealthgroup.com/#products">page</a>.</p> */}
-                                <p>For more details please visit the Kaiser International page.</p>
+                                <p>For more information please visit the Kaiser International Healthgroup page.</p>
                                 <a href="https://kaiserhealthgroup.com/#products" target="_blank" 
                                 rel="noopener noreferrer" className="button small special">Go to Kaiser site</a>
                             </ContainerHealth>
-                            </div>
-
-                            <div className="col-12">
-                                <p>Note: <i>Effective rates as of June 15, 2019. The company reserves the exclusive right to change, update and revise prices at any given time.</i></p>
+                            <p>Note: <i>*Effective rates as of June 15, 2019. The company reserves the exclusive right to change, update and revise prices at any given time.</i></p>
                             </div>
                         </div>
                 </div>

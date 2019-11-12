@@ -42,7 +42,7 @@ const Investments = (props) => (
                             <h3>Mutual Funds</h3>
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             <p>Stress-free investing with great long term growth potential.</p>                            
-                            {/* <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>*/}
+                            <Link to="/privileges/investments/mutualfunds" className="button special small">Learn more</Link>
                         </ContainerCard>                            
                         </div>
 
@@ -51,7 +51,7 @@ const Investments = (props) => (
                             <h3>Stock Market</h3>
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <p>Stock market investing right at your fingertips.</p>
-                            {/* <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link> */}
+                            <Link to="/privileges/investments/stocktrading" className="button special small">Learn more</Link>
                         </ContainerCard>                            
                         </div>
 
@@ -60,7 +60,7 @@ const Investments = (props) => (
                             <h3>Real Estate</h3>
                             <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             <p>Expand your investment portfolio with properties.</p>
-                            {/* <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link> */}
+                            <Link to="/privileges/investments/realestate" className="button special small">Learn more</Link>
                         </ContainerCard>
                         </div>
                     </div>          

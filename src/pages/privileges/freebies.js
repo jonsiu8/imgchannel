@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
+import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
@@ -42,7 +43,8 @@ const Freebies = (props) => (
                         <ContainerCard>
                             <h3>FREE Doctor's Consultation</h3>
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <p>Unlimited outpatient consultations in any Kaiser Medical Center clinics.</p>                           
+                            <p>Unlimited outpatient consultations in any Kaiser Medical Center clinics.</p>
+                            <Link to="/privileges/freebiesdiscounts/freeconsultation" className="button special small">Learn more</Link>                        
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
