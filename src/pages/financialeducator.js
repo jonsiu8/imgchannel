@@ -66,8 +66,8 @@ const Container = styled.div`
 const Financialeducator = (props) => (
     <Layout>
         <Helmet>
-            <title>Be a Financial Educator</title>
-            <meta name="description" content="Be a Financial Educator - IMG Channel" />
+            <title>Financial Educator Career</title>
+            <meta name="description" content="Financial Educator Career - IMG Channel" />
         </Helmet>
 
         <BannerEducator />
@@ -75,7 +75,7 @@ const Financialeducator = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">              
-                    <h2>Financial Educator Career</h2>                                  
+                    <h2>A Freelance Career</h2>                                  
                     <Container>
                     <div className="grid-wrapper">
                     <div className="col-4">    
