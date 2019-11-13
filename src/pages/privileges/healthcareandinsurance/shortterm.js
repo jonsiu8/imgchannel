@@ -30,37 +30,6 @@ const ContainerHealth = styled.div`
     align-items: center;
     justify-content: center;
     `
-const ContainerCard = styled.div`  
-    background-color:white;
-    h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    color: black;
-    .button{
-        background-color:#3277B3;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;  
-    `
-    const ContainerForm = styled.div`  
-    background-color:#0B258F;
-    h4{color:white};  
-    h3{color:white};
-    h2{color:white};
-    color: white;
-    .button{
-        background-color:#13778F;
-        color:white;     
-    }
-    hr.line1 {border-top: 1px solid black;}    
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 1px;   
-    `
-
     const Ulist = styled.ul`  
     list-style-type: none;
     color:black;

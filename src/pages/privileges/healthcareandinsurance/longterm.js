@@ -8,7 +8,6 @@ import Img from 'gatsby-image'
 import pic01 from '../../../assets/images/healthicon.png'
 import pic02 from '../../../assets/images/lifeinsicon.png'
 import pic03 from '../../../assets/images/investmenticon.png'
-import kaiserbanner from '../../../assets/images/kaiser-banner.png'
 
 const ContainerHealth = styled.div`  
     background-color:white;  

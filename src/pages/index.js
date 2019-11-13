@@ -69,7 +69,7 @@ class HomeIndex extends React.Component {
                 >
                     <meta property="og:title" content="IMG Channel"/>
                     <meta property="og:description" content="A Reference Site"/>
-                    <meta property="og:image" content="https://www.imgchannel.com/preview/imgch-home.png" />
+                    <meta property="og:image" content="../assets/images/imgch-home.png" />
                 </Helmet>
 
          
