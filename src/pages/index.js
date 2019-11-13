@@ -14,6 +14,7 @@ import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
+import previewpic from '../assets/images/imgch-home.png'
 
 const BannerContainer = styled.div`
   display: grid;
@@ -70,7 +71,7 @@ class HomeIndex extends React.Component {
                 >
                     <meta property="og:title" content="IMG Channel"/>
                     <meta property="og:description" content="A Reference Site"/>
-                    <meta property="og:image" content={this.props.data.image01.childImageSharp.fluid} />
+                    <meta property="og:image" content={previewpic} />
                 </Helmet>
 
          
