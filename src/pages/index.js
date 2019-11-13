@@ -67,6 +67,9 @@ class HomeIndex extends React.Component {
                         { name: 'keywords', content: 'img, benefits' },
                     ]}
                 >
+                    <meta property="og:title" content="IMG Channel"/>
+                    <meta property="og:description" content="A Reference Site"/>
+                    <meta property="og:image" content="https://www.imgchannel.com/imgch-home.png" />
                 </Helmet>
 
          
