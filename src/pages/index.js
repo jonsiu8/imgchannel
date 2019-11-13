@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
+import { graphql } from "gatsby"
 import Banner from '../components/Banner'
 
 import bannerpic from '../assets/images/bannerhome.jpg'
@@ -69,7 +70,7 @@ class HomeIndex extends React.Component {
                 >
                     <meta property="og:title" content="IMG Channel"/>
                     <meta property="og:description" content="A Reference Site"/>
-                    <meta property="og:image" content="../assets/images/previews/imgch-home.png" />
+                    <meta property="og:image" content={this.props.data.image01.childImageSharp.fluid} />
                 </Helmet>
 
          
@@ -173,3 +174,21 @@ class HomeIndex extends React.Component {
 }
 
 export default HomeIndex
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    image01: file(relativePath: { eq: "imgch-home.png" }) {
+      ...fluidImage
+    }
+  }
+  `
