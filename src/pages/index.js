@@ -71,7 +71,7 @@ class HomeIndex extends React.Component {
                 >
                     <meta property="og:title" content="IMG Channel"/>
                     <meta property="og:description" content="A Reference Site"/>
-                    <meta property="og:image" content={`url(${previewpic})`} />
+                    <meta property="og:image" content={previewpic} />
                 </Helmet>
 
          
