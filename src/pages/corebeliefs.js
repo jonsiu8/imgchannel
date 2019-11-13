@@ -7,6 +7,8 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../assets/images/pic01.jpg'
+
 const Container = styled.div`  
     background-color:white;  
     h2{color:black};
@@ -33,6 +35,9 @@ const Corebeliefs = (props) => (
         <Helmet>
             <title>Core beliefs</title>
             <meta name="description" content="Our Beliefs - IMG Channel" />
+            <meta property="og:title" content="Core Beliefs"/>
+            <meta property="og:description" content="Fight for something you really believe in"/>
+            <meta property="og:image" content={previewpic} />
         </Helmet>
 
         <BannerBeliefs/>
