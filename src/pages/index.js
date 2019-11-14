@@ -70,7 +70,10 @@ class HomeIndex extends React.Component {
                 >
                     <meta property="og:title" content="IMG Channel"/>
                     <meta property="og:description" content="A Reference Site - Benefits for IMG Members"/>
-                    <meta property="og:image" content={previewpic} />
+                    <meta property="og:image:type" content="image/png" />
+                    <meta property="og:image:width" content="1200" />
+                    <meta property="og:image:height" content="630" />
+                    <meta property="og:image:alt" content="Mobile Phone Homepage" />
                 </Helmet>
 
          
