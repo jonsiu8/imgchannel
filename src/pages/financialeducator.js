@@ -7,6 +7,9 @@ import BannerEducator from '../components/BannerEducator'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../assets/images/pic05.jpg'
+import compensation from '../assets/images/compensation.jpg'
+
 const ContainerCard = styled.div`  
     background-color:#3277B3;  
     h2{color:black}; 
@@ -63,11 +66,29 @@ const Container = styled.div`
     font-size: 18px;
   }
 `
+
+const Ulist1 = styled.ul`  
+    list-style-type: none;
+    color:black;
+    font-size: 26px;
+    p{  font-size: 20px;
+        padding-left:15px;
+        margin:0px
+    };
+    b{color:black};
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+      }
+  `
 const Financialeducator = (props) => (
     <Layout>
         <Helmet>
             <title>Financial Educator Career</title>
             <meta name="description" content="Financial Educator Career - IMG Channel" />
+            <meta property="og:title" content="Financial Educator Career"/>
+            <meta property="og:description" content="Be a Campaigner for Financial Literacy"/>
+            <meta property="og:image" content={previewpic} />
         </Helmet>
 
         <BannerEducator />
@@ -146,25 +167,30 @@ const Financialeducator = (props) => (
                     <Container>
                         <div className="grid-wrapper">
 
-                            <div className="col-6">
+                            {/* <div className="col-6">
                                 <h3>Compensation</h3>
                                 <p>Once you're coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
                                     by serving people through financial education.</p>
                                 <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                                 <hr className="line1"/>
-                            </div>
-
-                            {/* <div className="col-6">             
-                                <div className="grid-wrapper">
-                                   <p>Associate</p>
-                                   <p>20%</p>
-                                   <p>Marketing Director</p>
-                                   <p>37%</p>
-                                   <p>Senior Marketing Director</p>
-                                   <p>47%</p>
-                                </div>
                             </div> */}
 
+                            <div className="col-6">             
+                                <h3>Compensation</h3>
+                                <span className="image left"><img src={compensation} alt="" /></span>
+                                <p>Once you're coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
+                                    by serving people through financial education.</p>
+                                <hr/>
+                            </div>
+
+                            <div className="col-6">
+                                <h3>Contract</h3>
+                                <Ulist1>                            
+                                <li className="icon fa-user"> Associate - 20%</li>
+                                <li className="icon fa-user"> Marketing Director - 37%</li> 
+                                <li className="icon fa-user"> Senior Marketing Director - 47%</li> 
+                                </Ulist1>
+                            </div>
                         </div>
                     </Container>
                 </div>
@@ -191,7 +217,7 @@ fragment fluidImage on File {
 
 export const pageQuery = graphql`
   query {
-    image01: file(relativePath: { eq: "fecareer.jpg" }) {
+    image01: file(relativePath: { eq: "associatecampaign.png" }) {
       ...fluidImage
     }
     image02: file(relativePath: { eq: "personalfinancemastery.jpg" }) {

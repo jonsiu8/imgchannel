@@ -80,25 +80,23 @@ const Career = (props) => (
                         <div className="col-4">    
                             <ContainerCard>                
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            <Link to="/financialeducator" className="button small">become a financial educator</Link>   
+                            <Link to="/financialeducator" className="button small">Learn more</Link>   
                             </ContainerCard>
                         </div>          
                         <div className="col-8">
                             <h2>Financial Educator Career</h2>                        
                             <h4>Join our growing team of financial educators and be part of a great campaign.</h4>
                             <div className="grid-wrapper">
-                                <div className="col-6">
+                                <div className="col-12">
                                     <Ulist>
-                                        <p><b>Privileges</b></p>
-                                        <li className="icon fa-check-square-o"> Be guided by qualified mentors</li> 
-                                        <li className="icon fa-check-square-o"> Build your financial foundation</li> 
-                                        <li className="icon fa-check-square-o"> Get exclusive benefits</li> 
-                                        <li className="icon fa-check-square-o"> Earn a good part time income</li> 
-                                        <li className="icon fa-check-square-o"> Excellent support system</li>
-                                        <li className="icon fa-check-square-o"> NO QUOTAS</li>   
-                                    </Ulist>    
+                                        <li className="icon fa-arrow-right"> Do you have an entrpreneur mindset?</li> 
+                                        <li className="icon fa-arrow-right"> Do you believe that knowledge is power?</li> 
+                                        <li className="icon fa-arrow-right"> Do you believe in people?</li> 
+                                        <li className="icon fa-arrow-right"> Will you be happy helping people?</li> 
+                                        <h3>This could be the freelance career for you.</h3>
+                                    </Ulist>
                                 </div>
-                                <div className="col-6">
+                                {/* <div className="col-6">
                                     <Ulist>
                                         <p><b>Responsibilities</b></p>
                                         <li className="icon fa-check-square-o"> Attend workshops & training</li> 
@@ -108,35 +106,11 @@ const Career = (props) => (
                                         <li className="icon fa-check-square-o"> Work with the team</li>
                                         <li className="icon fa-check-square-o"> Enjoy!</li>   
                                     </Ulist>                       
-                                </div>
+                                </div> */}
                             </div>                              
                         </div>
-                        
                     </div>
                     </Container>                  
-       
-                    <Container>
-                        <div className="grid-wrapper">              
-                            <div className="col-4">
-                                <h3>Personal Finance Proficiency</h3>
-                                <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                                <p>Gain knowledge and financial wisdom while having a freelance career.</p>
-                                <hr className="line1"/>
-                            </div>
-                            <div className="col-4">    
-                                <h3>Rewards & Travel Incentives</h3>         
-                                <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                                <p>Travel around the world and be recognized for your efforts.</p>
-                                <hr className="line1"/>
-                            </div>
-                            <div className="col-4">    
-                                <h3>Build a Big Business</h3>         
-                                <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
-                                <p>Make a difference and leave a legacy through entrepreneurship.</p>
-                                <hr className="line1"/>
-                            </div>
-                        </div>
-                    </Container>
                 </div>
             </section>
         </div>
@@ -156,17 +130,8 @@ fragment fluidImage on File {
 
 export const pageQuery = graphql`
   query {
-    image01: file(relativePath: { eq: "fecareer.jpg" }) {
+    image01: file(relativePath: { eq: "careerperson.png" }) {
       ...fluidImage
-    }
-    image02: file(relativePath: { eq: "personalfinancemastery.jpg" }) {
-        ...fluidImage
-    }
-    image03: file(relativePath: { eq: "travel.jpg" }) {
-        ...fluidImage
-    }
-    image04: file(relativePath: { eq: "buildbiz.jpg" }) {
-        ...fluidImage
     }
   }
   `

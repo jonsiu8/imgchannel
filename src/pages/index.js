@@ -132,6 +132,13 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/contact" className="link primary"></Link>
                         </article>
+                        {/* <article style={{backgroundImage: `url(${pic06})`}}>
+                            <header className="major">
+                                <h3>About</h3>
+                                <p>The IMG Channel</p>
+                            </header>
+                            <Link to="/about" className="link primary"></Link>
+                        </article> */}
                     </section>
                     <section id="two">
                         <div className="inner">
