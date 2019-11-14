@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import Banner from '../components/Banner'
 
 import bannerpic from '../assets/images/bannerhome.jpg'
 // import BannerEducator from '../components/BannerEducator'
@@ -70,7 +69,7 @@ class HomeIndex extends React.Component {
                     ]}
                 >
                     <meta property="og:title" content="IMG Channel"/>
-                    <meta property="og:description" content="A Reference Site"/>
+                    <meta property="og:description" content="A Reference Site - Benefits for IMG Members"/>
                     <meta property="og:image" content={previewpic} />
                 </Helmet>
 

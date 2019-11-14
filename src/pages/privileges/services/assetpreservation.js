@@ -1,18 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../../components/layout'
-import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
-
-const Ulist = styled.ul`  
-  list-style-type: none;
-  color:white;
-  font-size: 22px;
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`
     
 const Assetpreservation = (props) => (
     <Layout>

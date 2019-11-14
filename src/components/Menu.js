@@ -17,8 +17,6 @@ const Menu = (props) => (
             </ul>
             <ul className="actions vertical">            
                 <Link to="/becomeamember" className="button fit">Join the campaign</Link> 
-                {/* <li><a href="https://img-corp.net/register.php?agentcode=6110hk" className="button fit">Join now</a></li> */}
-                {/*<li><a href="#" className="button fit">Log In</a></li>*/}
             </ul>
         </div>
    
