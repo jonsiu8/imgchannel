@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import styled from "styled-components"
+import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
@@ -30,7 +31,7 @@ const Services = (props) => (
             <section id="one">
                 <div className="inner">                    
                     <header className="major">
-                        <h1>Services</h1>
+                        <h1>More Services</h1>
                     </header>
                     <div className="grid-wrapper">              
                         <div className="col-4">
@@ -38,7 +39,7 @@ const Services = (props) => (
                             <h3>Asset Preservation Service</h3>
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             <p>Preserve your wealth and don't let a lifetime of savings be devoured by taxes.</p>
-                     
+                            <Link to="/privileges/services/assetpreservation" className="button special small">Learn more</Link>                     
                         </ContainerCard>                            
                         </div>
                         <div className="col-4">
@@ -46,6 +47,7 @@ const Services = (props) => (
                             <h3>Exclusive Memorial Service</h3>
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <p>Convenience and peace of mind... when your family need it the most.</p>
+                            <Link to="/privileges/services/everest" className="button special small">Learn more</Link>
                         </ContainerCard>                            
                         </div>
                     </div>          
