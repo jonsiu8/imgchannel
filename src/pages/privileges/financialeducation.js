@@ -98,11 +98,10 @@ const Financialeducation = (props) => (
                             <ContainerCard>
                                 <h3>Get your FREE e-book!</h3>
                                 <span className="image left"><img src={ssbyfbook} alt="" /></span>
-                                <p>Get the first 2 chapters of "The Secret to Saving and Building Your Future" book.<br/><br/>
-                                Become your own financial educator.<br/><br/>
-                                <em>"This book will upgrade your financial life."</em><br/>
-                                -Bro. Bo Sanchez
-                                </p>
+                                <h3>Get the first 2 chapters of "The Secret to Saving and Building Your Future" book.</h3>
+                                <p>Become your own financial educator.</p>
+                                <p>"Financial Education is  not just for the wealthy - it's for everyone."</p>
+                                <p>"This book will upgrade your financial life." -Bro. Bo Sanchez</p>
                                 <div>
                                     <form name="ssbyfbook" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
                                         <input type="hidden" name="bot-field" />

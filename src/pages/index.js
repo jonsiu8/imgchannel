@@ -66,8 +66,7 @@ class HomeIndex extends React.Component {
                     meta={[
                         { name: 'description', content: 'Tools, Reference, Information' },
                         { name: 'keywords', content: 'img, benefits' },
-                    ]}
-                >
+                    ]}                >
                     <meta property="og:title" content="IMG Channel"/>
                     <meta property="og:description" content="A Reference Site - Benefits for IMG Members"/>
                     <meta property="og:image:type" content="image/png" />
@@ -77,7 +76,6 @@ class HomeIndex extends React.Component {
                     <meta property="og:image:alt" content="Mobile Phone Homepage" />
                 </Helmet>
 
-         
                     <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
                     <HeroBanner>
                         <HeroBannerTitle>A Campaign for Financial Literacy</HeroBannerTitle>
