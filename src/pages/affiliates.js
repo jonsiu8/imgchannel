@@ -5,7 +5,7 @@ import styled from "styled-components"
 import BannerAffiliates from '../components/BannerAffiliates'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
-import previewpic from '../assets/images/pic03.jpg'
+import previewpic from '../assets/images/ogimage-privileges.png'
 
 const Container = styled.div`  
     background-color: white;  
@@ -38,7 +38,11 @@ const Affiliates = (props) => (
             <meta name="description" content="Affiliates Page - IMG Channel" />
             <meta property="og:title" content="Affiliates"/>
             <meta property="og:description" content="Powerful Strategic Partners"/>
+            <meta property="og:image:type" content="image/png" />
             <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="Last piece of a puzzle" />
         </Helmet>
 
         <BannerAffiliates />

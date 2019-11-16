@@ -7,7 +7,7 @@ import BannerPrivileges from '../components/BannerPrivileges'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
-import previewpic from '../assets/images/pic02.jpg'
+import previewpic from '../assets/images/ogimage-privileges.png'
 
   const ContainerCard = styled.div`  
     background-color:white;  
@@ -30,7 +30,11 @@ const Privileges = (props) => (
             <meta name="description" content="Privileges Page - IMG Channel" />
             <meta property="og:title" content="Privileges"/>
             <meta property="og:description" content="Exclusive Benefits for IMG Members"/>
+            <meta property="og:image:type" content="image/png" />
             <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="Cupcake on hand" />
         </Helmet>
 
         <BannerPrivileges />
