@@ -14,20 +14,43 @@ module.exports = {
         name: `images`,
       },
     },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 800,
+    //         },
+    //       },
+    //       "gatsby-remark-copy-linked-files",
+    //     ],
+    //   },
+    // },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-relative-images',
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 800,
+              maxWidth: 600,
+              linkImagesToOriginal: false
+            }
+          },
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              path: `${__dirname}/src/pages/posts`,
+              name: `posts`,
             },
           },
-          "gatsby-remark-copy-linked-files",
         ],
       },
     },
+
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
