@@ -5,7 +5,7 @@ import styled from "styled-components"
 import BannerAffiliates from '../components/BannerAffiliates'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
-import previewpic from '../assets/images/ogimage-privileges.png'
+import previewpic from '../assets/images/ogimage-affiliates.png'
 
 const Container = styled.div`  
     background-color: white;  
