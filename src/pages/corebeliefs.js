@@ -39,8 +39,8 @@ const Corebeliefs = (props) => (
             <meta property="og:description" content="Fight for something you really believe in"/>
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image" content={previewpic} />
-            <meta property="og:image:width" content="592" />
-            <meta property="og:image:height" content="311" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
             <meta property="og:image:alt" content="Fighting Silhouette" />
         </Helmet>
 
