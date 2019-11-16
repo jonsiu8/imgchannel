@@ -19,7 +19,8 @@ const Header = (props) => (
         {/*<Link to="/" className="logo"><strong>IMG</strong> <span>Channel</span></Link>*/}
         <Link to="/" className="logo"><Logo src={logo}/></Link>
         <nav>
-            <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
+            {/* <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a> */}
+            <a className="menu-link" onClick={props.onToggleMenu} >Menu</a>
         </nav>
     </header>
 )
