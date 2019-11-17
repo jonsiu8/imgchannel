@@ -1,8 +1,8 @@
 ---
-path: "/post-one"
-date: "2018-07-05"
 title: "Employees Can Become Wealthy Too"
+date: "2018-07-05"
 author: "Jon Siu"
+featuredImage: './pic01.jpg'
 ---
 
 1st Sentence
