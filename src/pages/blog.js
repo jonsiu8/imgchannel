@@ -6,6 +6,8 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import BannerBlog from '../components/BannerBlog'
 
+import previewpic from '../assets/images/ogimage-blogpage.png'
+
 const StyledImg = styled(Img)`
   display: block;
   margin: 0 ;
@@ -41,55 +43,18 @@ const Excerpt = styled.p`
     font-family: Verdana, sans-serif;
 `
 
-
-
-const BlogTitles = styled.div`    
-    background-color:white;  
-    
-    color: #666666;
-    :hover { 
-        background-color:#e6e6e6;
-        h3{color:#3277B3};
-    };   
-    box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: .5rem 1rem;
-    h2 {
-        border-style: solid;
-        border-color: red;
-        color:#000000;
-        font-family: "Times New Roman", Times, serif;
-        margin: 0;
-        padding: 0px;
-    }
-
-`
-const BlogList = styled.li`
-    list-style-type: none;
-    margin: 0;
-    text-decoration: none;
-
-    h2 {
-        border-style: solid;
-        border-color: red;
-        color:#000000;
-        font-family: "Times New Roman", Times, serif;
-        margin: 0;
-        padding: 0px;
-    }
-
-    p {
-         color: #070F2B
-         margin: 0;
-        padding: 0px;
-    };
-`
-
 const BlogPage = (props) => (
     <Layout>        
         <Helmet>
             <title>Blog Page</title>
             <meta name="description" content="Blog - IMG Channel" />
+            <meta property="og:title" content="Blog"/>
+            <meta property="og:description" content="If you think financial education is expensive try ingnorance."/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="blogger" />
         </Helmet>
 
         <BannerBlog/>
