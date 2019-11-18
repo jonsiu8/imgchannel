@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from "styled-components"
+import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
 const PageContainer = styled.body`
@@ -10,24 +11,39 @@ const PageContainer = styled.body`
 const BlogContainer = styled.div`
     h1 {
         color: #000000;
+        margin: 0;
+        padding: 0px;
+        font-family: "Times New Roman", Times, serif;
     };
 
     p {
-        color: #000000;
+        color: #808080;
+        font-size: .9em;
+        font-family: Verdana, sans-serif;
     };
 
     margin: auto;
-    width: 50%;
+    width: 60%;
     border: none;
     padding: 10px;
 
     @media (max-width: 768px) {
-        width: 95%;
+        width: 90%;
       }
 ` 
+
+const BlogHtml = styled.div`
+    p {
+        color: #000000;
+        font-size: 1em;
+        font-family: Verdana, sans-serif;
+    }
+`
 export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
+            excerpt
+            timeToRead
             frontmatter {
                 title
                 date
@@ -38,6 +54,7 @@ export const query = graphql`
                         ...GatsbyImageSharpSizes
                       }
                     }
+                    publicURL
                 }
             }
             html
@@ -49,14 +66,24 @@ const Blog = (props) => {
     
     return (
         <Layout>
+            <Helmet>
+            <title>{props.data.markdownRemark.frontmatter.title}</title>
+            
+            <meta property="og:title" content={props.data.markdownRemark.frontmatter.title}/>
+            <meta property="og:description" content={props.data.markdownRemark.excerpt}/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={props.data.markdownRemark.frontmatter.featuredImage.publicURL} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="image" />
+        </Helmet>
             <PageContainer>
-                <div className="grid-wrapper">
-                    <div className="col-12">
+                <div className="blog-wrapper">
+                    <div className="col-9">
                         <BlogContainer>
                             <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-                            <p>{props.data.markdownRemark.frontmatter.date}<br/>
-                            by: {props.data.markdownRemark.frontmatter.author}</p>            
-                            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></div>
+                            <p>by: {props.data.markdownRemark.frontmatter.author} | <i>Last updated on: {props.data.markdownRemark.frontmatter.date}</i></p>          
+                            <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>
                     </div> 
                 </div>            

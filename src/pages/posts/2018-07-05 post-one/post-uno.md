@@ -1,17 +1,13 @@
 ---
 title: "Employees Can Become Wealthy Too"
-date: "2018-07-05"
+date: "2019-11-05"
 author: "Jon Siu"
 featuredImage: './pic01.jpg'
 ---
 
-1st Sentence
+"If you want to be wealthy, you should be in business." I often hear this advice by successful entrepreneurs and business people. But I wonder how this would make the employees feel. Pressured perhaps to be an entrepreneur or they may just accept the fact that they can never become wealthy.
 
 ![fight](./pic01.jpg)
-
-### This is why
-
-"If you want to be wealthy, you should be in business." I often hear this advice by successful entrepreneurs and business people. But I wonder how this would make the employees feel. Pressured perhaps to be an entrepreneur or they may just accept the fact that they can never become wealthy.
 
 Sure, business people and entrepreneurs can become wealthy, why not? there's enough business for everyone. But businesses need employees to help build their wealth for them. Team members and leaders run the business in their absence. Is there a chance for employees to become wealthy too?
 
