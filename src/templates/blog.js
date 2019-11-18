@@ -33,11 +33,20 @@ const BlogContainer = styled.div`
 ` 
 
 const BlogHtml = styled.div`
+    color: #000000;
+    h1{color: #000000; margin:0}
+    h2{color: #000000; margin:0}
+    h3{color: #000000; margin:0}
+    h4{color: #000000; margin:0}
+    h5{color: #000000; margin:0}
+    h6{color: #000000; margin:0}
     p {
         color: #000000;
         font-size: 1em;
         font-family: Verdana, sans-serif;
+        margin 0 1.1em 1.1em 1.1em;
     }
+    margin: 0;
 `
 export const query = graphql`
     query($slug: String!) {
@@ -82,7 +91,7 @@ const Blog = (props) => {
                     <div className="col-9">
                         <BlogContainer>
                             <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-                            <p>by: {props.data.markdownRemark.frontmatter.author} | <i>Last updated on: {props.data.markdownRemark.frontmatter.date}</i></p>          
+                            <p className="icon fa-user"> : {props.data.markdownRemark.frontmatter.author} | <i>Last updated on: {props.data.markdownRemark.frontmatter.date}</i></p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>
                     </div> 

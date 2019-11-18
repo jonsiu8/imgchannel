@@ -36,7 +36,7 @@ const Excerpt = styled.p`
     display: block;
     margin: 10px 0;
     padding 0;
-    color: #ececec;
+    color: #181D34;
     font-size: .9em;
     font-family: Verdana, sans-serif;
 `
@@ -104,7 +104,7 @@ const BlogPage = (props) => (
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
                                         <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
                                         <Link to ={`/blog/${edge.node.fields.slug}`}> <Header2>{edge.node.frontmatter.title}</Header2></Link>                                             
-                                        <Author className="icon fa-user">: {edge.node.frontmatter.author} | Last updated: {edge.node.frontmatter.date} </Author>
+                                        <Author className="icon fa-user"> : {edge.node.frontmatter.author} | Last updated: {edge.node.frontmatter.date} </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
                                         <hr/>
                                     </div>                 
