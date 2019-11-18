@@ -17,7 +17,7 @@ featuredImage: './mypic01.jpg'
 ##4. Get Healthcare
 ... choose an HMO with a Health Savings Account feature. This program helps you build funds for the future medical costs. Longterm care provides lifetime* financial support when you need the most.
 
-![image](./mypic01.jpg)
+![image1](./mypic01.jpg)
 
 ##5. Get A Part-time Work
 ... manage your time in such a way that you have at least 2 to 3 hours extra. Use the extra hours to make some money doing part-time work. An extra Php5,000 a week can help. This may not be a formal job, but something freelance. This is a back-up plan to your job. Whatever you earn here, is active income so and invest it for longterm.
@@ -32,6 +32,8 @@ Check out a business inside the financial industry. Financial industry is where 
 
 ##8. Get Into A Training Profession
 Train people with personal finance, social media/online distribution business- these are the most in-demand training businesses right now. As of writing, a new money industry emerges and is called FINTECH.
+
+![image2](./mypic02.jpg)
 
 You can train people to be a Financial or Wealth Coach as well. As you share your knowledge and expertise - you duplicate yourself.
 
