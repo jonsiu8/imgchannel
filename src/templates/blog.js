@@ -45,7 +45,7 @@ const BlogHtml = styled.div`
     h5{color: #000000; margin:0 0 0 0}
     h6{color: #000000; margin:0 0 0 0}
 
-    p, i, b, strong {
+    p, b, strong, i, em, mark, small, del, ins, sub, sup {
         color: #000000;
         font-size: 1em;
         font-family: Verdana, sans-serif;
