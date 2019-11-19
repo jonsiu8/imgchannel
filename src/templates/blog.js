@@ -14,6 +14,7 @@ const BlogContainer = styled.div`
         margin: 0;
         padding: 0px;
         font-family: "Times New Roman", Times, serif;
+        line-height: 115%;
     };
 
     p {

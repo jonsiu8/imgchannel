@@ -10,10 +10,9 @@ import previewpic from '../assets/images/ogimage-blogpage.png'
 
 const StyledImg = styled(Img)`
   display: block;
-  margin: 0 ;
+  margin: 0 0 1em 0;
   padding 0;
   max-width: 160px;
-  border: 2px solid #ffffff;
   border-radius: 8%;
 `
 
@@ -22,6 +21,7 @@ const Header2 = styled.h2`
     margin: 0 ;
     padding 0;
     font-family: "Times New Roman", Times, serif;
+    line-height: 115%;
     :hover {
         color: #07102B;
     }
@@ -43,6 +43,7 @@ const Excerpt = styled.p`
     color: #ececec;
     font-size: .9em;
     font-family: Verdana, sans-serif;
+    line-height: 130%;
 `
 
 const HrBlog = styled.hr`
