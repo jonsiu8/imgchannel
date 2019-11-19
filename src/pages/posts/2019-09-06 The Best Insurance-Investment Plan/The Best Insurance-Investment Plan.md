@@ -1,5 +1,5 @@
 ---
-title: The Best Insurance-Investment Plan"
+title: "The Best Insurance-Investment Plan"
 date: "2019-09-06"
 author: "Jess Faller, Jr."
 featuredImage: './mypic01.png'

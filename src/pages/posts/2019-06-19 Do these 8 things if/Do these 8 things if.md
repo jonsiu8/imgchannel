@@ -1,5 +1,5 @@
 ---
-title: Do these 8 things if you know your income is TEMPORARY"
+title: "Do these 8 things if you know your income is TEMPORARY"
 date: "2019-06-19"
 author: "Jess Faller, Jr."
 featuredImage: './mypic01.jpg'

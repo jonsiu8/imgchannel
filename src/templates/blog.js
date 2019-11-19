@@ -34,14 +34,17 @@ const BlogContainer = styled.div`
 ` 
 
 const BlogHtml = styled.div`
+    margin: 0;
     font-family: Verdana, sans-serif;
     color: #000000;
+
     h1{color: #000000; margin:0 0 1em 0}
     h2{color: #000000; margin:0 0 1em 0}
     h3{color: #000000; margin:0 0 1em 0}
     h4{color: #000000; margin:0 0 1em 0}
     h5{color: #000000; margin:0 0 1em 0}
     h6{color: #000000; margin:0 0 1em 0}
+
     p {
         color: #000000;
         font-size: 1em;
@@ -52,7 +55,10 @@ const BlogHtml = styled.div`
     li {
         margin: 0 1em 1em 1em;
     }
-    margin: 0;
+    
+    img {
+    
+    }
 `
 export const query = graphql`
     query($slug: String!) {
