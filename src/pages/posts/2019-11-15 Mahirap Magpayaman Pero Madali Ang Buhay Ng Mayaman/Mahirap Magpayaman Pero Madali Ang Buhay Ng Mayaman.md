@@ -5,7 +5,7 @@ author: "Rosey Sardido"
 featuredImage: './carpic01.jpg'
 ---
 
-####Madali lang maging mahirap pero napakahirap ang buhay ng mahirap.
+**Madali lang maging mahirap pero napakahirap ang buhay ng mahirap.**
 
 Maging tamad ka lang, wag kang magtrabaho, at manuod ka lang ng telenovela buong magdamag, yun, mahirap ka na.
 

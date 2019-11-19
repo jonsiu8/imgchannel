@@ -9,12 +9,12 @@ const PageContainer = styled.body`
     height: 100%;
 ` 
 const BlogContainer = styled.div`
-    h1 {
+    h2 {
         color: #000000;
         margin: 0;
         padding: 0px;
-        font-family: "Times New Roman", Times, serif;
-        line-height: 115%;
+        font-family: Verdana, sans-serif;
+        line-height: 1.3em;
     };
 
     p {
@@ -38,26 +38,23 @@ const BlogHtml = styled.div`
     font-family: Verdana, sans-serif;
     color: #000000;
 
-    h1{color: #000000; margin:0 0 1em 0}
-    h2{color: #000000; margin:0 0 1em 0}
-    h3{color: #000000; margin:0 0 1em 0}
-    h4{color: #000000; margin:0 0 1em 0}
-    h5{color: #000000; margin:0 0 1em 0}
-    h6{color: #000000; margin:0 0 1em 0}
+    h1{color: #000000; margin:0 0 0 0}
+    h2{color: #000000; margin:0 0 0 0}
+    h3{color: #000000; margin:0 0 0 0}
+    h4{color: #000000; margin:0 0 0 0}
+    h5{color: #000000; margin:0 0 0 0}
+    h6{color: #000000; margin:0 0 0 0}
 
-    p {
+    p, i, b, strong {
         color: #000000;
         font-size: 1em;
         font-family: Verdana, sans-serif;
-        margin 0 1.1em 1.1em 1.1em;
+        margin 0 0 1.1em 0;
+        line-height: 1.6em;
     }
 
     li {
-        margin: 0 1em 1em 1em;
-    }
-    
-    img {
-    
+        margin: 0 0 .9em 0;
     }
 `
 export const query = graphql`
@@ -102,8 +99,8 @@ const Blog = (props) => {
                 <div className="blog-wrapper">
                     <div className="col-9">
                         <BlogContainer>
-                            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-                            <p className="icon fa-user-circle"> : {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> : {props.data.markdownRemark.frontmatter.date}</p>          
+                            <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date}</p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>
                     </div> 

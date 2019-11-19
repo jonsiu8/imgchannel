@@ -5,7 +5,7 @@ author: "Jess Faller, Jr."
 featuredImage: './mypic01.png'
 ---
 
-###A life insurance protection and investment program like no other.
+**A life insurance protection and investment program like no other.**
 
 - guaranteed cash value on the 1st year (some insurance products offered by banks and insurance companies have zero cash value on the 1st year, others on the first 2 years)
 

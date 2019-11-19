@@ -13,26 +13,34 @@ const StyledImg = styled(Img)`
   margin: 0 0 1em 0;
   padding 0;
   max-width: 160px;
-  border-radius: 8%;
+  border-radius: 10%;
 `
 
-const Header2 = styled.h2`
+const HeaderTitle = styled.h3`
     display: block;
     margin: 0 ;
     padding 0;
-    font-family: "Times New Roman", Times, serif;
-    line-height: 115%;
+    font-family: Verdana, sans-serif;
+    line-height: 1.3em;
     :hover {
         color: #07102B;
     }
 
 `
+const IconSpan = styled.span`
+    margin: 0.2em 0 0 0;
+    padding 0;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-family: Verdana, sans-serif;
+`
+
 const Author = styled.p`
     display: block;
-    margin: 0 ;
+    margin: 0.2em 0 0 0;
     padding 0;
     color: #ececec;
-    font-size: .8em;
+    font-size: .9em;
     font-family: Verdana, sans-serif;
 `
 
@@ -43,7 +51,7 @@ const Excerpt = styled.p`
     color: #ececec;
     font-size: .9em;
     font-family: Verdana, sans-serif;
-    line-height: 130%;
+    line-height: 1.4em;
 `
 
 const HrBlog = styled.hr`
@@ -76,8 +84,8 @@ const BlogPage = (props) => (
                                     <div className="col-4">                                                                       
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
                                         <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
-                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <Header2>{edge.node.frontmatter.title}</Header2></Link>                                             
-                                        <Author className="icon fa-user-circle"> : {edge.node.frontmatter.author} | <span className="icon fa-calendar"/> : {edge.node.frontmatter.date} </Author>
+                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>                                             
+                                        <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date} </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
                                         <HrBlog/>
                                     </div>                 
