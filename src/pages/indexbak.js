@@ -76,7 +76,8 @@ class HomeIndex extends React.Component {
                     <BannerContainer style={{backgroundImage:`url(` + bannerpic + `)`,backgroundSize:`cover`,backgroundPosition:`center`}}>
                     <HeroBanner>
                         <HeroBannerTitle>Welcome!</HeroBannerTitle>
-                        <HeroBannerParag>FINANCIAL LITERACY FOR EVERYONE</HeroBannerParag>                       
+                        <HeroBannerParag>FINANCIAL LITERACY FOR EVERYONE</HeroBannerParag>
+                        <Link to="/blog" className="button next scrolly">Go to Blog</Link>                     
                         {/*<ul className="actions">
                             <li><a href="#one" className="button next scrolly">Learn More</a></li>
                         </ul>*/}

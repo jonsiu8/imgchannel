@@ -80,7 +80,8 @@ class HomeIndex extends React.Component {
                     <HeroBanner>
                         <HeroBannerTitle>A Campaign for Financial Literacy</HeroBannerTitle>
                  
-                        <HeroBannerParag>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></HeroBannerParag>                    
+                        <HeroBannerParag>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></HeroBannerParag>   
+                        {/* <Link to="/blog" className="button small">Go to Blog</Link>                  */}
                         {/*<ul className="actions">
                             <li><a href="#one" className="button next scrolly">Learn More</a></li>
                         </ul>*/}
