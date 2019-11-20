@@ -64,7 +64,7 @@ export const query = graphql`
             timeToRead
             frontmatter {
                 title
-                date
+                date(formatString: "MMM Do YYYY")
                 author
                 featuredImage {
                     childImageSharp {
@@ -100,7 +100,9 @@ const Blog = (props) => {
                     <div className="col-9">
                         <BlogContainer>
                             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date}</p>          
+                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date}<br/>
+                                <span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
+                            </p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>
                     </div> 

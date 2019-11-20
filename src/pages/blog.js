@@ -9,9 +9,9 @@ import previewpic from '../assets/images/ogimage-blogpage.png'
 
 const StyledImg = styled(Img)`
   display: block;
-  margin: .9em 0 0 0;
+  margin: .4em 0 0 0;
   padding 0;
-  max-width: 160px;
+  max-width: 180px;
   border-radius: 10px;
 `
 
@@ -46,6 +46,7 @@ const Author = styled.p`
     font-size: .9em;
     font-family: Verdana, sans-serif;
     text-shadow: .8px 0px #070F29;
+    line-height: 1.5em;
 `
 
 const Excerpt = styled.p`
@@ -124,7 +125,7 @@ export const query = graphql`
                 node {
                     frontmatter {
                         title
-                        date
+                        date(formatString: "MMM Do YYYY") 
                         author
                         featuredImage {
                             childImageSharp {
