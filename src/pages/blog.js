@@ -59,10 +59,10 @@ const Excerpt = styled.p`
     line-height: 1.5em;
 `
 
-const HrBlog = styled.hr`
-    border: 1px dotted white;
-    border-radius: 1px;
-`
+// const HrBlog = styled.hr`
+//     border: 1px dotted white;
+//     border-radius: 1px;
+// `
 
 const BlogPage = (props) => (
     <Layout>        

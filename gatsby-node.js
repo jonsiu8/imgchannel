@@ -4,8 +4,19 @@ module.exports.onCreateNode = ({node, actions}) => {
     const { createNodeField } = actions
 
     if (node.internal.type === 'MarkdownRemark') {
-        const slug = path.basename(node.fileAbsolutePath, '.md')
+        const slugify = function(text) {
+            return text
+              .toString()
+              .toLowerCase()
+              .replace(/\s+/g, '-') // Replace spaces with -
+              .replace(/[^\w-]+/g, '') // Remove all non-word chars
+              .replace(/--+/g, '-') // Replace multiple - with single -
+              .replace(/^-+/, '') // Trim - from start of text
+              .replace(/-+$/, '') // Trim - from end of text
+          }
 
+        const slug = slugify(path.basename(node.fileAbsolutePath, '.md'))  
+        
         createNodeField({
             node,
             name: 'slug',
