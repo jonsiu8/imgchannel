@@ -25,6 +25,9 @@ const HeaderTitle = styled.h3`
         color: #07102B;
     }
     text-shadow: 1px 0px #070F29;
+    @media (max-width: 768px) {
+        font-size: 1.4em;
+  }
 `
 const IconSpan = styled.span`
     margin: 0.2em 0 0 0;
@@ -42,7 +45,7 @@ const Author = styled.p`
     color: #ececec;
     font-size: .9em;
     font-family: Verdana, sans-serif;
-    text-shadow: 1px 0px #070F29;
+    text-shadow: .8px 0px #070F29;
 `
 
 const Excerpt = styled.p`
@@ -57,7 +60,7 @@ const Excerpt = styled.p`
 
 const HrBlog = styled.hr`
     border: 1px dotted white;
-    border-radius: 5px;
+    border-radius: 1px;
 `
 
 const BlogPage = (props) => (
