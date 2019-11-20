@@ -90,9 +90,7 @@ const Blog = (props) => {
             <meta property="og:title" content={props.data.markdownRemark.frontmatter.title}/>
             <meta property="og:description" content={props.data.markdownRemark.excerpt}/>
             <meta property="og:image:type" content="image/png" />
-            
-            <meta property="og:image" content={props.data.markdownRemark.frontmatter.featuredImage.childImageSharp.sizes} />
-            {/* <meta property="og:image" content={props.data.markdownRemark.frontmatter.featuredImage.publicURL} /> */}
+            <meta property="og:image" content={props.data.markdownRemark.frontmatter.featuredImage.publicURL} />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
             <meta property="og:image:alt" content="image" />
