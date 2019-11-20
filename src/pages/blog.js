@@ -99,7 +99,7 @@ const BlogPage = (props) => (
                                         <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>
                                         <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />                                            
                                         <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date}<br/>
-                                            <IconSpan className="icon fa-clock-o"/> {edge.node.timeToRead}<i> min to read</i>
+                                            <IconSpan className="icon fa-clock-o"/> {edge.node.timeToRead}<i>-min read</i>
                                         </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
                                      
