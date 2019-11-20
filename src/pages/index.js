@@ -35,11 +35,16 @@ const HeroBanner = styled.div`
 `;
 
 const HeroBannerParag = styled.p`
-  font-size: 20px;
+  font-size: 0.8em;
   color: white;
 
+    // font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 0.8em;
   }
 `;
 

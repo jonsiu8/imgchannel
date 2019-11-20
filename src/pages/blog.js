@@ -50,12 +50,12 @@ const Author = styled.p`
 
 const Excerpt = styled.p`
     display: block;
-    margin: 10px 0;
+    margin: .4em 0 4em 0;
     padding 0;
     color: #ececec;
     font-size: .9em;
     font-family: Verdana, sans-serif;
-    line-height: 1.4em;
+    line-height: 1.5em;
 `
 
 const HrBlog = styled.hr`
@@ -98,9 +98,11 @@ const BlogPage = (props) => (
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
                                         <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>
                                         <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />                                            
-                                        <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date} </Author>
+                                        <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date}<br/>
+                                            <IconSpan className="icon fa-clock-o"/> {edge.node.timeToRead}<i> min to read</i>
+                                        </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
-                                        <HrBlog/>
+                                     
                                     </div>                 
                                 )
                             })}

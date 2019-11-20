@@ -3,7 +3,7 @@ module.exports = {
     title: "IMG Channel",
     author: "JFS",
     description: "A reference and tool site for IMG",
-    siteUrl: 'https://www.imgchannel.com',
+    siteUrl: 'https://www.imgchannel.com/',
   },
   pathPrefix: '/',
   plugins: [
