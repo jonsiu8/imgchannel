@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
-import BannerEducator from '../components/BannerEducator'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
@@ -91,7 +90,16 @@ const Financialeducator = (props) => (
             <meta property="og:image" content={previewpic} />
         </Helmet>
 
-        <BannerEducator />
+        <section id="banner" className="style1">
+            <div className="inner">
+                <header className="major">
+                    <h1>Financial Educator</h1>
+                </header>
+                <div className="content">
+                    <p>A campaigner for financial literacy</p>
+                </div>
+            </div>
+        </section>
         
         <div id="main" className="alt">
             <section id="one">

@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
-import BannerContact from '../components/BannerContact'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
@@ -52,7 +51,16 @@ const Contact = (props) => (
             <meta name="description" content="Contact Page" />
         </Helmet>
 
-        <BannerContact/>
+        <section id="banner" className="style2">
+          <div className="inner">
+              <header className="major">
+                  <h1>Contact</h1>
+              </header>
+              <div className="content">
+                  <p>For More Information and Inquiries</p>
+              </div>
+          </div>
+        </section>
 
         <div id="main" className="alt">
             <section id="one">

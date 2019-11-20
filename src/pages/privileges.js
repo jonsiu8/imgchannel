@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
-import BannerPrivileges from '../components/BannerPrivileges'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
@@ -37,7 +36,16 @@ const Privileges = (props) => (
             <meta property="og:image:alt" content="Cupcake on hand" />
         </Helmet>
 
-        <BannerPrivileges />
+        <section id="banner" className="style2">
+            <div className="inner">
+                <header className="major">
+                    <h1>Privileges</h1>
+                </header>
+                <div className="content">
+                    <p>Benefits of IMG Members</p>
+                </div>
+            </div>
+        </section>
         
         <div id="main" className="alt">
             <section id="one">            

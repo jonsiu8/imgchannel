@@ -4,16 +4,15 @@ import styled from "styled-components"
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import BannerBlog from '../components/BannerBlog'
 
 import previewpic from '../assets/images/ogimage-blogpage.png'
 
 const StyledImg = styled(Img)`
   display: block;
-  margin: 0 0 1em 0;
+  margin: .9em 0 0 0;
   padding 0;
   max-width: 160px;
-  border-radius: 10%;
+  border-radius: 10px;
 `
 
 const HeaderTitle = styled.h3`
@@ -25,7 +24,7 @@ const HeaderTitle = styled.h3`
     :hover {
         color: #07102B;
     }
-
+    text-shadow: 1px 0px #070F29;
 `
 const IconSpan = styled.span`
     margin: 0.2em 0 0 0;
@@ -33,6 +32,7 @@ const IconSpan = styled.span`
     color: #ffffff;
     font-size: 1.1em;
     font-family: Verdana, sans-serif;
+    text-shadow: 1px 0px #070F29;
 `
 
 const Author = styled.p`
@@ -42,6 +42,7 @@ const Author = styled.p`
     color: #ececec;
     font-size: .9em;
     font-family: Verdana, sans-serif;
+    text-shadow: 1px 0px #070F29;
 `
 
 const Excerpt = styled.p`
@@ -73,7 +74,16 @@ const BlogPage = (props) => (
             <meta property="og:image:alt" content="blogger" />
         </Helmet>
 
-        <BannerBlog/>
+        <section id="banner" className="style3">
+            <div className="inner">
+                <header className="major">
+                    <h1>Blog</h1>
+                </header>
+                <div className="content">
+                    <p>If you think financial education is expensive try ingnorance.</p>
+                </div>
+            </div>
+        </section>
 
         <div id="main" className="alt">
             <section id="one">
@@ -83,8 +93,8 @@ const BlogPage = (props) => (
                                 return (                           
                                     <div className="col-4">                                                                       
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
-                                        <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
-                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>                                             
+                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>
+                                        <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />                                            
                                         <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date} </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
                                         <HrBlog/>

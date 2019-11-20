@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
-import BannerAffiliates from '../components/BannerAffiliates'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 import previewpic from '../assets/images/ogimage-affiliates.png'
@@ -45,7 +44,16 @@ const Affiliates = (props) => (
             <meta property="og:image:alt" content="Last piece of a puzzle" />
         </Helmet>
 
-        <BannerAffiliates />
+        <section id="banner" className="style3">
+            <div className="inner">
+                <header className="major">
+                    <h1>Affiliates</h1>
+                </header>
+                <div className="content">
+                    <p>Our Powerful Strategic Partners</p>
+                </div>
+            </div>
+        </section>
 
         <div id="main" className="alt">
 

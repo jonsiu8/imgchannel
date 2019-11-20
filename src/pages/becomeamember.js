@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import styled from "styled-components"
-import BannerMember from '../components/BannerMember'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
@@ -70,7 +69,17 @@ const Becomeamember = (props) => (
             <meta name="description" content="Become a Member - IMG Channel" />
         </Helmet>
 
-        <BannerMember />
+        <section id="banner" className="style4">
+            <div className="inner">
+                <header className="major">
+                    <h1>Become a Member</h1>
+                </header>
+                <div className="content">
+                    {/* <p>Join the campaign for financial literacy and start your journey to financial freedom.</p> */}
+                    <p>Be part of the movement</p>
+                </div>
+            </div>
+        </section>
         
         <div id="main" className="alt">
             <section id="one">

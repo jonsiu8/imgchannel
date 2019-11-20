@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
-import BannerBeliefs from '../components/BannerBeliefs'
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
@@ -44,7 +43,16 @@ const Corebeliefs = (props) => (
             <meta property="og:image:alt" content="Fighting Silhouette" />
         </Helmet>
 
-        <BannerBeliefs/>
+        <section id="banner" className="style1">
+            <div className="inner">
+                <header className="major">
+                    <h1>Core Beliefs</h1>
+                </header>
+                <div className="content">
+                    <p>Fight for something you believe in</p>
+                </div>
+            </div>
+        </section>
 
         <div id="main" className="alt">
 
