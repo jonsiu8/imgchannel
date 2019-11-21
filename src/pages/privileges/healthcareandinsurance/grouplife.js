@@ -1,9 +1,25 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../../components/layout'
+import styled from "styled-components"
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
+
+const SubHeader2 = styled.h2`
+    line-height: 1.2em;
+`
+
+const SubHeader3 = styled.h3`
+    line-height: 1.2em;
+`
+
+const Content = styled.p`
+    line-height: 1.2em;
+    margin 0 0 .9em 0;
+`
+
+
     
 const Grouplife = (props) => (
     <Layout>
@@ -22,10 +38,10 @@ const Grouplife = (props) => (
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                         </div>                        
                         <div className="col-7">                          
-                            <h2>P50,000 Life Insurance* for all IMG Members</h2>
-                            <h3>with 24/7 memorial concierge service tie-up with Everest</h3>
-                            <p>* Need to fll out application form subject to underwriting process<br/>
-                                * Pay one-time membership fee of P500 for Fidelity</p>
+                            <SubHeader2>P50,000 Life Insurance* for all IMG Members</SubHeader2>
+                            <SubHeader3>with 24/7 memorial concierge service tie-up with Everest</SubHeader3>
+                            <Content>* Need to fll out application form subject to underwriting process</Content>
+                             <Content>* Pay one-time membership fee of P500 for Fidelity</Content>
                             <hr className="major"/>                    
                         </div>
     
@@ -33,8 +49,8 @@ const Grouplife = (props) => (
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </div>                        
                         <div className="col-7">                          
-                            <h2>P100,000 Personal Accident Insurance* for all IMG Members</h2>                            
-                            <p>* Standard underwriting guidelines will apply</p>
+                            <SubHeader2>P100,000 Personal Accident Insurance* for all IMG Members</SubHeader2>                            
+                            <Content>* Standard underwriting guidelines will apply</Content>
                             <hr className="major"/>                       
                         </div>
                         <div className="col-12">

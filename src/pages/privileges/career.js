@@ -25,10 +25,15 @@ const Container = styled.div`
         color:black;
         margin: 1rem auto;
     }
-    h3{color:black};
+    h3{
+        color:black;
+        margin: 1em 0 1em 0;
+        line-height: 1.12em;
+    }
     h4{
         color:black;
-        margin:5px;
+        margin:0 0 1em 0;
+        line-height: 1.2em;
     }    
 
     p { color:black;
@@ -56,12 +61,22 @@ const Container = styled.div`
 
   const Ulist = styled.ul`  
     list-style-type: none;
+    margin: 0;
     color:black;
     font-size: 21px;
+    li {
+        line-height: 1.2em;
+        margin: 0 0 .5em 0;
+    }
     @media (max-width: 768px) {
         font-size: 18px;
   }
   `
+
+  const SpanIcon = styled.span`
+    color: #3277B3;
+    font-size: 1.1em;
+`
 const Career = (props) => (
     <Layout>
         <Helmet>
@@ -89,10 +104,10 @@ const Career = (props) => (
                             <div className="grid-wrapper">
                                 <div className="col-12">
                                     <Ulist>
-                                        <li className="icon fa-arrow-right"> Do you have an entrpreneur mindset?</li> 
-                                        <li className="icon fa-arrow-right"> Do you believe that knowledge is power?</li> 
-                                        <li className="icon fa-arrow-right"> Do you believe in people?</li> 
-                                        <li className="icon fa-arrow-right"> Will you be happy helping people?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you have an entrpreneur mindset?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you believe that knowledge is power?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you believe in people?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Will you be happy helping people?</li> 
                                         <h3>This could be the freelance career for you.</h3>
                                     </Ulist>
                                 </div>

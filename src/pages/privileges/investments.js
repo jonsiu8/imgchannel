@@ -8,7 +8,11 @@ import Img from 'gatsby-image'
 
     const ContainerCard = styled.div`  
         background-color:white;  
-        h3{color:#046880};
+        h3{
+            color:#046880;
+            line-height: 1.2em;
+            margin: 0 0 .2em 0;
+        }
         color: black;
         .button{
             background-color:#3277B3;
@@ -19,6 +23,10 @@ import Img from 'gatsby-image'
         box-shadow: 5px 5px 5px #1E1E1E;
         padding: 25px;
         margin: 1rem auto;
+        p{
+            line-height: 1.25em;
+            margin: .4em 0 .5em 0;
+        }
     `
 
 
@@ -40,7 +48,7 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Mutual Funds</h3>
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             <p>Stress-free investing with great long term growth potential.</p>                            
                             <Link to="/privileges/investments/mutualfunds" className="button special small">Learn more</Link>
                         </ContainerCard>                            
@@ -49,7 +57,7 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Stock Market</h3>
-                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <p>Stock market investing right at your fingertips.</p>
                             <Link to="/privileges/investments/stocktrading" className="button special small">Learn more</Link>
                         </ContainerCard>                            
@@ -58,7 +66,7 @@ const Investments = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Real Estate</h3>
-                            <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             <p>Expand your investment portfolio with properties.</p>
                             <Link to="/privileges/investments/realestate" className="button special small">Learn more</Link>
                         </ContainerCard>

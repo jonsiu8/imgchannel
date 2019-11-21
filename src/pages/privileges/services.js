@@ -8,7 +8,11 @@ import Img from 'gatsby-image'
 
     const ContainerCard = styled.div`  
         background-color:white;  
-        h3{color:#046880};
+        h3{
+            color:#046880;
+            line-height: 1.2em;
+            margin: 0 0 .2em 0;
+        }
         color: black;
         .button{
             background-color:#3277B3;
@@ -19,6 +23,11 @@ import Img from 'gatsby-image'
         box-shadow: 5px 5px 5px #1E1E1E;
         padding: 25px;
         margin: 1rem auto; 
+
+        p{
+            line-height: 1.25em;
+            margin: .4em 0 .5em 0;
+        }
     `
 const Services = (props) => (
     <Layout>
@@ -37,7 +46,7 @@ const Services = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Asset Preservation Service</h3>
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             <p>Preserve your wealth and don't let a lifetime of savings be devoured by taxes.</p>
                             <Link to="/privileges/services/assetpreservation" className="button special small">Learn more</Link>                     
                         </ContainerCard>                            
@@ -45,7 +54,7 @@ const Services = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Exclusive Memorial Service</h3>
-                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <p>Convenience and peace of mind... when your family need it the most.</p>
                             <Link to="/privileges/services/everest" className="button special small">Learn more</Link>
                         </ContainerCard>                            

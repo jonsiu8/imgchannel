@@ -6,9 +6,18 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+const SubHeader = styled.h2`
+    line-height: 1.25em;
+    margin: 0;
+`
+
 const ContainerCard = styled.div`  
     background-color:white;  
-    h3{color:#046880};
+    h3{
+        color:#046880;
+        line-height: 1.2em;
+        margin: 0 0 .2em 0;
+    }
     color: black;
     .button{
         background-color:#3277B3;
@@ -18,7 +27,11 @@ const ContainerCard = styled.div`
     hr.line1 {border-top: 1px solid white;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 1rem auto;  
+    margin: 1rem auto; 
+    p{
+        line-height: 1.25em;
+        margin: .4em 0 .5em 0;
+    } 
     `
 
 const Freebies = (props) => (
@@ -37,12 +50,12 @@ const Freebies = (props) => (
                         <h1>Freebies and Discounts</h1>
                     </header>
                     
-                    <h2>Freebies</h2>
+                    <SubHeader>Freebies</SubHeader>
                     <div className="grid-wrapper">              
                         <div className="col-4">
                         <ContainerCard>
                             <h3>FREE Doctor's Consultation</h3>
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             <p>Unlimited outpatient consultations in any Kaiser Medical Center clinics.</p>
                             <Link to="/privileges/freebiesdiscounts/freeconsultation" className="button special small">Learn more</Link>                        
                         </ContainerCard>                            
@@ -50,7 +63,7 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>FREE Eyeglasses Frames</h3>
-                            <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <p>Free frames for every multi-coated lens purchased from Site for Eyes.</p>
                             <Link to="/privileges/freebiesdiscounts/freeframes" className="button special small">Learn more</Link>  
                         </ContainerCard>                            
@@ -58,7 +71,7 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Online Marketing Tools</h3>
-                            <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             <p>Free account to make your own website for online marketing.</p>
                             <Link to="/privileges/freebiesdiscounts/dominatetool" className="button special small">Learn more</Link>  
                         </ContainerCard>
@@ -67,12 +80,12 @@ const Freebies = (props) => (
                     
                     <hr className="major" />
                 
-                    <h2>Discounts</h2>
+                    <SubHeader>Discounts</SubHeader>
                     <div className="grid-wrapper">              
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Non-Life Insurance</h3>
-                            <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
                             <p>Save money while insuring your car and house.</p>
                             <Link to="/privileges/freebiesdiscounts/nonlife" className="button special small">Learn more</Link>                            
                         </ContainerCard>                            
@@ -80,7 +93,7 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Auto Program</h3>
-                            <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                             <p>Get discounts when purchasing your brand new car.</p>
                             <Link to="/privileges/freebiesdiscounts/autoprogram" className="button special small">Learn more</Link>   
                         </ContainerCard>                            
@@ -88,7 +101,7 @@ const Freebies = (props) => (
                         <div className="col-4">
                         <ContainerCard>
                             <h3>Course Fees</h3>
-                            <span className="image fit"><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
+                            <span><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
                             <p>Tuition fee discounts with our partner computer schools.</p>
                             <Link to="/privileges/freebiesdiscounts/coursefees" className="button special small">Learn more</Link>   
                         </ContainerCard>

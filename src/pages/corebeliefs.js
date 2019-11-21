@@ -13,12 +13,13 @@ const Container = styled.div`
     h2{
         color:black;
         line-height: 1.2em;
+        margin: 0 0 .2em 0;
     }
     h3{color:black;}  
 
     p {
         line-height: 1.25em;
-        margin: 0 0 1em 0;
+        margin: .4em 0 2.5em 0;
     }
     color: black;
     .button{
@@ -35,7 +36,6 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
   `
-
 
 const Corebeliefs = (props) => (
     <Layout>
@@ -71,23 +71,20 @@ const Corebeliefs = (props) => (
                     <div className="grid-wrapper">                       
                         <div className="col-4">                                                       
                             <h2>Everyone Can Be Financially Independent</h2>
-                            <p><span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
-                            Everyone can be financially independent given the right education, guidance and environment.
-                            </p>                                                                                       
+                            <span><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
+                            <p>Everyone can be financially independent given the right education, guidance and environment.</p>                                                                                       
                         </div>  
                         
                         <div className="col-4">                                                       
                             <h2>Everyone Deserves a Chance </h2>
-                            <p><span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
-                            Everyone deserves a chance to improve and change for the better.<br/>
-                            </p>                                                                                        
+                            <span><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                            <p>Everyone deserves a chance to improve and change for the better.<br/></p>                                                                                        
                         </div>  
                            
                         <div className="col-4">                                                       
                             <h2>Everyone Can Help or Serve</h2>
-                            <p><span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
-                            Everyone can help or serve one person at a time.<br/>
-                            </p>                                                                                       
+                            <span><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                            <p>Everyone can help or serve one person at a time.<br/></p>                                                                                       
                         </div>                                                
                     </div>      
                     </Container>

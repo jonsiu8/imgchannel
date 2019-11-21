@@ -5,11 +5,24 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+const PageSubTitle = styled.h1`
+    line-height: 1.1em;
+`
+const PageSubTitle2 = styled.h3`
+    line-height: 1.1em;
+`
+
 const ContainerHealth = styled.div`  
     background-color:white;  
-    h4{color:#0B258F};  
+    h4{
+        color:#0B258F;
+        line-height: 1.3em;
+    } 
     h3{color:#0B258F};
-    h2{color:#0B258F};
+    h2{
+        color:#0B258F;
+        margin: 0;
+    }
     h1{color:#0B258F};  
     color: black;
     b{color:black};
@@ -25,10 +38,7 @@ const ContainerHealth = styled.div`
     padding: 30px;
     margin: 3rem auto;
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    display: block;
     `
 
     const ContainerForm = styled.div`  
@@ -67,6 +77,10 @@ const ContainerHealth = styled.div`
     list-style-type: none;
     color:black;
     font-size: 18px;
+    li {
+        line-height: 1.2em;
+        margin: 0 0 .5em 0;
+    }
     p{  font-size: 20px;
         padding-bottom:20px;
         margin:0px
@@ -77,6 +91,11 @@ const ContainerHealth = styled.div`
         font-size: 15px;
       }
   `
+
+  const SpanIcon = styled.span`
+    color: #0B258F;
+    font-size: 1em;
+`
     
 const Termlife = (props) => (
     <Layout>
@@ -95,8 +114,8 @@ const Termlife = (props) => (
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </div>
                         <div className="col-9">
-                        <h1>M.O.S.T.18 - Multiple Option Super Term</h1>
-                        <h3>Buy Term and Invest the Difference to maximize your investments</h3>
+                        <PageSubTitle>M.O.S.T.18 - Multiple Option Super Term</PageSubTitle>
+                        <PageSubTitle2>Buy Term and Invest the Difference to maximize your investments</PageSubTitle2>
                         </div>
                     </div> 
                         <div className="grid-wrapper">    
@@ -107,33 +126,33 @@ const Termlife = (props) => (
                                 <h4>MOST18 is a level term life insurance with PDF (Premium Deposit Fund).</h4>
                                 <Ulist>
                                     
-                                    <li className="icon fa-check-square-o"> <b>Affordable</b> - Get higher face amount for your money</li>
-                                    <li className="icon fa-check-square-o"> <b>Higher fund value</b> - PDF allows higher growth of funds</li>
-                                    <li className="icon fa-check-square-o"> <b>Premium flexibility</b> - Settle your contribution on a schedule that fits your lifestyle</li>
-                                    <li className="icon fa-check-square-o"> <b>Withdrawal advantage</b> - Withdraw your savings anytime without penalty</li>
-                                    <li className="icon fa-check-square-o"> <b>Level coverage risk</b> - Your cash value is added to your coverage</li>
-                                    <li className="icon fa-check-square-o"> <b>Emergency fund advantage</b> - Cash value even on the first year</li>
-                                    <li className="icon fa-check-square-o"> <b>Investment flexibility</b> - You decide where to invest</li>
-                                    <li className="icon fa-check-square-o"> <b>Early maturity</b> - Maturity after 5/10/15/18 years</li>
-                                    <li className="icon fa-check-square-o"> <b>Issue age is 5 to 60</b> - Insure your whole family</li>
-                                    <li className="icon fa-check-square-o"> <b>Addresses various financial needs</b> - Retirement, education, investment, etc.</li>                                    
-                                    <li className="icon fa-check-square-o"> <b>Convertible</b> - Option to convert to a permanent policy</li>
-                                    <li className="icon fa-check-square-o"> <b>Low chance of lapsation</b> - Premiums may be settled from your PDF earnings</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Affordable</b> - Get higher face amount for your money</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Higher fund value</b> - PDF allows higher growth of funds</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Premium flexibility</b> - Settle your contribution on a schedule that fits your lifestyle</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Withdrawal advantage</b> - Withdraw your savings anytime without penalty</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Level coverage risk</b> - Your cash value is added to your coverage</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Emergency fund advantage</b> - Cash value even on the first year</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Investment flexibility</b> - You decide where to invest</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Early maturity</b> - Maturity after 5/10/15/18 years</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Issue age is 5 to 60</b> - Insure your whole family</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Addresses various financial needs</b> - Retirement, education, investment, etc.</li>                                    
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Convertible</b> - Option to convert to a permanent policy</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> <b>Low chance of lapsation</b> - Premiums may be settled from your PDF earnings</li>
                                 </Ulist>
                                 <h4>Advantages of PDF (Premium Deposit Fund)</h4>
                                 <div className="grid-wrapper">              
                                     <div className="col-6">
                                         <Ulist>                              
-                                        <li className="icon fa-circle"> Very competitive rate of return</li>
-                                        <li className="icon fa-circle"> Partial or full withdrawal can be made anytime</li>
-                                        <li className="icon fa-circle"> Maximum total deposit of 100% of the Face Amount, excluding interest earnings</li>
-                                        <li className="icon fa-circle"> Payable to the beneficiaries upon death of the insured</li>
+                                        <li><SpanIcon className="icon fa-arrow-circle-right"/> Very competitive rate of return</li>
+                                        <li><SpanIcon className="icon fa-arrow-circle-right"/> Partial or full withdrawal can be made anytime</li>
+                                        <li><SpanIcon className="icon fa-arrow-circle-right"/> Maximum total deposit of 100% of the Face Amount, excluding interest earnings</li>
+                                        <li><SpanIcon className="icon fa-arrow-circle-right"/> Payable to the beneficiaries upon death of the insured</li>
                                         </Ulist>
                                     </div>
                                     <div className="col-6">
                                         <Ulist>                               
-                                        <li className="icon fa-circle"> PDF has higher growth and doesn't go negative</li>
-                                        <li className="icon fa-circle"> Premium that will fall due may be deducted from the PDF, the client will not 
+                                        <li><SpanIcon className="icon fa-arrow-circle-right"/> PDF has higher growth and doesn't go negative</li>
+                                        <li><SpanIcon className="icon fa-arrow-circle-right"/> Premium that will fall due may be deducted from the PDF, the client will not 
                                                                         need to shell out additional payment (assuming that the PDF amount will suffice)</li> 
                                         </Ulist>
                                     </div>

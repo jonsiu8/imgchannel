@@ -5,12 +5,19 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+const PageSubTitle = styled.h2`
+    line-height: 1.25em;
+`
+
 const ContainerHealth = styled.div`  
     background-color:white;  
-    h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    h1{color:#046880};  
+    h4{color:#046880;}  
+    h3{
+        color:#046880;
+        line-height: 1.25em;
+    }
+    h2{color:#046880;}
+    h1{color:#046880;}  
     color: black;
     b{color:black};
     th{color:black};
@@ -25,21 +32,33 @@ const ContainerHealth = styled.div`
     padding: 30px;
     margin: 3rem auto;
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
+ 
+    p{
+        line-height: 1.25em;
+        margin: 0.7em 0 0.6em 0;
+    }
+
+    th,tr {
+        line-height: 1.2em;
+        margin: 5px;
+    }
     `
     const Ulist = styled.ul`  
     list-style-type: none;
     color:black;
-    padding-left:0px;
-    font-size:20px;
+    padding:0px;
+    font-size:19px;
+    margin 0;
+    li {
+        line-height:1.55em;
+    }
     
     p{  font-size: 22px;
         padding-left:0px;
         margin:0px
-    };
+        line-height: 0;
+    }
     b{color:black};
 
     @media (max-width: 768px) {
@@ -49,6 +68,11 @@ const ContainerHealth = styled.div`
             margin:0px
       }
   `
+
+  const SpanIcon = styled.span`
+    color: #058340;
+    font-size: 1.3em;
+`
     
 const Shortterm = (props) => (
     <Layout>
@@ -67,7 +91,7 @@ const Shortterm = (props) => (
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </div>
                         <div className="col-3">
-                            <h2>The Kaiser HealthCard</h2>  
+                            <PageSubTitle>The Kaiser HealthCard</PageSubTitle>  
                         </div>
                     </div>               
                         <div className="grid-wrapper">
@@ -76,11 +100,11 @@ const Shortterm = (props) => (
                                 <Ulist>
                                     <h3>Our Five-Point HealthCard Program</h3>
                                     <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                                    
-                                    <li className="icon fa-check-square-o"> Preventive Health Care</li>
-                                    <li className="icon fa-check-square-o"> In-Patient Care</li> 
-                                    <li className="icon fa-check-square-o"> Out-Patient Care</li> 
-                                    <li className="icon fa-check-square-o"> Dental Care</li> 
-                                    <li className="icon fa-check-square-o"> Emergency Care</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Preventive Health Care</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> In-Patient Care</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Out-Patient Care</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Dental Care</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Emergency Care</li>
                                 </Ulist>
                                 <p>For more info & options please visit the Kaiser International Healthgroup page.</p>
                                 <a href="https://kaiserhealthgroup.com/products/short-term.php" target="_blank" 
@@ -90,7 +114,7 @@ const Shortterm = (props) => (
 
                             <div className="col-4">
                             <ContainerHealth>
-                            <div className="table-wrapper">
+                            <div>
                             <h3>Individual Rates (Excludes *Major Hospitals)</h3>
                                 <table>
                                     <thead>

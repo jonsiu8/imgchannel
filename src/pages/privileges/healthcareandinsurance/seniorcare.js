@@ -5,10 +5,17 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+const PageSubTitle = styled.h2`
+    line-height: 1.25em;
+`
+
 const ContainerHealth = styled.div`  
     background-color:white;  
     h4{color:#046880};  
-    h3{color:#046880};
+    h3{
+        color:#046880;
+        margin: 0 0 .4em 0;
+    }
     h2{color:#046880};
     h1{color:#046880};  
     color: black;
@@ -25,16 +32,23 @@ const ContainerHealth = styled.div`
     padding: 30px;
     margin: 3rem auto;
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    p{
+        line-height: 1.4em;
+        margin: 0 0 .8em 0;
+    }
     `
     const Ulist = styled.ul`  
     list-style-type: none;
     color:black;
     padding-left:0px;
     font-size:20px;
+    h3 {margin: 0 0 .4em 0;}
+
+    li {
+        margin: 0 0 .9em 0;
+        line-height: 1.4em;
+    }
     
     p{  font-size: 22px;
         padding-left:0px;
@@ -67,7 +81,7 @@ const Seniorcare = (props) => (
                             <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                         </div>
                         <div className="col-5">
-                        <h2>Kaiser Healthcare Plan for Seniors from 61-100 years old</h2>  
+                        <PageSubTitle>Kaiser Healthcare Plan for Seniors from 61-100 years old</PageSubTitle>  
                         </div>
                     </div> 
                         <div className="grid-wrapper">    
@@ -92,10 +106,10 @@ const Seniorcare = (props) => (
                                     <li className="icon fa-check-square-o"> Renewal is guaranteed up to age 100. However, KAISER reserves the right to adjust premiums and
                                                                             other policy conditions upon written advice of 45 days prior to renewal.</li>
                                 </Ulist>
-                                <p><b>Additional Info:</b><br/>
-                                Premiums are inclusive of all applicable taxes.<br/>
-                                Premiums may change subject to the result of medical evaluation of applicable form.<br/>
-                                Hospitalization & treatment outside the Philippines is not covered.</p>
+                                <p><b>Additional Info:</b></p>
+                                <p>Premiums are inclusive of all applicable taxes.</p>
+                                <p>Premiums may change subject to the result of medical evaluation of applicable form.</p>
+                                <p>Hospitalization & treatment outside the Philippines is not covered.</p>
                             </ContainerHealth>
                             </div>
 

@@ -82,6 +82,7 @@ const ContainerCard = styled.div`
 
 const SpanIcon = styled.span`
   color: #058340;
+  font-size: 1.3em;
 `
 
 

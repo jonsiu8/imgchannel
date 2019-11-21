@@ -8,7 +8,11 @@ import Img from 'gatsby-image'
 
     const ContainerCardHealth = styled.div`  
         background-color:white;  
-        h3{color:#046880};
+        h3{
+            color:#046880;
+            line-height: 1.2em;
+            margin: 0 0 .2em 0;
+        }
         color: black;
         .button{
             background-color:#3277B3;
@@ -19,10 +23,18 @@ import Img from 'gatsby-image'
         box-shadow: 5px 5px 5px #1E1E1E;
         padding: 25px;
         margin: 1rem auto;
+        p{
+            line-height: 1.25em;
+            margin: .4em 0 .5em 0;
+        }
     `
     const ContainerCardLife = styled.div`  
         background-color:white;  
-        h3{color:#1A237E};
+        h3{
+            color:#1A237E;
+            line-height: 1.2em;
+            margin: 0 0 .2em 0;
+        }
         color: black;
         .button{
             background-color:#3277B3;
@@ -33,6 +45,10 @@ import Img from 'gatsby-image'
         box-shadow: 5px 5px 5px #1E1E1E;
         padding: 25px;
         margin: 1rem auto;   
+        p{
+            line-height: 1.25em;
+            margin: .4em 0 .5em 0;
+        }
     `
 
 
@@ -56,8 +72,8 @@ const Healthcareandinsurance = (props) => (
                         <div className="grid-wrapper">              
                             <div className="col-4">
                             <ContainerCardHealth>
-                                <h3>Long-term care</h3>
-                                <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>   
+                                <h3>Long-Term Care</h3>
+                                <span><Img fluid={props.data.image01.childImageSharp.fluid} /></span>   
                                 <p>Health Savings Program with Invesments to cover your retirement years.</p>                            
                                 <Link to="/privileges/healthcareandinsurance/longterm" className="button special small">Learn more</Link>
                             </ContainerCardHealth>                            
@@ -65,8 +81,8 @@ const Healthcareandinsurance = (props) => (
 
                             <div className="col-4">
                             <ContainerCardHealth>
-                                <h3>Short-term care</h3>
-                                <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                                <h3>Short-Term Care</h3>
+                                <span><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                                 <p>Healthcare coverage for you and your family while you're still employed.</p>
                                 <Link to="/privileges/healthcareandinsurance/shortterm" className="button special small">Learn more</Link>
                             </ContainerCardHealth>                            
@@ -74,8 +90,8 @@ const Healthcareandinsurance = (props) => (
 
                             <div className="col-4">
                             <ContainerCardHealth>
-                                <h3>Senior care</h3>
-                                <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                                <h3>Senior Care</h3>
+                                <span><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                                 <p>Healthcare coverage for seniors from 61-100 years of age.</p>
                                 <Link to="/privileges/healthcareandinsurance/seniorcare" className="button special small">Learn more</Link>
                             </ContainerCardHealth>
@@ -88,16 +104,16 @@ const Healthcareandinsurance = (props) => (
                     <div className="grid-wrapper">              
                             <div className="col-4">
                             <ContainerCardLife>
-                                <h3>Term life insurance</h3>
-                                <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                                <h3>Term Life Insurance</h3>
+                                <span><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
                                 <p>Most affordable income replacement while building your future.</p>
                                 <Link to="/privileges/healthcareandinsurance/termlife" className="button small">Learn more</Link>
                             </ContainerCardLife>
                             </div>
                             <div className="col-4">
                             <ContainerCardLife>
-                                <h3>Group life insurance</h3>
-                                <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
+                                <h3>Group Life Insurance</h3>
+                                <span><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                                 <p>Life and Accident Insurance for your organization.</p>
                                 <Link to="/privileges/healthcareandinsurance/grouplife" className="button small">Learn more</Link>
                             </ContainerCardLife>
