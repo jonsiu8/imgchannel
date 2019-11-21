@@ -1,8 +1,21 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../../components/layout'
+import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
+
+const SubHeader3 = styled.h3`
+  line-height: 1.2em;
+`
+
+const SubHeader2 = styled.h2`
+  line-height: 1.2em;
+`
+
+const Content = styled.p`
+  line-height: 1.2em;
+`
     
 const Mutualfunds = (props) => (
     <Layout>
@@ -21,10 +34,10 @@ const Mutualfunds = (props) => (
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                         </div>                        
                         <div className="col-6">                          
-                            <h2>Invest in Mutual Funds at 0% Entry Fee*</h2>
-                            <h2>Free Access to Investment Seminars</h2>
-                            <h3>Start investing from as low as P1,000</h3>
-                            <p>*Exclusive to IMG members</p>
+                            <SubHeader2>Invest in Mutual Funds at 0% Entry Fee*</SubHeader2>
+                            <SubHeader2>Free Access to Investment Seminars</SubHeader2>
+                            <SubHeader3>Start investing from as low as P1,000</SubHeader3>
+                            <Content>*Exclusive to IMG members</Content>
                             <hr className="major"/>                    
                         </div>                                         
                     </div> 

@@ -6,12 +6,19 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+const SubHeader2 = styled.h2`
+    font-size: 1.9em;
+    line-height: .9em;
+    margin: 0;
+`
+
     const ContainerCardHealth = styled.div`  
         background-color:white;  
         h3{
             color:#046880;
             line-height: 1.2em;
             margin: 0 0 .2em 0;
+            font-size: 1.5em;
         }
         color: black;
         .button{
@@ -34,6 +41,7 @@ import Img from 'gatsby-image'
             color:#1A237E;
             line-height: 1.2em;
             margin: 0 0 .2em 0;
+            font-size: 1.5em;
         }
         color: black;
         .button{
@@ -68,7 +76,7 @@ const Healthcareandinsurance = (props) => (
                         <h1>Healthcare and Insurance</h1>
                     </header>
                     
-                    <h2>Healthcare plans</h2>
+                    <SubHeader2>Healthcare plans</SubHeader2>
                         <div className="grid-wrapper">              
                             <div className="col-4">
                             <ContainerCardHealth>
@@ -100,7 +108,7 @@ const Healthcareandinsurance = (props) => (
                   
                     <hr className="major" />
                 
-                    <h2>Life Insurance</h2>
+                    <SubHeader2>Life Insurance</SubHeader2>
                     <div className="grid-wrapper">              
                             <div className="col-4">
                             <ContainerCardLife>

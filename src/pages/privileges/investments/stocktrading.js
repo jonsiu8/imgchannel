@@ -1,8 +1,21 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../../components/layout'
+import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
+
+const SubHeader3 = styled.h3`
+  line-height: 1.2em;
+`
+
+const SubHeader2 = styled.h2`
+  line-height: 1.2em;
+`
+
+const Content = styled.p`
+  line-height: 1.2em;
+`
     
 const Stocktrading = (props) => (
     <Layout>
@@ -21,9 +34,9 @@ const Stocktrading = (props) => (
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                         </div>                        
                         <div className="col-8">                          
-                            <h2>MyTrade Online Stock Market Trading Platform</h2>
-                            <h3>with FREE investment guidance, analysis & updates</h3>
-                            <p>Trade using your mobile devices through the MyTrade App</p>
+                            <SubHeader2>MyTrade Online Stock Market Trading Platform</SubHeader2>
+                            <SubHeader3>with FREE investment guidance, analysis & updates</SubHeader3>
+                            <Content>Trade using your mobile devices through the MyTrade App</Content>
                             <hr className="major"/>                    
                         </div>                                         
                     </div> 

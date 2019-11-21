@@ -1,8 +1,21 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../../../components/layout'
+import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
+
+const SubHeader3 = styled.h3`
+  line-height: 1.2em;
+`
+
+const SubHeader2 = styled.h2`
+  line-height: 1.2em;
+`
+
+const Content = styled.p`
+  line-height: 1.2em;
+`
     
 const Realestate = (props) => (
     <Layout>
@@ -21,9 +34,9 @@ const Realestate = (props) => (
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                         </div>                        
                         <div className="col-7">                          
-                            <h2>Get Discounts from Real Estate Companies</h2>
-                            <h3>After building your proper financial foundation, you may now expand your portfolio through real estate investments</h3>
-                            <p>*Discounts may vary depending on the type of property, company, location, etc.</p>
+                            <SubHeader2>Get Discounts from Real Estate Companies</SubHeader2>
+                            <SubHeader3>After building your proper financial foundation, you may now expand your portfolio through real estate investments</SubHeader3>
+                            <Content>*Discounts may vary depending on the type of property, company, location, etc.</Content>
                             <hr className="major"/>                    
                         </div>                                         
                     </div> 
