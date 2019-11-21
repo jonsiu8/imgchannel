@@ -10,10 +10,11 @@ import previewpic from '../assets/images/ogimage-privileges.png'
 
   const ContainerCard = styled.div`  
     background-color:white;  
-    h3{
+    h2{
         color:black;
         line-height: 1.2em;
         margin: 0 0 .2em 0;
+        font-size: 1.5em;
     }
     color: black;
     .button{
@@ -60,7 +61,7 @@ const Privileges = (props) => (
                     <div className="grid-wrapper">                         
                         <div className="col-4">
                         <ContainerCard>
-                            <h3>Financial Education</h3>
+                            <h2>Financial Education</h2>
                             <span><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                             <p>Workshops, seminars, financial checkups, and more...</p>
                             <Link to="/privileges/financialeducation" className="button special small">Learn more</Link>
@@ -69,7 +70,7 @@ const Privileges = (props) => (
                                                 
                         <div className="col-4">
                         <ContainerCard>
-                            <h3>Healthcare and Insurance</h3>
+                            <h2>Healthcare & Insurance</h2>
                             <span><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
                             <p>Protect your family while building your wealth.</p>
                             <Link to="/privileges/healthcareandinsurance" className="button special small">Learn more</Link>                 
@@ -78,7 +79,7 @@ const Privileges = (props) => (
                                     
                         <div className="col-4">
                         <ContainerCard>
-                            <h3>Investments</h3>
+                            <h2>Investments</h2>
                             <span><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                             <p>Invest for your future and let your money work for you.</p>
                             <Link to="/privileges/investments" className="button special small">Learn more</Link>
@@ -89,7 +90,7 @@ const Privileges = (props) => (
                     <div className="grid-wrapper"> 
                         <div className="col-4">
                         <ContainerCard>
-                            <h3>Freebies and Discounts</h3>
+                            <h2>Freebies & Discounts</h2>
                             <span><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
                             <p>Enjoy exclusive discounts and free products and services.</p>
                             <Link to="/privileges/freebies" className="button special small">Learn more</Link>
@@ -98,7 +99,7 @@ const Privileges = (props) => (
                                         
                         <div className="col-4">
                         <ContainerCard>
-                            <h3>Career and Business</h3>
+                            <h2>Career & Business</h2>
                             <span><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
                             <p>Start your financial educator career and be in the financial industry business. </p>
                             <Link to="/privileges/career" className="button special small">Learn more</Link>
@@ -106,7 +107,7 @@ const Privileges = (props) => (
                         </div>
                         <div className="col-4">
                         <ContainerCard>
-                            <h3>Services</h3>
+                            <h2>Services</h2>
                             <span><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
                             <p>Avail of these other services provided by our partners.</p>
                             <Link to="/privileges/services" className="button special small">Learn more</Link>
