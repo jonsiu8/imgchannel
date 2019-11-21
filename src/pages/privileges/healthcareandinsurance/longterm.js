@@ -9,12 +9,25 @@ import pic01 from '../../../assets/images/healthicon.png'
 import pic02 from '../../../assets/images/lifeinsicon.png'
 import pic03 from '../../../assets/images/investmenticon.png'
 
+const PageSubTitle = styled.h2`
+    line-height: 1.25em;
+`
+
 const ContainerHealth = styled.div`  
     background-color:white;  
     h4{color:#046880};  
-    h3{color:#046880};
-    h2{color:#046880};
-    h1{color:#046880};  
+    h3{
+        color:#046880;
+        margin: 0;
+    }
+    h2{
+        color:#046880;
+        margin: 0;
+    }
+    h1{
+        color:#046880;
+        margin: 0;
+    }  
     color: black;
     .button{
         background-color:#3277B3;
@@ -59,23 +72,54 @@ const ContainerHealth = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 1px;   
+    margin: 1px;
+    p {
+        line-height: 1.25em;
+        margin: 0 0 1em 0;
+    }
     `
 
-    const Ulist = styled.ul`  
-    list-style-type: none;
-    color:black;
-    font-size: 18px;
-    p{  font-size: 20px;
-        padding-left:30px;
-        margin:0px
-    };
+//     const Ulist = styled.ul`  
+//     list-style-type: none;
+//     color:black;
+//     font-size: 18px;
+//     p{  font-size: 20px;
+//         padding-left:30px;
+//         margin:0px
+//     };
+//     b{color:black};
+
+//     @media (max-width: 768px) {
+//         font-size: 15px;
+//       }
+//   `
+
+  const Ulist = styled.ul`  
+  list-style-type: none;
+  color:black;
+  h2 {
+    margin: 0;
+  }
+  li {
+      margin: 0 0 .7em 0;
+      line-height: 1.2em;
+  }
+  font-size: 18px;
+  p{  
+      font-size: 20px;
+      padding-left:30px;
+      margin:0px;
+    }
     b{color:black};
 
     @media (max-width: 768px) {
-        font-size: 15px;
-      }
-  `
+         font-size: 15px;
+     }
+`
+
+const SpanIcon = styled.span`
+  color: #058340;
+`
     
 const Longterm = (props) => (
     <Layout>
@@ -94,7 +138,7 @@ const Longterm = (props) => (
                             <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                         </div>
                         <div className="col-6">
-                            <h2>The ULTIMATE KAISER HEALTH BUILDER brings together 3 great features:</h2>  
+                            <PageSubTitle>The ULTIMATE KAISER HEALTH BUILDER brings together 3 great features:</PageSubTitle>  
                         </div>
                     </div>                  
                     <ContainerHealth>

@@ -80,6 +80,10 @@ const ContainerCard = styled.div`
   }
 `
 
+const SpanIcon = styled.span`
+  color: #058340;
+`
+
 
 const Financialeducation = (props) => (
     <Layout>
@@ -101,12 +105,12 @@ const Financialeducation = (props) => (
                             <div className="col-6">                            
                                 <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>
                                 <Ulist>                                
-                                    <li className="icon fa-check-square-o"> Increasing Cash Flow</li> 
-                                    <li className="icon fa-check-square-o"> Managing Debts</li> 
-                                    <li className="icon fa-check-square-o"> Saving for Emergencies</li> 
-                                    <li className="icon fa-check-square-o"> Protecting your Family</li> 
-                                    <li className="icon fa-check-square-o"> Investing for your Future</li>
-                                    <li className="icon fa-check-square-o"> Building a Business</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Increasing Cash Flow</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Managing Debts</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Saving for Emergencies</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Protecting your Family</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Investing for your Future</li>
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Building a Business</li>
                                 </Ulist>
                             </div>
                             <div className="col-6">
@@ -147,10 +151,10 @@ const Financialeducation = (props) => (
                             <div className="col-6">                            
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
                                 <Ulist>                                
-                                    <li className="icon fa-check-square-o"> Evaluate your financial situation</li> 
-                                    <li className="icon fa-check-square-o"> Analyze the strengths and weaknesses</li> 
-                                    <li className="icon fa-check-square-o"> Create a simple and clear plan</li> 
-                                    <li className="icon fa-check-square-o"> Execute and sustain</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Evaluate your financial situation</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Analyze the strengths and weaknesses</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Create a simple and clear plan</li> 
+                                    <li><SpanIcon className="icon fa-check-square-o"/> Execute and sustain</li> 
                                 </Ulist>
                             </div>             
                             <div className="col-6">
