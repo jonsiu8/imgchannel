@@ -10,8 +10,16 @@ import previewpic from '../assets/images/ogimage-corebeliefs.png'
 
 const Container = styled.div`  
     background-color:white;  
-    h2{color:black};
-    h3{color:black};    
+    h2{
+        color:black;
+        line-height: 1.2em;
+    }
+    h3{color:black;}  
+
+    p {
+        line-height: 1.25em;
+        margin: 0 0 1em 0;
+    }
     color: black;
     .button{
         background-color:#3277B3;
