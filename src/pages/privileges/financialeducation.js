@@ -11,7 +11,10 @@ import rx from '../../assets/images/rx.jpg'
 
 const Container = styled.div`  
     background-color:white;  
-    h2{color:black};    
+    h2{
+        color:black;
+        line-height: 1.1em;
+    }   
     h5{color:black};
     color: black;
 
@@ -48,7 +51,10 @@ const Container = styled.div`
 
 const ContainerCard = styled.div`  
     background-color:#3277B3;  
-    h3{color:white};
+    h3{
+        color:white;
+        line-height: 1.1em;
+    }
     color: white;
     .button{
         background-color:#3277B3;
@@ -57,12 +63,21 @@ const ContainerCard = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 0rem auto;   
+    margin: 0rem auto;
+    
+    p {
+        line-height: 1.25em;
+        margin: 0 0 1em 0;
+    }
   `
 
   const Ulist = styled.ul`  
   list-style-type: none;
   color:black;
+  li {
+      margin: 0 0 .7em 0;
+      line-height: 1.2em;
+  }
 `
 
 
