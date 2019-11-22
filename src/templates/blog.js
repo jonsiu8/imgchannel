@@ -14,7 +14,7 @@ const BlogContainer = styled.div`
         margin: 0;
         padding: 0px;
         font-family: Verdana, sans-serif;
-        line-height: 1.3em;
+        line-height: 1.2em;
     };
 
     p {
@@ -26,13 +26,13 @@ const BlogContainer = styled.div`
     margin: auto;
     width: 60%;
     border: none;
-    padding: 10px;
+    padding: 25px;
 
     @media (max-width: 768px) {
         width: 90%;
+        padding: 10px;
       }
 ` 
-
 const BlogHtml = styled.div`
     margin: 0;
     font-family: Verdana, sans-serif;
@@ -57,6 +57,27 @@ const BlogHtml = styled.div`
         margin: 0 0 .9em 0;
     }
 `
+
+const ContainerForm = styled.div`
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #3277B3;
+    background-color:#3277B3;
+    margin: 0 0 0 0;
+    padding: 1em;
+    h2 {
+        color: #ffffff;
+        line-height: 1.3em;
+        margin: 0 0 .2em 0;
+    }
+    p {
+        color: #ffffff;
+        line-height: 1.3em;
+        margin: 0 0 .8em 0;
+    }
+`
+
 export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -96,7 +117,7 @@ const Blog = (props) => {
             <meta property="og:image:alt" content="image" />
         </Helmet>
             <PageContainer>
-                <div className="blog-wrapper">
+                <div className="grid-wrapper">
                     <div className="col-9">
                         <BlogContainer>
                             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
@@ -104,14 +125,35 @@ const Blog = (props) => {
                                 <span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
                             </p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
-                        </BlogContainer>
-                    </div> 
-                </div>            
-            </PageContainer>
+
+                            <ContainerForm>
+                                <h2>Subscribe to our newsletters</h2>
+                                <p>Receive new articles straight to your inbox.</p>
+                                <form name="blog-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <input type="hidden" name="bot-field" />
+                                    <input type="hidden" name="form-name" value="blog-subscribe" /> 
+                                    <div className="field half first">
+                                        <label htmlFor="name">Name
+                                        <input type="text" name="name" id="name" required/>
+                                        </label>                                            
+                                    </div>
+                                    <div className="field half">
+                                        <label htmlFor="email">Email
+                                        <input type="text" name="email" id="email" required/>
+                                        </label>                                         
+                                    </div>
+                                    <ul className="actions">                                            
+                                        <input type="submit" value="Subscribe" className="button" />                                                                      
+                                    </ul>
+                                </form>   
+                            </ContainerForm>   
+
+                        </BlogContainer>                                     
+                    </div>
+                </div>                       
+            </PageContainer>   
         </Layout>
-        
     )
-    
 }
 
 export default Blog
