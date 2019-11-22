@@ -35,7 +35,6 @@ const IconSpan = styled.span`
     color: #ffffff;
     font-size: 1.1em;
     font-family: Verdana, sans-serif;
-    text-shadow: 1px 0px #070F29;
 `
 
 const Author = styled.p`
@@ -45,7 +44,6 @@ const Author = styled.p`
     color: #ececec;
     font-size: .9em;
     font-family: Verdana, sans-serif;
-    text-shadow: .8px 0px #070F29;
     line-height: 1.5em;
 `
 

@@ -16,7 +16,7 @@ const ContainerCard = styled.div`
     h3{
         color:#046880;
         line-height: 1.2em;
-        margin: 0 0 .2em 0;
+        margin: 0 0 .3em 0;
     }
     color: black;
     .button{
@@ -30,7 +30,7 @@ const ContainerCard = styled.div`
     margin: 1rem auto; 
     p{
         line-height: 1.25em;
-        margin: .4em 0 .5em 0;
+        margin: .5em 0 .5em 0;
     } 
     `
 

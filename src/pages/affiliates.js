@@ -56,7 +56,6 @@ const Affiliates = (props) => (
         </section>
 
         <div id="main" className="alt">
-
             <section id="one">
                 <div className="inner">
                     {/*<h2 id="content">Our Powerful Strategic Partners</h2>*/}

@@ -7,6 +7,7 @@ import Img from 'gatsby-image'
 
 import ssbyfbook from '../../assets/images/ssbyfbook.jpg'
 import rx from '../../assets/images/rx.jpg'
+import previewpic from '../../assets/images/ogimage-fe.png'
 
 
 const Container = styled.div`  
@@ -91,10 +92,16 @@ const Financialeducation = (props) => (
         <Helmet>
             <title>Financial Education</title>
             <meta name="description" content="Financial Education - IMG Channel" />
+            <meta property="og:title" content="Financial Education"/>
+            <meta property="og:description" content="Webinars, Workshops, e-books + more"/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="screenshot" />
         </Helmet>
 
         <div id="main" className="alt">
-
             <section id="one">
                 <div className="inner">                    
                     <header className="major">

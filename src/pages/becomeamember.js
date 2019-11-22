@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
+import previewpic from '../assets/images/ogimage-becomeamember.png'
 
 const ContainerCard = styled.div`  
     background-color:#3277B3;  
@@ -67,6 +68,13 @@ const Becomeamember = (props) => (
         <Helmet>
             <title>Become a Member</title>
             <meta name="description" content="Become a Member - IMG Channel" />
+            <meta property="og:title" content="Become a Member"/>
+            <meta property="og:description" content="Join the Campaign"/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="Team Selfie" />
         </Helmet>
 
         <section id="banner" className="style4">

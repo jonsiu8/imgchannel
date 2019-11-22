@@ -6,7 +6,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
-import previewpic from '../assets/images/pic05.jpg'
+import previewpic from '../assets/images/ogimage-financialeducator.png'
 import compensation from '../assets/images/compensation.jpg'
 
 const ContainerCard = styled.div`  
@@ -87,7 +87,11 @@ const Financialeducator = (props) => (
             <meta name="description" content="Financial Educator Career - IMG Channel" />
             <meta property="og:title" content="Financial Educator Career"/>
             <meta property="og:description" content="Be a Campaigner for Financial Literacy"/>
+            <meta property="og:image:type" content="image/png" />
             <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="Teaching" />
         </Helmet>
 
         <section id="banner" className="style1">

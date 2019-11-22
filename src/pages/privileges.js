@@ -13,7 +13,7 @@ import previewpic from '../assets/images/ogimage-privileges.png'
     h2{
         color:black;
         line-height: 1.2em;
-        margin: 0 0 .2em 0;
+        margin: 0 0 .3em 0;
         font-size: 1.5em;
     }
     color: black;
@@ -27,7 +27,7 @@ import previewpic from '../assets/images/ogimage-privileges.png'
     margin: 2rem auto;
     p{
         line-height: 1.25em;
-        margin: .4em 0 .5em 0;
+        margin: .5em 0 .6em 0;
     }
   `
 const Privileges = (props) => (

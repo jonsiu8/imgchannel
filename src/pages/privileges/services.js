@@ -11,7 +11,7 @@ import Img from 'gatsby-image'
         h3{
             color:#046880;
             line-height: 1.2em;
-            margin: 0 0 .2em 0;
+            margin: 0 0 .3em 0;
         }
         color: black;
         .button{
@@ -26,7 +26,7 @@ import Img from 'gatsby-image'
 
         p{
             line-height: 1.25em;
-            margin: .4em 0 .5em 0;
+            margin: .5em 0 .5em 0;
         }
     `
 const Services = (props) => (

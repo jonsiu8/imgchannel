@@ -17,7 +17,7 @@ const SubHeader2 = styled.h2`
         h3{
             color:#046880;
             line-height: 1.2em;
-            margin: 0 0 .2em 0;
+            margin: 0 0 .3em 0;
             font-size: 1.5em;
         }
         color: black;
@@ -32,7 +32,7 @@ const SubHeader2 = styled.h2`
         margin: 1rem auto;
         p{
             line-height: 1.25em;
-            margin: .4em 0 .5em 0;
+            margin: .6em 0 .5em 0;
         }
     `
     const ContainerCardLife = styled.div`  
@@ -40,7 +40,7 @@ const SubHeader2 = styled.h2`
         h3{
             color:#1A237E;
             line-height: 1.2em;
-            margin: 0 0 .2em 0;
+            margin: 0 0 .3em 0;
             font-size: 1.5em;
         }
         color: black;
@@ -55,7 +55,7 @@ const SubHeader2 = styled.h2`
         margin: 1rem auto;   
         p{
             line-height: 1.25em;
-            margin: .4em 0 .5em 0;
+            margin: .6em 0 .5em 0;
         }
     `
 
