@@ -8,7 +8,6 @@ const Banner = (props) => (
             </header>
             <div className="content">
                 <p>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></p>
-         
             </div>
         </div>
     </section>

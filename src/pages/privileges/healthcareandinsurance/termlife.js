@@ -224,7 +224,7 @@ const Termlife = (props) => (
                             <ContainerForm>
                                 <h3>Ask for a Quotation</h3>                            
                                 <div>
-                                    <form name="most18" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="most18" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thankyou"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="most18" /> 
                                         <div className="field half first">

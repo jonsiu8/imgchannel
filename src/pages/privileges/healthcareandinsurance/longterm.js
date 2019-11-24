@@ -204,7 +204,7 @@ const Longterm = (props) => (
                                 <p>Get your free sample computations for your age category.</p>
                                 <p>Find the plan that's affordable and suitable for you.</p>                              
                                 <div>
-                                    <form name="kaiserltc" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="kaiserltc" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thankyou"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="kaiserltc" /> 
                                         <div className="field">

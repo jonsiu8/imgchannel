@@ -130,7 +130,7 @@ const Financialeducation = (props) => (
                                 <p>"Financial Education is  not just for the wealthy - it's for everyone."</p>
                                 <p>"This book will upgrade your financial life." -Bro. Bo Sanchez</p>
                                 <div>
-                                    <form name="ssbyfbook" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="ssbyfbook" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/signedup"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="ssbyfbook" /> 
                                         <div className="field half first">
@@ -165,7 +165,7 @@ const Financialeducation = (props) => (
                                     <li><SpanIcon className="icon fa-check-square-o"/> Execute and sustain</li> 
                                 </Ulist>
                             </div>             
-                            <div className="col-6">
+                            <div className="col-6">                      
                             <ContainerCard>
                                 <h3>FREE Financial Checkup</h3>
                                 <div>
@@ -175,7 +175,7 @@ const Financialeducation = (props) => (
                                 <div>
                                 <p>Join our Free Financial Checkup Webinar from your mobile devices.  Sign up and get your invite and link. </p>
                                 </div>
-                                    <form name="financialcheckup" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="financialcheckup" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/signedup"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="financialcheckup"/> 
                                         <div className="field half first">
@@ -218,7 +218,7 @@ const Financialeducation = (props) => (
                                 For IMG Members = Php2,500
                                 </p>
                                 </div>
-                                    <form name="AFPprogram" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                    <form name="AFPprogram" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thankyou"> 
                                         <input type="hidden" name="bot-field" />
                                         <input type="hidden" name="form-name" value="AFPprogram"/> 
                                         <div className="field half first">

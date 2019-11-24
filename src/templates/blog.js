@@ -129,7 +129,7 @@ const Blog = (props) => {
                             <ContainerForm>
                                 <h2>Subscribe to our newsletters</h2>
                                 <p>Receive new articles straight to your inbox.</p>
-                                <form name="blog-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you"> 
+                                <form name="blog-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/subscribed"> 
                                     <input type="hidden" name="bot-field" />
                                     <input type="hidden" name="form-name" value="blog-subscribe" /> 
                                     <div className="field half first">
