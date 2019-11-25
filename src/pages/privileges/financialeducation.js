@@ -113,9 +113,9 @@ const Financialeducation = (props) => (
             <meta property="og:description" content="Webinars, Workshops, e-books + more"/>
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image" content={previewpic} />
-            <meta property="og:image:width" content="800" />
-            <meta property="og:image:height" content="420" />
-            <meta property="og:image:alt" content="screenshot" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="movement" />
         </Helmet>
 
         <div id="main" className="alt">

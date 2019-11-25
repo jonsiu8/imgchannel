@@ -6,6 +6,8 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../../assets/images/ogimage-investments.png'
+
     const ContainerCard = styled.div`  
         background-color:white;  
         h3{
@@ -35,6 +37,13 @@ const Investments = (props) => (
         <Helmet>
             <title>Investments</title>
             <meta name="description" content="Investments - IMG Channel" />
+            <meta property="og:title" content="Investments"/>
+            <meta property="og:description" content="Let money work for you"/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="graph" />
         </Helmet>
 
         <div id="main" className="alt">

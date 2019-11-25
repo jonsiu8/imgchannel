@@ -40,7 +40,7 @@ const BlogHtml = styled.div`
 
     h1, h2, h3, h4, h5,h6 {
         color: #000000;
-        margin: 0 0 .8em 0;
+        margin: 0 0 .2em 0;
         line-height: 1.4em;
     }
  
@@ -49,12 +49,12 @@ const BlogHtml = styled.div`
         color: #000000;
         font-size: 1em;
         font-family: Verdana, sans-serif;
-        margin 0 0 1.1em 0;
+        margin 0 0 1.2em 0;
         line-height: 1.6em;
     }
 
     li {
-        margin: 0 0 .7em 0;
+        margin: 0 0 .5em 0;
     }
 `
 

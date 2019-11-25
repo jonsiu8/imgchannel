@@ -6,6 +6,8 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../../assets/images/ogimage-freebies.png'
+
 const SubHeader = styled.h2`
     line-height: 1.25em;
     margin: 0;
@@ -38,7 +40,14 @@ const Freebies = (props) => (
     <Layout>
         <Helmet>
             <title>Freebies and Discounts</title>
-            <meta name="description" content="Healthcare and Insurance Page" />
+            <meta name="description" content="Freebies and Discounts Page" />
+            <meta property="og:title" content="Freebies and Discounts"/>
+            <meta property="og:description" content="Exclusive discounts and free products & services."/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="sale tag" />
         </Helmet>
 
         <div id="main" className="alt">

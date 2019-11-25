@@ -6,6 +6,8 @@ import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../../assets/images/ogimage-healthandlife.png'
+
 const SubHeader2 = styled.h2`
     font-size: 1.9em;
     line-height: .9em;
@@ -65,6 +67,13 @@ const Healthcareandinsurance = (props) => (
         <Helmet>
             <title>Healthcare and Insurance</title>
             <meta name="description" content="Healthcare and Insurance Page" />
+            <meta property="og:title" content="Healthcare and Insurance"/>
+            <meta property="og:description" content="Protect your family while buidling your wealth"/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="wheelchair" />
         </Helmet>
 
         <div id="main" className="alt">
