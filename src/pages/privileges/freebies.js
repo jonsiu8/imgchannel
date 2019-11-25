@@ -116,7 +116,7 @@ const Freebies = (props) => (
                         </ContainerCard>
                         </div>
                     </div>
-                  
+                    <Link to="/contact" className="button next">Contact us for more info </Link>
                 </div>
             </section>
         </div>

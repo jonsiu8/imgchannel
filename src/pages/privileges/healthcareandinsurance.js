@@ -68,7 +68,7 @@ const Healthcareandinsurance = (props) => (
             <title>Healthcare and Insurance</title>
             <meta name="description" content="Healthcare and Insurance Page" />
             <meta property="og:title" content="Healthcare and Insurance"/>
-            <meta property="og:description" content="Protect your family while buidling your wealth"/>
+            <meta property="og:description" content="Protect your family while buidling your"/>
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image" content={previewpic} />
             <meta property="og:image:width" content="1200" />
@@ -136,7 +136,7 @@ const Healthcareandinsurance = (props) => (
                             </ContainerCardLife>
                             </div>
                         </div>
-                 
+                        <Link to="/contact" className="button next">Contact us for more info </Link>
                 </div>
             </section>
         </div>

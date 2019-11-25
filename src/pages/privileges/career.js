@@ -26,6 +26,7 @@ const Container = styled.div`
     h2{
         color:black;
         margin: 1rem auto;
+        line-height: 1.12em;
     }
     h3{
         color:black;
@@ -113,10 +114,10 @@ const Career = (props) => (
                             <div className="grid-wrapper">
                                 <div className="col-12">
                                     <Ulist>
-                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you have an entrpreneur mindset?</li> 
-                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you believe that knowledge is power?</li> 
-                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you believe in people?</li> 
-                                        <li><SpanIcon className="icon fa-arrow-right"/> Will you be happy helping people?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you want an online part-time income?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you want to control your own time?</li> 
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Are you willing to be trained?</li>
+                                        <li><SpanIcon className="icon fa-arrow-right"/> Do you want to be part of a great cause?</li> 
                                         <h3>This could be the freelance career for you.</h3>
                                     </Ulist>
                                 </div>
@@ -134,7 +135,8 @@ const Career = (props) => (
                             </div>                              
                         </div>
                     </div>
-                    </Container>                  
+                    </Container>   
+                    <Link to="/contact" className="button next">Contact us for more info </Link>               
                 </div>
             </section>
         </div>

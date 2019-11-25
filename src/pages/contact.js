@@ -111,7 +111,7 @@ const Contact = (props) => (
                             </Container>            
                         </div>
                         <div className="col-6">                    
-                            <span className="image fit"><Img fluid={props.data.image01.childImageSharp.fluid} /></span>                      
+                          <Img fluid={props.data.image01.childImageSharp.fluid} />              
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ fragment fluidImage on File {
 
 export const pageQuery = graphql`
   query {
-    image01: file(relativePath: { eq: "contact.jpg" }) {
+    image01: file(relativePath: { eq: "contactnew.png" }) {
       ...fluidImage
     }
   }

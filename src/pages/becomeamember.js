@@ -120,6 +120,7 @@ const Becomeamember = (props) => (
                         </div>
                     </div>
                     </Container>
+                    <Link to="/contact" className="button next">Contact us for more info </Link>
                 </div>
             </section>
         </div>

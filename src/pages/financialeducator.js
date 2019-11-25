@@ -117,7 +117,7 @@ const Financialeducator = (props) => (
                             {/* <ul className="actions">                                
                                 <li><a href="https://img-corp.net/register.php?agentcode=6110hk" target="_blank" rel="noopener noreferrer" className="button small">Start my Career</a></li>
                             </ul> */}
-                            <Link to="/joining" className="button">Start my Career</Link>
+                            <Link to="/contact" className="button">Send a message</Link>
                             </ContainerCard>
                         </div>            
                         <div className="col-8">
@@ -149,8 +149,6 @@ const Financialeducator = (props) => (
                             </div>
                             {/* <Link to="/privileges" className="button small">Learn more</Link>*/}
                         </div>
-
-                        
                     </div>
                     </Container>                  
        
@@ -204,7 +202,8 @@ const Financialeducator = (props) => (
                                 </Ulist1>
                             </div>
                         </div>
-                    </Container>
+                    </Container>                 
+                    <Link to="/contact" className="button next">Contact us for more info </Link>
                 </div>
             </section>
         </div>

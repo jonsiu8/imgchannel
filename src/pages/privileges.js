@@ -113,8 +113,9 @@ const Privileges = (props) => (
                             <Link to="/privileges/services" className="button special small">Learn more</Link>
                         </ContainerCard>
                         </div>
-                    </div>                       
-                </div>                
+                    </div> 
+                    <Link to="/contact" className="button next">Contact us for more info </Link>                      
+                </div>                                
             </section>           
         </div>
     </Layout>

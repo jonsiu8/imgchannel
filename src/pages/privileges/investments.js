@@ -80,7 +80,8 @@ const Investments = (props) => (
                             <Link to="/privileges/investments/realestate" className="button special small">Learn more</Link>
                         </ContainerCard>
                         </div>
-                    </div>          
+                    </div>  
+                    <Link to="/contact" className="button next">Contact us for more info </Link>        
                 </div>
             </section>
         </div>

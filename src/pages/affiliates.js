@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styled from "styled-components"
+import { Link } from 'gatsby'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 import previewpic from '../assets/images/ogimage-affiliates.png'
@@ -103,6 +104,7 @@ const Affiliates = (props) => (
                             </div>                    
                         </div>                       
                     </Container>
+                    <Link to="/contact" className="button next">Contact us for more info </Link>
                 </div>
             </section>
         </div>
