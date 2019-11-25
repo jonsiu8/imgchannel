@@ -10,6 +10,23 @@ import rx from '../../assets/images/rx.jpg'
 import previewpic from '../../assets/images/ogimage-fe.png'
 
 
+const WrapperDiv = styled.div`
+    position: relative;
+    padding-bottom: 100%;
+    padding-top: 0px;
+    height: 0;
+`
+
+const WrapperIframe = styled.iframe`
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+`
+
+
+
 const Container = styled.div`  
     background-color:white;  
     h2{
@@ -165,7 +182,13 @@ const Financialeducation = (props) => (
                                     <li><SpanIcon className="icon fa-check-square-o"/> Execute and sustain</li> 
                                 </Ulist>
                             </div>             
-                            <div className="col-6">                      
+                            <div className="col-6">     
+                                {/* <WrapperDiv>
+                                <WrapperIframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-QoWgiOfD1rDEs81OTgZAvJZBKIXR7wFiCDAyKFuD0V1H5Q/viewform?embedded=true" 
+                                width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</WrapperIframe>
+                                </WrapperDiv>*/}
+
+
                             <ContainerCard>
                                 <h3>FREE Financial Checkup</h3>
                                 <div>

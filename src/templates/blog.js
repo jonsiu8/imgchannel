@@ -38,12 +38,12 @@ const BlogHtml = styled.div`
     font-family: Verdana, sans-serif;
     color: #000000;
 
-    h1{color: #000000; margin:0 0 0 0}
-    h2{color: #000000; margin:0 0 0 0}
-    h3{color: #000000; margin:0 0 0 0}
-    h4{color: #000000; margin:0 0 0 0}
-    h5{color: #000000; margin:0 0 0 0}
-    h6{color: #000000; margin:0 0 0 0}
+    h1, h2, h3, h4, h5,h6 {
+        color: #000000;
+        margin: 0 0 .8em 0;
+        line-height: 1.4em;
+    }
+ 
 
     p, b, strong, i, em, mark, small, del, ins, sub, sup {
         color: #000000;
@@ -54,7 +54,7 @@ const BlogHtml = styled.div`
     }
 
     li {
-        margin: 0 0 .9em 0;
+        margin: 0 0 .7em 0;
     }
 `
 

@@ -1,7 +1,7 @@
 ---
 title: "Life Insurance: Did You Buy It Or Was It Sold To You?"
 date: "2019-11-22"
-author: "jon f. siu"
+author: "Jon F. Siu"
 featuredImage: './shoppingbag.jpg'
 ---
 
