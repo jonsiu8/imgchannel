@@ -65,7 +65,7 @@
 		display: block;
 		font-size: 0.8em;
 		font-weight: _font(weight-bold);
-		letter-spacing: _font(letter-spacing-alt);
+		letter-spacing: 0.15em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
 	}
@@ -159,7 +159,7 @@
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
+				background: _palette(fg);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);

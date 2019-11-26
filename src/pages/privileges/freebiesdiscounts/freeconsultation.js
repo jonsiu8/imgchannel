@@ -24,6 +24,7 @@ const Freeconsultation = (props) => (
                             <h2>Unlimited FREE Consultation</h2>
                             <h3>and Get Discounts on Medical Services for IMG Members and their Immediate Families</h3>
                             <p>Available on all Kaiser Medical Center Clinics</p>
+                            <p>https://kaisermedcenter.com/</p>
                             <hr className="major"/>                    
                         </div>
                         <div className="col-3">

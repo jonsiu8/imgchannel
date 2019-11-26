@@ -32,8 +32,8 @@ const HeaderTitle = styled.h3`
 const IconSpan = styled.span`
     margin: 0.2em 0 0 0;
     padding 0;
-    color: #ffffff;
-    font-size: 1.1em;
+    color: #ececec;
+    font-size: 0.9em;
     font-family: Verdana, sans-serif;
 `
 

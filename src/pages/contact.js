@@ -5,6 +5,10 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+const StyledImg = styled(Img)`
+  border-radius: 15px;
+`
+
 const Container = styled.div`  
     background-color:#3277B3;  
     h2{color:black};    
@@ -95,7 +99,7 @@ const Contact = (props) => (
 
                                 <div className="field">
                                     <label htmlFor="message">Message
-                                    <textarea name="message" id="message" rows="2" required/>
+                                    <textarea name="message" id="message" rows="4" required/>
                                     </label>
                                 </div>
 
@@ -111,7 +115,7 @@ const Contact = (props) => (
                             </Container>            
                         </div>
                         <div className="col-6">                    
-                          <Img fluid={props.data.image01.childImageSharp.fluid} />              
+                          <StyledImg fluid={props.data.image01.childImageSharp.fluid} />              
                         </div>
                     </div>
                 </div>

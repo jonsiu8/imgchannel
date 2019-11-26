@@ -142,6 +142,10 @@ const Blog = (props) => {
                                         <input type="text" name="email" id="email" required/>
                                         </label>                                         
                                     </div>
+                                    <div className="6u 12u(small)">
+                                        <input type="checkbox" id="amember" name="amember" />
+                                        <label htmlFor="amember">already an IMG member</label>
+                                    </div>                          
                                     <ul className="actions">                                            
                                         <input type="submit" value="Subscribe" className="button" />                                                                      
                                     </ul>
