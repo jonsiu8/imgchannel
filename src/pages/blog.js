@@ -106,11 +106,10 @@ const BlogPage = (props) => (
                                 )
                             })}
                     </div>
+                    <Link to="/privileges/thessbyfbook" className="button next">Get your free ebook here</Link>
                 </div>
             </section>
         </div>
-
-       
     </Layout>
 )
 
