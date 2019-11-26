@@ -2,18 +2,19 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from "styled-components"
 import Helmet from 'react-helmet'
-import Layout from '../../components/layout'
+import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
-import profilepic from '../../assets/images/bosanchezprofile.jpg'
+import profilepic from '../assets/images/bosanchezprofile.jpg'
+import previewpic from '../assets/images/ogimage-freebook.png'
 
 const StyledImg = styled(Img)`
   display: block;
   margin: auto;
   padding: 0;
-  max-width: 220px;
+  max-width: 280px;
   @media (max-width: 768px) {
-    max-width: 120px;
+    max-width: 180px;
 }
 `
 
@@ -40,20 +41,30 @@ const ContainerForm = styled.div`
         color: #ffffff;
         line-height: 1.3em;
         margin: 0 0 .2em 0;
+        font-size: 1.8em;
     }
     p {
         color: #ffffff;
         line-height: 1.3em;
         margin: 0 0 .7em 0;
+        font-size: 1.1em;
     }
 `
 
-const TheSSBYFbook = (props) => {
+const FreeBook = (props) => {
     
     return (
         <Layout>
             <Helmet>
-      
+                <title>Free eBook</title>
+                <meta name="description" content="Free eBook" />
+                <meta property="og:title" content="Free eBook"/>
+                <meta property="og:description" content="Financial education is not just for the wealthy, it's for everyone."/>
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image" content={previewpic} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content="lapton on desk" />
             </Helmet>
             <div id="main" className="alt">
                 <div className="inner">
@@ -64,8 +75,9 @@ const TheSSBYFbook = (props) => {
                         <div className="col-9">
                             <ContainerForm>                
                             <h2>Get your FREE copy now!</h2>
-                            <p>Be confident in your financial decision making and become your own financial educator.</p>
-                            <p>Subscribe to our newsletter and get your partial PDF copy straight to your inbox.</p>
+                            <p><b>The Secret to Saving and Building Your Future book</b></p>
+                            <p>Be confident in your financial decisions and become your own financial educator.</p>
+                            <p>Subscribe to our newsletter and get your <b><i>partial PDF copy</i></b> straight to your inbox.</p>
                                 <form name="bookpage-ssbyf" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/subscribed"> 
                                     <input type="hidden" name="bot-field" />
                                     <input type="hidden" name="form-name" value="bookpage-ssbyf" /> 
@@ -103,7 +115,7 @@ const TheSSBYFbook = (props) => {
     )
 }
 
-export default TheSSBYFbook
+export default FreeBook
 
 export const fluidImage = graphql`
 fragment fluidImage on File {
