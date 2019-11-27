@@ -152,10 +152,15 @@ const Blog = (props) => {
                                 <span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
                             </p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
+                            <span>
                             <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
-                      <Styledimg src={fbmessenger} alt="message" /></AStyled>  
+                                <Styledimg src={fbmessenger} alt="message" /></AStyled>  
 
-                            <ContainerForm>
+                            </span>
+                            
+                            
+                            
+                            <ContainerForm>                            
                                 <h2>Subscribe to our newsletters</h2>
                                 <p>Receive new articles straight to your inbox.</p>
                                 <form name="blog-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/subscribed"> 
@@ -176,7 +181,7 @@ const Blog = (props) => {
                                         <label htmlFor="amember">already an IMG member</label>
                                     </div>                          
                                     <ul className="actions">                                            
-                                        <input type="submit" value="Subscribe" className="button" />                                                                      
+                                        <input type="submit" value="Subscribe" className="button" />                                                                     
                                     </ul>
                                 </form>   
                             </ContainerForm>   

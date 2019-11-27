@@ -60,7 +60,7 @@ const AStyled = styled.a`
 `
 
 const Styledimg = styled.img`
-margin: 1.6em 0 0 0;
+margin: 1.7em 0 0 0;
 padding: 1px;
 border: none;
 border-radius: 5px;
