@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../assets/images/ogimage-contact.png'
 import fbmessenger from '../assets/images/messageus.png'
 
 const StyledImg = styled(Img)`
@@ -82,6 +83,13 @@ const Contact = (props) => (
         <Helmet>
             <title>Contact - IMG Channel</title>
             <meta name="description" content="Contact Page" />
+            <meta property="og:title" content="Contact Page"/>
+            <meta property="og:description" content="Send us a message here or through facebook messenger."/>
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="girl calling" />
         </Helmet>
 
         <section id="banner" className="style2">
