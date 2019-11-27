@@ -1,10 +1,5 @@
 import React from 'react'
-import styled from "styled-components"
 import { Link } from 'gatsby'
-
-const IconList = styled.ul`
-    list-style-type: none;
-`
 
 const Footer = (props) => (
     <footer id="footer">

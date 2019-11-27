@@ -8,6 +8,7 @@ import Img from 'gatsby-image'
 import ssbyfbook from '../../assets/images/ssbyfbook.jpg'
 import rx from '../../assets/images/rx.jpg'
 import previewpic from '../../assets/images/ogimage-fe.png'
+import fbmessenger from '../../assets/images/messageus.png'
 
 
 const WrapperDiv = styled.div`
@@ -103,6 +104,31 @@ const SpanIcon = styled.span`
   font-size: 1.3em;
 `
 
+const AStyled = styled.a`
+:link {color: #ffffff;}    
+:visited {color: #ffffff;}    
+:hover {color: #ffffff;}    
+:active {color: #ffffff;}
+`
+
+const Styledimg = styled.img`
+margin: 1em 0 0 0;
+padding: 1px;
+border: none;
+border-radius: 5px;
+box-shadow: 1px 1px 1px #070F29;
+max-width: 143px;
+
+:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 3px 2px #070F29;
+}
+
+@media (max-width: 768px) {
+    max-width: 132px;
+}
+`
+
 
 const Financialeducation = (props) => (
     <Layout>
@@ -166,6 +192,8 @@ const Financialeducation = (props) => (
                                     </form>   
                                 </div>                      
                             </ContainerCard>
+                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                                <Styledimg src={fbmessenger} alt="message" /></AStyled> 
                             </div>
                         </div>
                     </Container>
@@ -216,6 +244,8 @@ const Financialeducation = (props) => (
                                         </ul>
                                     </form>
                             </ContainerCard>
+                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                                <Styledimg src={fbmessenger} alt="message" /></AStyled>
                             </div>
                         </div>
                     </Container>

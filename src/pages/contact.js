@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import fbmessenger from '../assets/images/messageus.png'
+
 const StyledImg = styled(Img)`
   border-radius: 15px;
 `
@@ -48,6 +50,33 @@ const Container = styled.div`
     justify-content: center;
   `
 
+  const AStyled = styled.a`
+    :link {color: #3277B3;}    
+    :visited {color: #3277B3;}    
+    :hover {color: #3277B3;}    
+    :active {color: #3277B3;}
+  `
+
+  const Styledimg = styled.img`
+    margin: 0;
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #070F29;
+    max-width: 143px;
+
+    :hover {
+      opacity: 0.9;
+      box-shadow: 0 0 3px 2px #070F29;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 132px;
+    }
+  `
+
+
+
 const Contact = (props) => (
     <Layout>
         <Helmet>
@@ -69,7 +98,12 @@ const Contact = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">              
-                    <h2 id="elements">We are here to assist you</h2>                    
+                    <h2 id="elements">We are here to assist you</h2>
+                    <span>
+                      <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                      <Styledimg src={fbmessenger} alt="message" /></AStyled>     
+                    </span>
+                                  
        
                     <div className="grid-wrapper">  
                                  
@@ -109,9 +143,9 @@ const Contact = (props) => (
                                     </li>
                                     <li>
                                         <input type="reset" value="Clear" className="button small"/>
-                                    </li>
-                                </ul>
-                            </form>   
+                                    </li>                                                                              
+                                </ul>                                
+                            </form>                             
                             </Container>            
                         </div>
                         <div className="col-6">                    
@@ -139,6 +173,9 @@ fragment fluidImage on File {
 export const pageQuery = graphql`
   query {
     image01: file(relativePath: { eq: "contactnew.png" }) {
+      ...fluidImage
+    }
+    image02: file(relativePath: { eq: "messengericon.png" }) {
       ...fluidImage
     }
   }

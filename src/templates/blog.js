@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
+import fbmessenger from '../assets/images/messageus.png'
+
 const PageContainer = styled.body`
     background-color: #ffffff;
     height: 100%;
@@ -78,6 +80,31 @@ const ContainerForm = styled.div`
     }
 `
 
+const AStyled = styled.a`
+:link {color: #ffffff;}    
+:visited {color: #ffffff;}    
+:hover {color: #ffffff;}    
+:active {color: #ffffff;}
+`
+
+const Styledimg = styled.img`
+margin: .4em 0 0 0;
+padding: 1px;
+border: none;
+border-radius: 5px;
+box-shadow: 1px 1px 1px #070F29;
+max-width: 143px;
+
+:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 3px 2px #070F29;
+}
+
+@media (max-width: 768px) {
+    max-width: 132px;
+}
+`
+
 export const query = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -125,6 +152,8 @@ const Blog = (props) => {
                                 <span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
                             </p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
+                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                      <Styledimg src={fbmessenger} alt="message" /></AStyled>  
 
                             <ContainerForm>
                                 <h2>Subscribe to our newsletters</h2>

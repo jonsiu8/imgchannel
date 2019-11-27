@@ -7,12 +7,13 @@ import Img from 'gatsby-image'
 
 import profilepic from '../assets/images/bosanchezprofile.jpg'
 import previewpic from '../assets/images/ogimage-freebook.png'
+import fbmessenger from '../assets/images/messageus.png'
 
 const StyledImg = styled(Img)`
   display: block;
   margin: auto;
   padding: 0;
-  max-width: 280px;
+  max-width: 245px;
   @media (max-width: 768px) {
     max-width: 180px;
 }
@@ -51,6 +52,31 @@ const ContainerForm = styled.div`
     }
 `
 
+const AStyled = styled.a`
+:link {color: #3277B3;}    
+:visited {color: #3277B3;}    
+:hover {color: #3277B3;}    
+:active {color: #3277B3;}
+`
+
+const Styledimg = styled.img`
+margin: 1.6em 0 0 0;
+padding: 1px;
+border: none;
+border-radius: 5px;
+box-shadow: 1px 1px 1px #070F29;
+max-width: 143px;
+
+:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 3px 2px #070F29;
+}
+
+@media (max-width: 768px) {
+    max-width: 132px;
+}
+`
+
 const FreeBook = (props) => {
     
     return (
@@ -71,6 +97,10 @@ const FreeBook = (props) => {
                     <div className="grid-wrapper">              
                         <div className="col-3">
                             <StyledImg fluid={props.data.image01.childImageSharp.fluid} />
+                        
+                      <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                      <Styledimg src={fbmessenger} alt="message" /></AStyled>     
+                
                         </div>
                         <div className="col-9">
                             <ContainerForm>                
