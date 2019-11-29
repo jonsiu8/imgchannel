@@ -32,4 +32,4 @@ After you have accepted and decided, let me now give you this very first step to
 
 As Dave Ramsey said "***Personal Finance is 80% Behavior and only 20% Knowledge***".  So your attitude has a greater role to your journey to financial freedom than your intellect.
 
-I believe there is hope for everyone and you can have a stressed-free and Debt-free life.  Cheers!
+I believe there is hope for everyone and you can have a stress-free and Debt-free life.  Cheers!
