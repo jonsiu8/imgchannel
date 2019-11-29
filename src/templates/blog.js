@@ -84,6 +84,7 @@ const AStyled = styled.a`
 :visited {color: #ffffff;}    
 :hover {color: #ffffff;}    
 :active {color: #ffffff;}
+float: right;
 `
 
 const Styledimg = styled.img`
@@ -150,15 +151,13 @@ const Blog = (props) => {
                             <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date}<br/>
                                 <span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
                             </p>          
-                            <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
-                            <span>
-                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
-                                <Styledimg src={fbmessenger} alt="message" /></AStyled>  
+                            <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>    
 
-                            </span>
-                            
-                            
-                            
+                            {/* messenger button */}
+                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                                <Styledimg src={fbmessenger} alt="message" /></AStyled>                           
+                           <div style={{clear: "right"}}/>
+
                             <ContainerForm>                            
                                 <h2>Subscribe to our newsletters</h2>
                                 <p>Receive new articles straight to your inbox.</p>

@@ -109,6 +109,7 @@ const AStyled = styled.a`
 :visited {color: #ffffff;}    
 :hover {color: #ffffff;}    
 :active {color: #ffffff;}
+float: right;
 `
 
 const Styledimg = styled.img`
@@ -244,8 +245,9 @@ const Financialeducation = (props) => (
                                         </ul>
                                     </form>
                             </ContainerCard>
-                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
-                                <Styledimg src={fbmessenger} alt="message" /></AStyled>
+                                <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                                    <Styledimg src={fbmessenger} alt="message" /></AStyled>
+                                    <div style={{clear: "right"}}/>
                             </div>
                         </div>
                     </Container>

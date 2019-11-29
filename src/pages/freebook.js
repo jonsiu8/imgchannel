@@ -57,6 +57,7 @@ const AStyled = styled.a`
 :visited {color: #3277B3;}    
 :hover {color: #3277B3;}    
 :active {color: #3277B3;}
+float: right;
 `
 
 const Styledimg = styled.img`
@@ -99,7 +100,8 @@ const FreeBook = (props) => {
                             <StyledImg fluid={props.data.image01.childImageSharp.fluid} />
                         
                       <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
-                      <Styledimg src={fbmessenger} alt="message" /></AStyled>     
+                      <Styledimg src={fbmessenger} alt="message" /></AStyled>  
+                      <div style={{clear: "right"}}/>   
                 
                         </div>
                         <div className="col-9">

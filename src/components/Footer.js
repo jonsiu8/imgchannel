@@ -8,6 +8,8 @@ const Footer = (props) => (
                 <li><Link to="/" className="icon alt fa-home"><span className="label">home</span></Link></li>
                 <li><a href="https://fb.com/imgch/" target="_blank" rel="noopener noreferrer" 
                 className="icon alt fa-facebook-official"><span className="label">facebook</span></a></li>
+                <li><a href="https://www.instagram.com/imgchannelph/" target="_blank" rel="noopener noreferrer" 
+                className="icon alt fa-instagram"><span className="label">messenger</span></a></li>
                 <li><a href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer" 
                 className="icon alt fa-comment"><span className="label">messenger</span></a></li>
                

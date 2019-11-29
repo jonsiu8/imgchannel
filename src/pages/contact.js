@@ -43,7 +43,7 @@ const Container = styled.div`
   
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 2rem auto;
+    margin: .5rem auto;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -56,6 +56,7 @@ const Container = styled.div`
     :visited {color: #3277B3;}    
     :hover {color: #3277B3;}    
     :active {color: #3277B3;}
+    float: right;
   `
 
   const Styledimg = styled.img`
@@ -107,15 +108,11 @@ const Contact = (props) => (
             <section id="one">
                 <div className="inner">              
                     <h2 id="elements">We are here to assist you</h2>
-                    <span>
-                      <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
-                      <Styledimg src={fbmessenger} alt="message" /></AStyled>     
-                    </span>
-                                  
-       
-                    <div className="grid-wrapper">  
-                                 
-                        <div className="col-6"> 
+                    <div className="grid-wrapper"> 
+                        <div className="col-6">
+                        <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                                        <Styledimg src={fbmessenger} alt="message" /></AStyled> 
+                                        <div style={{clear: "right"}}/>                      
                         <Container>                                                      
                             <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/thankyou"> 
                                 <input type="hidden" name="bot-field" />
@@ -151,10 +148,10 @@ const Contact = (props) => (
                                     </li>
                                     <li>
                                         <input type="reset" value="Clear" className="button small"/>
-                                    </li>                                                                              
-                                </ul>                                
+                                    </li>                                                            
+                                </ul>                     
                             </form>                             
-                            </Container>            
+                            </Container>             
                         </div>
                         <div className="col-6">                    
                           <StyledImg fluid={props.data.image01.childImageSharp.fluid} />              
