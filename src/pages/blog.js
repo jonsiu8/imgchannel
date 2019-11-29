@@ -136,7 +136,7 @@ export const query = graphql`
                     fields {
                         slug
                     }
-                    excerpt
+                    excerpt(pruneLength: 100)
                     timeToRead
                 }
             }
