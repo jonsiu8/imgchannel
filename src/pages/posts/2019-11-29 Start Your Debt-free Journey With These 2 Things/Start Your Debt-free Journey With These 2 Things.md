@@ -12,7 +12,7 @@ You may have read a lot of different "steps" or tips on how to get out of debt a
 * *"Earn extra money so that you can pay your balances faster."*
 * *"Stop buying things that you don't really need."*
 
-![checklist](.\checklist01.jpg)
+![checklist](./checklist01.jpg)
 
 These are all very good tips but they don't work for most people because it doesn't really motivate them.  Just thinking about any one of these doesn't really excite them - it may even seem daunting.
 
@@ -26,7 +26,7 @@ First is **ACCEPTANCE**, this is the hardest part - to admit that you have a deb
 
 Second is **DECISION**.   Now you understand that you have a serious problem, you need to decide whether you're just ok to always live with it OR decide that you're already sick and tired of being sick and tired.  You decide and say "Never Again!".  Never again will I be at the mercy of collectors and loan sharks every month, never again will I destroy my relationships with my family and friends just because of debt, and never again will I allow this problem to control my life.  Decide to be debt-free and stay that way.
 
-![choice](.\choice01.jpg)
+![choice](./choice01.jpg)
 
 After you have accepted and decided, let me now give you this very first step to finally work on your debt-free journey: **STOP BORROWING MORE MONEY** no matter what!  This is never easy because there will always be that unexpected something that needs to be taken care of.  (*That's why having an emergency fund is very important*)  Now that you have accepted and decided, I know you'll find a way to do it.  If you have already stopped the leak of the sinking boat then you can follow all the "*steps-to-get-out-of-debt*" you can find out there and will certainly work for you now.
 
