@@ -44,8 +44,7 @@ const BlogHtml = styled.div`
         color: #000000;
         margin: 0 0 .2em 0;
         line-height: 1.4em;
-    }
- 
+    } 
 
     p, b, strong, i, em, mark, small, del, ins, sub, sup {
         color: #000000;
