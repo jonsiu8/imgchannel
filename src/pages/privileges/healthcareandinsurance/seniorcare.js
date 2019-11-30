@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../../../assets/images/ogimage-seniorcare.jpg'
+
 const PageSubTitle = styled.h2`
     line-height: 1.25em;
 `
@@ -69,6 +71,13 @@ const Seniorcare = (props) => (
         <Helmet>
             <title>Senior Care</title>
             <meta name="description" content="Senior Care - IMG Channel" />
+            <meta property="og:title" content="Senior Care"/>
+            <meta property="og:description" content="Healthcare coverage for seniors from 61-100 years of age"/>
+            <meta property="og:image:type" content="image/jpg" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="elderly care" />
         </Helmet>
         <div id="main" className="alt">
             <section id="one">

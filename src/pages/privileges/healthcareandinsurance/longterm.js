@@ -8,6 +8,7 @@ import Img from 'gatsby-image'
 import pic01 from '../../../assets/images/healthicon.png'
 import pic02 from '../../../assets/images/lifeinsicon.png'
 import pic03 from '../../../assets/images/investmenticon.png'
+import previewpic from '../../../assets/images/ogimage-ltc.jpg'
 
 const PageSubTitle = styled.h2`
     line-height: 1.25em;
@@ -127,6 +128,13 @@ const Longterm = (props) => (
         <Helmet>
             <title>Long Term Care</title>
             <meta name="description" content="Long Term Care - IMG Channel" />
+            <meta property="og:title" content="Long Term Care"/>
+            <meta property="og:description" content="Health Savings Program with Invesments to cover your retirement years"/>
+            <meta property="og:image:type" content="image/jpg" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="happy elderly" />
         </Helmet>
         <div id="main" className="alt">
             <section id="one">
