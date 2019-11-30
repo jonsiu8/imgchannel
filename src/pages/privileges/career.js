@@ -156,7 +156,7 @@ fragment fluidImage on File {
 
 export const pageQuery = graphql`
   query {
-    image01: file(relativePath: { eq: "careerperson.png" }) {
+    image01: file(relativePath: { eq: "careerperson.jpg" }) {
       ...fluidImage
     }
   }
