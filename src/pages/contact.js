@@ -21,19 +21,19 @@ const Container = styled.div`
     border-color: black;
 
     input:invalid {
-        border: 1.5px solid red;
+        border: 1px solid red;
       }
       
       input:valid {
-        border: 1.5px solid green;
+        border: 1px solid green;
       }
 
       textarea:invalid {
-        border: 1.5px solid red;
+        border: 1px solid red;
       }
       
       textarea:valid {
-        border: 1.5px solid green;
+        border: 1px solid green;
       }
 
     .button{
@@ -43,7 +43,7 @@ const Container = styled.div`
   
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: .5rem auto;
+    margin: .5rem 0 .8rem 0;
     max-width: 800px;
     display: flex;
     flex-direction: column;

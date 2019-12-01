@@ -11,20 +11,20 @@ import previewpic from '../../assets/images/ogimage-fe.png'
 import fbmessenger from '../../assets/images/messageus.png'
 
 
-const WrapperDiv = styled.div`
-    position: relative;
-    padding-bottom: 100%;
-    padding-top: 0px;
-    height: 0;
-`
+// const WrapperDiv = styled.div`
+//     position: relative;
+//     padding-bottom: 100%;
+//     padding-top: 0px;
+//     height: 0;
+// `
 
-const WrapperIframe = styled.iframe`
-    position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-`
+// const WrapperIframe = styled.iframe`
+//     position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+// `
 
 
 

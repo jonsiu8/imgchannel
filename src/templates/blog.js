@@ -48,7 +48,7 @@ const BlogHtml = styled.div`
 
     p, b, strong, i, em, mark, small, del, ins, sub, sup {
         color: #000000;
-        font-size: 1em;
+        font-size: 1.07em;
         font-family: Verdana, sans-serif;
         margin 0 0 1.2em 0;
         line-height: 1.6em;

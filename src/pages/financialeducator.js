@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
 import previewpic from '../assets/images/ogimage-financialeducator.png'
-import compensation from '../assets/images/compensation.jpg'
+import compensation from '../assets/images/compensation.png'
 
 const ContainerCard = styled.div`  
     background-color:#3277B3;  
@@ -28,17 +28,20 @@ const Container = styled.div`
         color:black;
         margin: 1rem auto;
     }
-    h3{color:black};
+    h3{ color:black;
+        line-height: 1.25em;
+    }
     h4{
         color:black;
-        margin:5px;
+        margin:0;
     }    
 
     p { color:black;
-        margin:1px;
+        margin:0;
+        line-height: 1.25em;
     }
     b { color:black;
-        margin:1px;
+        margin:0;
     }
 
     color: black;
@@ -49,7 +52,7 @@ const Container = styled.div`
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
     padding: 25px;
-    margin: 3rem auto;
+    margin: 1rem auto;
     max-width: 1600px;
     display: flex;
     flex-direction: column;
@@ -194,7 +197,7 @@ const Financialeducator = (props) => (
                             </div>
 
                             <div className="col-6">
-                                <h3>Contract</h3>
+                                <h3>Partners' Contract</h3>
                                 <Ulist1>                            
                                 <li className="icon fa-user"> Associate - 20%</li>
                                 <li className="icon fa-user"> Marketing Director - 37%</li> 
@@ -231,16 +234,16 @@ export const pageQuery = graphql`
     image01: file(relativePath: { eq: "associatecampaign.jpg" }) {
       ...fluidImage
     }
-    image02: file(relativePath: { eq: "personalfinancemastery.jpg" }) {
+    image02: file(relativePath: { eq: "personalfinanceproficient.png" }) {
         ...fluidImage
     }
-    image03: file(relativePath: { eq: "travel.jpg" }) {
+    image03: file(relativePath: { eq: "rewardstravel.png" }) {
         ...fluidImage
     }
-    image04: file(relativePath: { eq: "buildbiz.jpg" }) {
+    image04: file(relativePath: { eq: "buildbiz.png" }) {
         ...fluidImage
     }
-    image05: file(relativePath: { eq: "compensation.jpg" }) {
+    image05: file(relativePath: { eq: "compensation.png" }) {
         ...fluidImage
     }
   }
