@@ -94,7 +94,7 @@ const ContainerCard = styled.div`
   list-style-type: none;
   color:black;
   li {
-      margin: 0 0 .7em 0;
+      margin: 0 0 .6em 0;
       line-height: 1.2em;
   }
 `

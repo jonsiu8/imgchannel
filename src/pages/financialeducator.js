@@ -24,20 +24,21 @@ const ContainerCard = styled.div`
     `
 const Container = styled.div`  
     background-color:white; 
-    h2{
+ 
+    h1, h2, h3 { 
         color:black;
-        margin: 1rem auto;
-    }
-    h3{ color:black;
         line-height: 1.25em;
+        margin: 0 0 .5em 0;
     }
-    h4{
-        color:black;
-        margin:0;
-    }    
+
+    h4 { 
+        color:#0B258F;
+        line-height: 1.25em;
+        margin: 0 0 .3em 0;
+    }  
 
     p { color:black;
-        margin:0;
+        margin: 0 0 2em 0;
         line-height: 1.25em;
     }
     b { color:black;
@@ -51,7 +52,7 @@ const Container = styled.div`
     }
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
+    padding: 30px;
     margin: 1rem auto;
     max-width: 1600px;
     display: flex;
@@ -61,12 +62,17 @@ const Container = styled.div`
   `
 
   const Ulist = styled.ul`  
-  list-style-type: none;
-  color:black;
-  font-size: 21px;
+    list-style-type: none;
+    color:black;
+    font-size: 21px;
+    li {
+        line-height: 1.2em;
+        margin: 0 0 .5em 0;
+    }
+
     @media (max-width: 768px) {
-    font-size: 18px;
-  }
+        font-size: 18px;
+    }
 `
 
 const Ulist1 = styled.ul`  
@@ -75,14 +81,25 @@ const Ulist1 = styled.ul`
     font-size: 26px;
     p{  font-size: 20px;
         padding-left:15px;
-        margin:0px
-    };
-    b{color:black};
+        margin:0px;
+    }
+    b{color:black;}
+
+    li {
+        line-height: 1.2em;
+        margin: 0 0 .5em 0;
+    }
 
     @media (max-width: 768px) {
         font-size: 16px;
       }
   `
+
+  const SpanIcon = styled.span`
+    color: #058340;
+    font-size: 1.1em;
+`
+
 const Financialeducator = (props) => (
     <Layout>
         <Helmet>
@@ -129,24 +146,24 @@ const Financialeducator = (props) => (
                                 <div className="grid-wrapper">
                                 <div className="col-6">
                                     <Ulist>
-                                    <p><b>Responsibilities</b></p>
-                                        <li className="icon fa-check-square-o"> Attend workshops & training</li> 
-                                        <li className="icon fa-check-square-o"> Campaign for financial literacy</li> 
-                                        <li className="icon fa-check-square-o"> Join webinars & meetings</li> 
-                                        <li className="icon fa-check-square-o"> Have your financial checkup</li> 
-                                        <li className="icon fa-check-square-o"> Work with the team</li>
-                                        <li className="icon fa-check-square-o"> Enjoy!</li>
+                                    <h4>Responsibilities</h4>
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Attend workshops & training</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Campaign for financial literacy</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Join webinars & meetings</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Have your financial checkup</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Work with the team</li>
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Enjoy!</li>
                                     </Ulist>    
                                 </div>
                                 <div className="col-6">
                                     <Ulist>
-                                    <p><b>Privileges</b></p>
-                                        <li className="icon fa-check-square-o"> Be guided by qualified mentors</li> 
-                                        <li className="icon fa-check-square-o"> Build your financial foundation</li> 
-                                        <li className="icon fa-check-square-o"> Get exclusive benefits</li> 
-                                        <li className="icon fa-check-square-o"> Earn a good part time income</li> 
-                                        <li className="icon fa-check-square-o"> Excellent support system</li>
-                                        <li className="icon fa-check-square-o"> NO QUOTAS</li> 
+                                    <h4>Privileges</h4>
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Be guided by qualified mentors</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Build your financial foundation</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Get exclusive benefits</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Earn a good part time income</li> 
+                                        <li><SpanIcon className="icon fa-check-square-o"/> Excellent support system</li>
+                                        <li><SpanIcon className="icon fa-check-square-o"/> NO QUOTAS</li> 
                                     </Ulist>                       
                                 </div>
                             </div>
@@ -158,22 +175,19 @@ const Financialeducator = (props) => (
                     <Container>
                         <div className="grid-wrapper">              
                             <div className="col-4">
-                                <h3>Personal Finance Proficiency</h3>
                                 <span className="image fit"><Img fluid={props.data.image02.childImageSharp.fluid} /></span>
+                                <h3>Personal Finance Proficiency</h3>
                                 <p>Gain knowledge and financial wisdom while having a freelance career.</p>
-                                <hr className="line1"/>
                             </div>
-                            <div className="col-4">    
-                                <h3>Rewards & Travel Incentives</h3>         
+                            <div className="col-4">
                                 <span className="image fit"><Img fluid={props.data.image03.childImageSharp.fluid} /></span>
+                                <h3>Rewards & Travel Incentives</h3> 
                                 <p>Travel around the world and be recognized for your efforts.</p>
-                                <hr className="line1"/>
                             </div>
-                            <div className="col-4">    
-                                <h3>Build a Big Business</h3>         
+                            <div className="col-4">          
                                 <span className="image fit"><Img fluid={props.data.image04.childImageSharp.fluid} /></span>
+                                <h3>Build a Big Business</h3>
                                 <p>Make a difference and leave a legacy through entrepreneurship.</p>
-                                <hr className="line1"/>
                             </div>
                         </div>
                     </Container>

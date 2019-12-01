@@ -7,6 +7,16 @@ import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 import previewpic from '../assets/images/ogimage-becomeamember.png'
 
+const Header1 = styled.h1`
+    margin: 0 0 0.125em 0;
+    line-height: 1.25em;
+`
+
+const SyledContent = styled.p`
+    font-size: 1.3em;
+    line-height: 1.25em;
+`
+
 const ContainerCard = styled.div`  
     background-color:#3277B3;  
     h2{color:black}; 
@@ -22,21 +32,25 @@ const ContainerCard = styled.div`
     `
     const Container = styled.div`  
     background-color:white; 
-    h2{
+ 
+    h1, h2, h3 { 
         color:black;
-        margin: 1rem auto;
+        line-height: 1.25em;
+        margin: 0 0 .5em 0;
     }
-    h3{color:black};
-    h4{
-        color:black;
-        margin:5px;
-    }    
+
+    h4 { 
+        color:#0B258F;
+        line-height: 1.25em;
+        margin: 0 0 .3em 0;
+    }  
 
     p { color:black;
-        margin:1px;
+        margin: 0 0 2em 0;
+        line-height: 1.25em;
     }
     b { color:black;
-        margin:1px;
+        margin:0;
     }
 
     color: black;
@@ -46,8 +60,8 @@ const ContainerCard = styled.div`
     }
     hr.line1 {border-top: 1px solid black;}    
     box-shadow: 5px 5px 5px #1E1E1E;
-    padding: 25px;
-    margin: 3rem auto;
+    padding: 30px;
+    margin: 1rem auto;
     max-width: 1600px;
     display: flex;
     flex-direction: column;
@@ -91,11 +105,23 @@ const Becomeamember = (props) => (
         
         <div id="main" className="alt">
             <section id="one">
-                <div className="inner">              
-                    <h2>IMG Preferred Member Benefits</h2>                                  
+                <div className="inner">
+                    <div className="grid-wrapper">
+                        <div className="col-4">
+                        <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
+                        </div>
+                        <div className="col-8">
+                            <Header1>What's in it for you?</Header1>
+                            <SyledContent>Our campaign for financial literacy is to educate <b>10 million families by the year 2025 </b>
+                                and help them build a solid financial foundation.  You and your family will be starting a new 
+                                tradition where you will learn how to have enough savings, zero debts, and investments for your future.
+                            </SyledContent>
+                        </div>
+                    </div>                               
                     <Container>
                     <div className="grid-wrapper">              
-                        <div className="col-6">                    
+                        <div className="col-6">         
+                            <h2>IMG Preferred Member Benefits</h2>           
                             <h3>Enjoy the privileges of being a member.</h3>                          
                             <Ulist>                                
                                 <li className="icon fa-check-square-o"> Financial Education</li> 
@@ -151,6 +177,9 @@ export const pageQuery = graphql`
         ...fluidImage
     }
     image04: file(relativePath: { eq: "buildbiz.jpg" }) {
+        ...fluidImage
+    }
+    image05: file(relativePath: { eq: "movement10M2025.jpg" }) {
         ...fluidImage
     }
   }
