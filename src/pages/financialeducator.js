@@ -9,6 +9,21 @@ import Img from 'gatsby-image'
 import previewpic from '../assets/images/ogimage-financialeducator.png'
 import compensation from '../assets/images/compensation.png'
 
+const Header1 = styled.h1`
+    margin: 0 0 0.125em 0;
+    line-height: 1.25em;
+`
+
+const Header2 = styled.h2`
+    margin: 0 0 0.125em 0;
+    line-height: 1.25em;
+`
+
+const StyledContent = styled.p`
+    font-size: 1.3em;
+    line-height: 1.25em;
+`
+
 const ContainerCard = styled.div`  
     background-color:#3277B3;  
     h2{color:black}; 
@@ -128,7 +143,14 @@ const Financialeducator = (props) => (
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">              
-                    <h2>A Freelance Career</h2>                                  
+                    <Header1>The Era of the Informed Consumer</Header1> 
+                    <StyledContent>From do-it-yourself home improvement to self booking travel, and online shopping, more and more people
+                        are learning how to get better deals and save more money on products and services.    
+                    </StyledContent>        
+                    <StyledContent>IMG is a new concept in the financial industry that assists people who want to help themselves in
+                        building their financial foundation.  Thousands of people from all walks of life across the globe have enjoyed
+                        IMG's platform of financial literacy and membership benefits.
+                    </StyledContent>                   
                     <Container>
                     <div className="grid-wrapper">
                     <div className="col-4">    
@@ -193,24 +215,17 @@ const Financialeducator = (props) => (
                     </Container>
                     <Container>
                         <div className="grid-wrapper">
-
-                            {/* <div className="col-6">
-                                <h3>Compensation</h3>
-                                <p>Once you're coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
-                                    by serving people through financial education.</p>
-                                <span className="image fit"><Img fluid={props.data.image05.childImageSharp.fluid} /></span>
-                                <hr className="line1"/>
-                            </div> */}
-
-                            <div className="col-6">             
+                            <div className="col-5">             
                                 <h3>Compensation</h3>
                                 <span className="image left"><img src={compensation} alt="" /></span>
                                 <p>Once you're coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
-                                    by serving people through financial education.</p>
+                                    by serving people through financial education.  As an IMG partner, you may earn a part time income of P10,000 to P100,000+
+                                    depending of course on your personal efforts and commitment.  You decide how much you want to earn.
+                                </p>
                                 <hr/>
                             </div>
 
-                            <div className="col-6">
+                            <div className="col-7">
                                 <h3>Partners' Contract</h3>
                                 <Ulist1>                            
                                 <li className="icon fa-user"> Associate - 20%</li>

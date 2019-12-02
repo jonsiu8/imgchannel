@@ -12,7 +12,7 @@ const Header1 = styled.h1`
     line-height: 1.25em;
 `
 
-const SyledContent = styled.p`
+const StyledContent = styled.p`
     font-size: 1.3em;
     line-height: 1.25em;
 `
@@ -112,10 +112,10 @@ const Becomeamember = (props) => (
                         </div>
                         <div className="col-8">
                             <Header1>What's in it for you?</Header1>
-                            <SyledContent>Our campaign for financial literacy is to educate <b>10 million families by the year 2025 </b>
+                            <StyledContent>Our campaign for financial literacy is to educate <b>10 million families by the year 2025 </b>
                                 and help them build a solid financial foundation.  You and your family will be starting a new 
                                 tradition where you will learn how to have enough savings, zero debts, and investments for your future.
-                            </SyledContent>
+                            </StyledContent>
                         </div>
                     </div>                               
                     <Container>
