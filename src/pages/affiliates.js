@@ -67,7 +67,7 @@ const Affiliates = (props) => (
                     {/*<h2 id="content">Our Powerful Strategic Partners</h2>*/}
                     <div className="grid-wrapper">
                         <div className="col-8">
-                        <StyledContent>We have among the best in the industry as partners, helping our members build their financial foudation and achieving their goals.</StyledContent>
+                        <StyledContent>We have among the best in the industry as partners, helping our members build their financial foundation and achieving their goals.</StyledContent>
                         <StyledContent>From healthcare, investments, life insurance, real estate, general insurance, and other financial services, they provide you with
                             the best products and services that you need to compliment your financial plans.
                         </StyledContent>
