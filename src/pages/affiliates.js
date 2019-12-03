@@ -7,6 +7,11 @@ import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 import previewpic from '../assets/images/ogimage-affiliates.png'
 
+const StyledContent = styled.p`
+    font-size: 1.3em;
+    line-height: 1.25em;
+`
+
 const Container = styled.div`  
     background-color: white;  
     h3{color:black};    
@@ -60,6 +65,14 @@ const Affiliates = (props) => (
             <section id="one">
                 <div className="inner">
                     {/*<h2 id="content">Our Powerful Strategic Partners</h2>*/}
+                    <div className="grid-wrapper">
+                        <div className="col-8">
+                        <StyledContent>We have among the best in the industry as partners, helping our members build their financial foudation and achieving their goals.</StyledContent>
+                        <StyledContent>From healthcare, investments, life insurance, real estate, general insurance, and other financial services, they provide you with
+                            the best products and services that you need to compliment your financial plans.
+                        </StyledContent>
+                        </div>
+                    </div>                         
                     <Container>
                         <div className="grid-wrapper"> 
                             <div className="col-3">

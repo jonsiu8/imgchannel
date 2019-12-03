@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import previewpic from '../../../assets/images/ogimage-termlife.png'
+
 const PageSubTitle = styled.h1`
     line-height: 1.1em;
 `
@@ -102,6 +104,13 @@ const Termlife = (props) => (
         <Helmet>
             <title>Term Life Insurance</title>
             <meta name="description" content="Term Life - IMG Channel" />
+            <meta property="og:title" content="Term Life - M.O.S.T. 18"/>
+            <meta property="og:description" content="Income protection with best value for your money."/>
+            <meta property="og:image:type" content="image/jpg" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="elderly care" />
         </Helmet>
         <div id="main" className="alt">
             <section id="one">
