@@ -10,13 +10,8 @@ import previewpic from '../assets/images/ogimage-financialeducator.png'
 import compensation from '../assets/images/compensation.png'
 
 const Header1 = styled.h1`
-    margin: 0 0 0.125em 0;
-    line-height: 1.25em;
-`
-
-const Header2 = styled.h2`
-    margin: 0 0 0.125em 0;
-    line-height: 1.25em;
+    margin: 0 0 0.8em 0;
+    line-height: 1em;
 `
 
 const StyledContent = styled.p`
@@ -53,7 +48,7 @@ const Container = styled.div`
     }  
 
     p { color:black;
-        margin: 0 0 2em 0;
+        margin: 0 0 1em 0;
         line-height: 1.25em;
     }
     b { color:black;
@@ -89,26 +84,6 @@ const Container = styled.div`
         font-size: 18px;
     }
 `
-
-const Ulist1 = styled.ul`  
-    list-style-type: none;
-    color:black;
-    font-size: 26px;
-    p{  font-size: 20px;
-        padding-left:15px;
-        margin:0px;
-    }
-    b{color:black;}
-
-    li {
-        line-height: 1.2em;
-        margin: 0 0 .5em 0;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 16px;
-      }
-  `
 
   const SpanIcon = styled.span`
     color: #058340;
@@ -215,23 +190,25 @@ const Financialeducator = (props) => (
                     </Container>
                     <Container>
                         <div className="grid-wrapper">
-                            <div className="col-5">             
+                            <div className="col-4">             
                                 <h3>Compensation</h3>
                                 <span className="image left"><img src={compensation} alt="" /></span>
-                                <p>Once you're coded and passed the basic accreditation, you can potentially earn referral bonuses and commissions
-                                    by serving people through financial education.  As an IMG partner, you may earn a part time income of P10,000 to P100,000+
+                                <p>Once you are a member and passed the basic accreditation reuirements, you can potentially earn referral bonuses and commissions
+                                    by serving people through financial education.</p>
+                                <p>As an IMG partner, you may earn a part time income of P10,000 to P100,000+
                                     depending of course on your personal efforts and commitment.  You decide how much you want to earn.
                                 </p>
                                 <hr/>
                             </div>
 
-                            <div className="col-7">
+                            <div className="col-8">
                                 <h3>Partners' Contract</h3>
-                                <Ulist1>                            
+                                <span className="image fit"><Img fluid={props.data.image06.childImageSharp.fluid} /></span>
+                                {/* <Ulist1>                            
                                 <li className="icon fa-user"> Associate - 20%</li>
                                 <li className="icon fa-user"> Marketing Director - 37%</li> 
                                 <li className="icon fa-user"> Senior Marketing Director - 47%</li> 
-                                </Ulist1>
+                                </Ulist1> */}
                             </div>
                         </div>
                     </Container>                 
@@ -273,6 +250,9 @@ export const pageQuery = graphql`
         ...fluidImage
     }
     image05: file(relativePath: { eq: "compensation.png" }) {
+        ...fluidImage
+    }
+    image06: file(relativePath: { eq: "contractimg.png" }) {
         ...fluidImage
     }
   }
