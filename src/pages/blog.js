@@ -110,9 +110,10 @@ const BlogPage = (props) => (
                                 return (                           
                                     <div className="col-4">                                                                       
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
-                                        
-                                        <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
-                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>                                         
+                                        <Link to ={`/blog/${edge.node.fields.slug}`}>
+                                            <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
+                                            <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle>
+                                        </Link>                                         
                                         <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | {edge.node.frontmatter.date} | 
                                               {" "} {edge.node.timeToRead}<i>-min read</i>
                                         </Author>
@@ -159,7 +160,7 @@ export const query = graphql`
                     fields {
                         slug
                     }
-                    excerpt(pruneLength: 100)
+                    excerpt(pruneLength: 130)
                     timeToRead
                 }
             }
