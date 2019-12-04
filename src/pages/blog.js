@@ -25,6 +25,10 @@ const StyledImg = styled(Img)`
   padding 0;
   max-width: 100%;
   border-radius: 10px;
+  :hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px #1E1E1E;
+    }
 `
 
 const HeaderTitle = styled.h3`
@@ -35,7 +39,7 @@ const HeaderTitle = styled.h3`
     line-height: 1.3em;
     color: #333333;
     :hover {
-        color: #07102B;
+        color: #3277B3;
     }
     // text-shadow: .5px 0px #070F29;
     @media (max-width: 768px) {
