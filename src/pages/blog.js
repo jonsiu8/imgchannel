@@ -29,7 +29,7 @@ const StyledImg = styled(Img)`
 
 const HeaderTitle = styled.h3`
     display: block;
-    margin: .4em 0;
+    margin: .4em 0 0 0;
     padding 0;
     font-family: Verdana, sans-serif;
     line-height: 1.3em;
@@ -39,7 +39,7 @@ const HeaderTitle = styled.h3`
     }
     // text-shadow: .5px 0px #070F29;
     @media (max-width: 768px) {
-        font-size: 1.4em;
+        font-size: 1.5em;
   }
 `
 const IconSpan = styled.span`
@@ -52,22 +52,25 @@ const IconSpan = styled.span`
 
 const Author = styled.p`
     display: block;
-    margin: 0.125em 0 0 0;
+    margin: .2em 0 .3em 0;
     padding 0;
     color: #0B258F;
     font-size: .8em;
     font-family: Verdana, sans-serif;
     line-height: 1.5em;
+    @media (max-width: 768px) {
+        font-size: 1em;
+  }
 `
 
 const Excerpt = styled.p`
     display: block;
-    margin: .4em 0 4em 0;
+    margin: 0 0 .2em 0;
     padding 0;
     color: #4d4d4d;
-    font-size: .9em;
+    font-size: 1em;
     font-family: Verdana, sans-serif;
-    line-height: 1.5em;
+    line-height: 1.4em;
 `
 
 // const HrBlog = styled.hr`
@@ -118,6 +121,7 @@ const BlogPage = (props) => (
                                               {" "} {edge.node.timeToRead}<i>-min read</i>
                                         </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+                                        <hr/>
 
                                         {/* <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>                                         
                                         <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date}<br/>

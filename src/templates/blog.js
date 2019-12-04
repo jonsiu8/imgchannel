@@ -12,7 +12,7 @@ const PageContainer = styled.body`
 ` 
 const BlogContainer = styled.div`
     h2 {
-        color: #000000;
+        color: #333333;
         margin: 0;
         padding: 0px;
         font-family: Verdana, sans-serif;
@@ -20,7 +20,7 @@ const BlogContainer = styled.div`
     };
 
     p {
-        color: #808080;
+        color: #0B258F;
         font-size: .9em;
         font-family: Verdana, sans-serif;
     };
@@ -33,21 +33,22 @@ const BlogContainer = styled.div`
     @media (max-width: 768px) {
         width: 90%;
         padding: 10px;
+        h2 { font-size: 1.8em;}
       }
 ` 
 const BlogHtml = styled.div`
     margin: 0;
     font-family: Verdana, sans-serif;
-    color: #000000;
+    color: #333333;
 
     h1, h2, h3, h4, h5,h6 {
-        color: #000000;
+        color: #333333;
         margin: 0 0 0.4em 0;
         line-height: 1.3em;
     } 
 
     p, b, strong, i, em, mark, small, del, ins, sub, sup {
-        color: #000000;
+        color: #333333;
         font-size: 1.07em;
         font-family: Verdana, sans-serif;
         margin 0 0 .75em 0;
