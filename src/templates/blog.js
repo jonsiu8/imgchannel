@@ -42,20 +42,20 @@ const BlogHtml = styled.div`
 
     h1, h2, h3, h4, h5,h6 {
         color: #000000;
-        margin: 0 0 .2em 0;
-        line-height: 1.4em;
+        margin: 0 0 0.4em 0;
+        line-height: 1.3em;
     } 
 
     p, b, strong, i, em, mark, small, del, ins, sub, sup {
         color: #000000;
         font-size: 1.07em;
         font-family: Verdana, sans-serif;
-        margin 0 0 1.2em 0;
-        line-height: 1.6em;
+        margin 0 0 .75em 0;
+        line-height: 1.5em;
     }
 
     li {
-        margin: 0 0 .5em 0;
+        margin: 0 0 0 0;
     }
 `
 
@@ -133,23 +133,26 @@ const Blog = (props) => {
     return (
         <Layout>
             <Helmet>
-            <title>{props.data.markdownRemark.frontmatter.title}</title>
-            
+            <title>{props.data.markdownRemark.frontmatter.title}</title>            
             <meta property="og:title" content={props.data.markdownRemark.frontmatter.title}/>
             <meta property="og:description" content={props.data.markdownRemark.excerpt}/>
-            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image:type" content="image/jpg" />
             <meta property="og:image" content={props.data.markdownRemark.frontmatter.featuredImage.publicURL} />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
+            <meta property="og:image:width" content="800" />
+            <meta property="og:image:height" content="480" />
             <meta property="og:image:alt" content="image" />
-        </Helmet>
+            </Helmet>
             <PageContainer>
                 <div className="grid-wrapper">
                     <div className="col-9">
                         <BlogContainer>
+                            {/* <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date} | 
+                                 {" "}<span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
+                            </p>         */}
+
                             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date}<br/>
-                                <span className="icon fa-clock-o"/> {props.data.markdownRemark.timeToRead}<i>-min read</i>
+                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | {props.data.markdownRemark.frontmatter.date} | {props.data.markdownRemark.timeToRead}<i>-min</i>
                             </p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>    
 
