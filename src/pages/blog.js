@@ -9,7 +9,7 @@ import previewpic from '../assets/images/ogimage-blogpage.png'
 
 const StyledImg = styled(Img)`
   display: block;
-  margin: .4em 0 0 0;
+  margin: 0 0 0 0;
   padding 0;
   max-width: 180px;
   border-radius: 10px;
@@ -17,14 +17,14 @@ const StyledImg = styled(Img)`
 
 const HeaderTitle = styled.h3`
     display: block;
-    margin: 0 ;
+    margin: .5em 0;
     padding 0;
     font-family: Verdana, sans-serif;
     line-height: 1.3em;
     :hover {
         color: #07102B;
     }
-    text-shadow: 1px 0px #070F29;
+    // text-shadow: .5px 0px #070F29;
     @media (max-width: 768px) {
         font-size: 1.4em;
   }
@@ -95,8 +95,9 @@ const BlogPage = (props) => (
                                 return (                           
                                     <div className="col-4">                                                                       
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
-                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>
-                                        <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />                                            
+                                        
+                                        <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
+                                        <Link to ={`/blog/${edge.node.fields.slug}`}> <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle></Link>                                         
                                         <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date}<br/>
                                             <IconSpan className="icon fa-clock-o"/> {edge.node.timeToRead}<i>-min read</i>
                                         </Author>
