@@ -28,24 +28,20 @@ const ContainerForm = styled.div`
 
 const RecentContainer = styled.div`
   display: block;
-
-  p {
+    margin: 0;
+  p, b {
     color: #3277B3;
-    margin: 0 1em 0 0;
-    font-size: 1em;
-    line-height: 1.1em;
+    margin: 0 0 0 0;
+    font-size: 1.05em;
+    line-height: 1.125em;
     :hover {
       color: green;
       }
   }
 
-  b {
-    color: #3277B3;
-    margin: 0 1em 0 0;
-    font-size: 1em;
-    line-height: 1.1em;
-    :hover {
-      color: green;
+    @media (max-width: 768px) {
+      p, b {
+        font-size: 1.25em;
       }
   }
 `
