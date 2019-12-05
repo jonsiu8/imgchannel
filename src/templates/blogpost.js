@@ -20,7 +20,7 @@ const BlogContainer = styled.div`
     };
 
     p {
-        color: #0B258F;
+        color: #3277B3;
         font-size: .9em;
         font-family: Verdana, sans-serif;
     };
@@ -113,7 +113,7 @@ export const query = graphql`
             timeToRead
             frontmatter {
                 title
-                date(formatString: "MMM Do YYYY")
+                date(formatString: "DDMMMYYYY")
                 author
                 featuredImage {
                     childImageSharp {
@@ -153,7 +153,7 @@ const Blog = (props) => {
                             </p>         */}
 
                             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | {props.data.markdownRemark.frontmatter.date} | {props.data.markdownRemark.timeToRead}<i>-min</i>
+                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | {props.data.markdownRemark.frontmatter.date} | {props.data.markdownRemark.timeToRead}<i>-min read</i>
                             </p>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>    
 
