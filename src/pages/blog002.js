@@ -12,21 +12,6 @@ const PageContainer = styled.body`
     background-color: #ffffff;
     height: 100%;
 ` 
-
-const ButtonContainer = styled.div`
-    .button{
-    background-color:#3277B3;
-    color:white;     
-}
-`
-
-const ImageStyled = styled.img`
-  display: block;
-  margin: 0 0 0 0;
-  padding 0;
-  max-width: 100%;
-`
-
 const StyledImg = styled(Img)`
   display: block;
   margin: 0 0 0 0;
@@ -82,28 +67,6 @@ const Excerpt = styled.p`
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4em;
-`
-
-const ContainerForm = styled.div`
-    max-width: 600px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #3277B3;
-    background-color:#3277B3;
-    margin: .5em 0;
-    padding: 1em;
-    h2 {
-        color: #ffffff;
-        line-height: 1.3em;
-        margin: 0 0 .2em 0;
-        font-size: 1.8em;
-    }
-    p {
-        color: #ffffff;
-        line-height: 1.3em;
-        margin: 0 0 .7em 0;
-        font-size: 1.1em;
-    }
 `
 
 // const HrBlog = styled.hr`

@@ -33,6 +33,7 @@ const RecentContainer = styled.div`
     color: #3277B3;
     margin: 0 0 0 0;
     font-size: 1.05em;
+    font-family: Georgia, serif;
     line-height: 1.125em;
     :hover {
       color: green;
@@ -41,7 +42,7 @@ const RecentContainer = styled.div`
 
     @media (max-width: 768px) {
       p, b {
-        font-size: 1.25em;
+        font-size: 1.2em;        
       }
   }
 `
@@ -62,6 +63,13 @@ const HeaderRecent = styled.h2`
     color: #333333;
     margin: 1em 0 .5em 0;
     line-height: 1em;
+`
+
+const ButtonContainer = styled.div`
+    .button{
+    background-color:#3277B3;
+    color:white;     
+}
 `
 
 
@@ -113,9 +121,7 @@ const Sidebar = ({ author, authorFluid }) => (
                      ))}
                  </div>
              )}/>
-
-
-         
+        <ButtonContainer><Link to="/freebook" className="button next">Get your free ebook here</Link></ButtonContainer>
   </div>
 )
 

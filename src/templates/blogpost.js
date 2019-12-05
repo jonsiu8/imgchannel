@@ -58,7 +58,7 @@ const BlogHtml = styled.div`
 
     li {
         margin: 0 0 0 0;
-    }
+    }    
 
     @media (max-width: 768px) {
       p, b, strong, i, em, mark, small, del, ins, sub, sup {
@@ -66,7 +66,7 @@ const BlogHtml = styled.div`
         font-size: 1.125em;
         font-family: Arial, Helvetica, sans-serif;
         margin 0 0 .75em 0;
-        line-height: 1.35em;
+        line-height: 1.5em;
     }
     }
 `
