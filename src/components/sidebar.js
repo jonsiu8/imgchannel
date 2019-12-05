@@ -1,5 +1,4 @@
 import React from 'react'
-import { CardText, Card, CardTitle, CardBody, Form, FormGroup, Input } from 'reactstrap'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
@@ -27,75 +26,101 @@ const ContainerForm = styled.div`
     }
 `
 
+const RecentContainer = styled.div`
+  display: block;
+
+  p {
+    color: #3277B3;
+    margin: 0 1em 0 0;
+    font-size: 1em;
+    line-height: 1.1em;
+    :hover {
+      color: green;
+      }
+  }
+
+  b {
+    color: #3277B3;
+    margin: 0 1em 0 0;
+    font-size: 1em;
+    line-height: 1.1em;
+    :hover {
+      color: green;
+      }
+  }
+`
+
+const StyledImg = styled(Img)`
+  display: block;
+  margin: 0 0 .5em 0;
+  padding 0;
+  max-width: 180px;
+
+  :hover {
+    opacity: 0.8;
+    box-shadow: 2px 2px 2px #3277B3;
+    }
+`
+
+const HeaderRecent = styled.h2`
+    color: #333333;
+    margin: 1em 0 .5em 0;
+    line-height: 1em;
+`
+
+
 const Sidebar = ({ author, authorFluid }) => (
-    <div>
-   
+  <div>
         <ContainerForm>                
-            <h2>Newsletter</h2>
-            <form name="subblogslist" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/subscribed"> 
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="subblogslist" /> 
-                <div className="field">
-                    <label htmlFor="name">Name
-                    <input type="text" name="name" id="name" required/>
-                    </label>                                            
-                </div>
-                <div className="field">
-                    <label htmlFor="email">Email
-                    <input type="text" name="email" id="email" required/>
-                    </label>                                         
-                </div>
-                <div className="6u 12u(small)">
-                    <input type="checkbox" id="amember" name="amember" />
-                    <label htmlFor="amember">already an IMG member</label>
-                </div>  
-                <ul className="actions">                                            
-                    <input type="submit" value="Subscribe" className="button" />                                                                      
-                </ul>
+          <h2>Newsletters</h2>
+          {/* <p>Receive new articles straight to your inbox.</p> */}
+          <form name="blog-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/subscribed"> 
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="blog-subscribe" /> 
+            <div className="field">
+                <label htmlFor="name">Name
+                <input type="text" name="name" id="name" required/>
+                </label>                                            
+            </div>
+            <div className="field">
+                <label htmlFor="email">Email
+                <input type="text" name="email" id="email" required/>
+                </label>                                         
+            </div>
+            <div className="6u 12u(small)">
+                <input type="checkbox" id="amember" name="amember" />
+                <label htmlFor="amember">already an IMG member</label>
+            </div>                          
+            <ul className="actions">                                            
+                <input type="submit" value="Subscribe" className="button" />                                                                     
+            </ul>
             </form>   
         </ContainerForm> 
-  
 
-        {/* <Card>
-            <CardBody>
-                <CardTitle className="text-center text-uppercase">
-                    Advertisement
-                </CardTitle>
-                <img 
-                src="https://via.placeholder.com/320x200" 
-                alt="Advert" 
-                style={{ width: "100%"}}
-                />
-            </CardBody>
-        </Card> */}
+         <HeaderRecent>Recent Posts</HeaderRecent>
+             
+             <StaticQuery query={sidebarQuery} render={(data) => (
+                 <div>
+                     {data.allMarkdownRemark.edges.map(({node}) => (
+                      <RecentContainer key={node.id}>
 
-        <Card>
-            <CardBody>
-                <CardTitle className="text-center text-uppercase mb-3">
-                    Recent Posts
-                </CardTitle>
-                <StaticQuery query={sidebarQuery} render={(data) => (
-                    <div>
-                        {data.allMarkdownRemark.edges.map(({node}) => (
-                            <Card key={node.id}>
-                                <Link to={node.fields.slug}>
-                                  <Img className="card-image-top" fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>  
-                                </Link>
-                                <CardBody>
-                                    <CardTitle>
-                                        <Link to={node.fields.slug}>
-                                        {node.frontmatter.title}
-                                        </Link>
-                                    </CardTitle>
-                                </CardBody>
-                            </Card>
-                        ))}
-                    </div>
-                )}/>
-            </CardBody>
-        </Card>
+                        <Link to ={`/blog/${node.fields.slug}`}>
+                          <StyledImg fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                        </Link>
+                  
+                        <Link to ={`/blog/${node.fields.slug}`}>
+                          <p><b>{node.frontmatter.title}</b></p>
+                          <p><i>{node.frontmatter.date}</i> | <i>{node.timeToRead}-min read</i></p>
+                        </Link> 
+                        <hr/>  
+                      </RecentContainer>
+                     ))}
+                 </div>
+             )}/>
 
-    </div>
+
+         
+  </div>
 )
 
 const sidebarQuery = graphql`
@@ -107,8 +132,10 @@ const sidebarQuery = graphql`
             edges{
                 node{
                     id
+                    timeToRead
                     frontmatter{
-                        title                        
+                        title
+                        date(formatString: "DDMMMYYYY")                    
                         featuredImage{
                             childImageSharp{
                                 fluid(maxWidth:300){

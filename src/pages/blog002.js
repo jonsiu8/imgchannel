@@ -59,7 +59,6 @@ const IconSpan = styled.span`
     padding 0;
     color: #3277B3;
     font-size: 0.9em;
-    font-family: Verdana, sans-serif;
 `
 
 const Author = styled.p`
@@ -68,7 +67,7 @@ const Author = styled.p`
     padding 0;
     color: #3277B3;
     font-size: .8em;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
     @media (max-width: 768px) {
         font-size: 1em;
@@ -81,7 +80,7 @@ const Excerpt = styled.p`
     padding 0;
     color: #4d4d4d;
     font-size: 1em;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4em;
 `
 

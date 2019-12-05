@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import styled from "styled-components"
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import Sidebar from '../components/sidebar'
 
 import fbmessenger from '../assets/images/messageus.png'
 
@@ -15,30 +16,30 @@ const BlogContainer = styled.div`
         color: #333333;
         margin: 0;
         padding: 0px;
-        font-family: Verdana, sans-serif;
+        font-family: Georgia, serif;
         line-height: 1.2em;
-    };
+    }
 
     p {
         color: #3277B3;
         font-size: .9em;
-        font-family: Verdana, sans-serif;
-    };
+        font-family: Georgia, serif;
+    }
 
-    margin: auto;
-    width: 60%;
+    margin: 0;
+    width: 100%;
     border: none;
-    padding: 25px;
+    padding: 0;
 
     @media (max-width: 768px) {
-        width: 90%;
-        padding: 10px;
+        width: 100%;
+        padding: 0px;
         h2 { font-size: 1.8em;}
       }
 ` 
 const BlogHtml = styled.div`
     margin: 0;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #333333;
 
     h1, h2, h3, h4, h5,h6 {
@@ -50,7 +51,7 @@ const BlogHtml = styled.div`
     p, b, strong, i, em, mark, small, del, ins, sub, sup {
         color: #333333;
         font-size: 1.07em;
-        font-family: Verdana, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         margin 0 0 .75em 0;
         line-height: 1.5em;
     }
@@ -58,25 +59,15 @@ const BlogHtml = styled.div`
     li {
         margin: 0 0 0 0;
     }
-`
 
-const ContainerForm = styled.div`
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 20px;
-    border-color: #3277B3;
-    background-color:#3277B3;
-    margin: 0 0 0 0;
-    padding: 1em;
-    h2 {
-        color: #ffffff;
-        line-height: 1.3em;
-        margin: 0 0 .2em 0;
+    @media (max-width: 768px) {
+      p, b, strong, i, em, mark, small, del, ins, sub, sup {
+        color: #333333;
+        font-size: 1.125em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin 0 0 .75em 0;
+        line-height: 1.35em;
     }
-    p {
-        color: #ffffff;
-        line-height: 1.3em;
-        margin: 0 0 .8em 0;
     }
 `
 
@@ -144,8 +135,11 @@ const Blog = (props) => {
             <meta property="og:image:alt" content="image" />
             </Helmet>
             <PageContainer>
+            <div id="main" className="alt">
+                <div className="inner">
                 <div className="grid-wrapper">
-                    <div className="col-9">
+                  <div className="col-1"/>
+                    <div className="col-6">
                         <BlogContainer>
                             {/* <h2>{props.data.markdownRemark.frontmatter.title}</h2>
                             <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | <span className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date} | 
@@ -160,37 +154,17 @@ const Blog = (props) => {
                             {/* messenger button */}
                             <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
                                 <Styledimg src={fbmessenger} alt="message" /></AStyled>                           
-                           <div style={{clear: "right"}}/>
-
-                            <ContainerForm>                            
-                                <h2>Subscribe to our newsletters</h2>
-                                <p>Receive new articles straight to your inbox.</p>
-                                <form name="blog-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/subscribed"> 
-                                    <input type="hidden" name="bot-field" />
-                                    <input type="hidden" name="form-name" value="blog-subscribe" /> 
-                                    <div className="field half first">
-                                        <label htmlFor="name">Name
-                                        <input type="text" name="name" id="name" required/>
-                                        </label>                                            
-                                    </div>
-                                    <div className="field half">
-                                        <label htmlFor="email">Email
-                                        <input type="text" name="email" id="email" required/>
-                                        </label>                                         
-                                    </div>
-                                    <div className="6u 12u(small)">
-                                        <input type="checkbox" id="amember" name="amember" />
-                                        <label htmlFor="amember">already an IMG member</label>
-                                    </div>                          
-                                    <ul className="actions">                                            
-                                        <input type="submit" value="Subscribe" className="button" />                                                                     
-                                    </ul>
-                                </form>   
-                            </ContainerForm>   
+                           <div style={{clear: "right"}}/>                           
 
                         </BlogContainer>                                     
                     </div>
-                </div>                       
+                    <div className="col-3">
+                      <Sidebar/>
+                    </div>
+                    <div className="col-2"/>
+                </div>
+              </div>
+            </div>                       
             </PageContainer>   
         </Layout>
     )

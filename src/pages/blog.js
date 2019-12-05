@@ -35,7 +35,7 @@ const HeaderTitle = styled.h3`
     display: block;
     margin: .4em 0 0 0;
     padding 0;
-    font-family: Verdana, sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.3em;
     color: #333333;
     :hover {
@@ -49,18 +49,17 @@ const HeaderTitle = styled.h3`
 const IconSpan = styled.span`
     margin: 0.2em 0 0 0;
     padding 0;
-    color: #0B258F;
+    color: #3277B3;
     font-size: 0.9em;
-    font-family: Verdana, sans-serif;
 `
 
 const Author = styled.p`
     display: block;
     margin: .2em 0 .3em 0;
     padding 0;
-    color: #0B258F;
-    font-size: .8em;
-    font-family: Verdana, sans-serif;
+    color: #3277B3;
+    font-size: .9em;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
     @media (max-width: 768px) {
         font-size: 1em;
@@ -73,8 +72,11 @@ const Excerpt = styled.p`
     padding 0;
     color: #4d4d4d;
     font-size: 1em;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4em;
+    @media (max-width: 768px) {
+      font-size: 1.1em;
+}
 `
 
 // const HrBlog = styled.hr`
