@@ -43,7 +43,7 @@ This is like insurance but just for the small stuff.  Life happens and there is 
 <br>
 
 ## 5. Investments
-There are a lot of “investments” you can find out there but I’m talking about liquid (*cash*) investments here.  Start with liquid investments because it is easier to understand and is very affordable, so literally **everyone can do it**.  I recommend investing in **mutual funds**.  It's mostly managed funds so you don't have to learn all the technical stuff about the stock market.  Another thing is that it's well **diversified** (*spread around*) thus making it less risky.
+There are a lot of “investments” you can find out there but I’m talking about liquid (*cash*) investments here.  Start with liquid investments because it is easier to understand and is very affordable, so literally **everyone can do it**.  I recommend investing in **mutual funds**.  It's mostly managed funds so you don't have to learn all the technical stuff about the stock market.  Another thing is that it's well-**diversified** (*spread around*) thus making it less risky.
 
 ![alt text](./solidfoundation.png)
 
