@@ -29,12 +29,12 @@ Having life insurance is an important part of your financial plan because the **
 
 Buying the **right kind of life insurance** is a bit tricky.  Insurance companies have so many different products with so many different names.  The average consumer wouldn't know how to choose and may just end up buying the product that the agent pushes.  The only kind of life insurance that provides the best value for your money is **Term Life Insurance**.  A good rule of thumb for the face amount (insurance coverage) is **10 times** your annual income.
 
+![you got this](./yougotthisonstreet.jpg)
 <br>
 
 ## 3. Debt Management
 Pay off all your debts and stay debt-free.  It is very tough for you to start saving and investing if you have debt payments because the interests alone will eat up a big part of your income.  **Staying debt-free** will really jumpstart your financial plan and will keep you focused ahead instead of getting stuck in your past errors.  *Nathan W. Morris* said **“*Every time you borrow money, you’re robbing your future self.*”**  You may want to read my previous article [*“Start Your Debt-free Journey with these 2 Things”*](https://www.imgchannel.com/blog/start-your-debt-free-journey-with-these-2-things).
 
-![you got this](./yougotthisonstreet.jpg)
 <br>
 
 ## 4. Emergency Fund
@@ -44,6 +44,8 @@ This is like insurance but just for the small stuff.  Life happens and there is 
 
 ## 5. Investments
 There are a lot of “investments” you can find out there but I’m talking about liquid (*cash*) investments here.  Start with liquid investments because it is easier to understand and is very affordable, so literally **everyone can do it**.  I recommend investing in **mutual funds**.  It's mostly managed funds so you don't have to learn all the technical stuff about the stock market.  Another thing is that it's well **diversified** (*spread around*) thus making it less risky.
+
+![alt text](./solidfoundation.png)
 
 For most people, mutual funds are the way to go. The track record for mutual fund growth is around an **average of 8% to 12% annually**.  It grows way better than your regular savings bank account and you can start investing for **as low as PHP1,000**.  Building wealth through investing is great but remember to first build your **proper foundation** so you will have the peace of mind of knowing that you're **taking care of your responsibilities while building your wealth**.
 
