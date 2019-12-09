@@ -59,7 +59,7 @@ const Author = styled.p`
     padding 0;
     color: #3277B3;
     font-size: .9em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.5em;
     @media (max-width: 768px) {
         font-size: 1em;

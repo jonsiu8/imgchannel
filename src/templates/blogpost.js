@@ -48,7 +48,7 @@ const BlogHtml = styled.div`
         line-height: 1.3em;
     } 
 
-    p, b, strong, i, em, mark, small, del, ins, sub, sup {
+    p, b, strong, i, mark, small, del, ins, sub, sup {
         color: #333333;
         font-size: 1.07em;
         font-family: Arial, Helvetica, sans-serif;
@@ -56,8 +56,18 @@ const BlogHtml = styled.div`
         line-height: 1.5em;
     }
 
+    em {
+      color: #333333;
+      font-size: .95em;
+      font-family: Arial, Helvetica, sans-serif;
+      margin 0 0 .75em 0;
+      line-height: 1.5em;
+    }
+
+
+
     li {
-        margin: 0 0 0 0;
+        margin: 0 0 .6em 0;
     }    
 
     @media (max-width: 768px) {
@@ -67,7 +77,16 @@ const BlogHtml = styled.div`
         font-family: Arial, Helvetica, sans-serif;
         margin 0 0 .75em 0;
         line-height: 1.5em;
-    }
+      }
+
+      em {
+        color: #333333;
+        font-size: .98em;
+        font-family: Arial, Helvetica, sans-serif;
+        margin 0 0 .75em 0;
+        line-height: 1.5em;
+      }
+
     }
 `
 
