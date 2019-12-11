@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 import styled from "styled-components"
+import fbmessenger from '../assets/images/messageus.png'
 
 const ContainerForm = styled.div`
     max-width: 600px;
@@ -66,15 +67,43 @@ const HeaderRecent = styled.h2`
 `
 
 const ButtonContainer = styled.div`
+    margin: 0 0 1em 0;
     .button{
     background-color:#3277B3;
     color:white;     
 }
 `
 
+const AStyled = styled.a`
+:link {color: #ffffff;}    
+:visited {color: #ffffff;}    
+:hover {color: #ffffff;}    
+:active {color: #ffffff;}
+float: right;
+`
+
+const StyledButtonImage = styled.img`
+margin: .4em 0 0 0;
+padding: 1px;
+border: none;
+border-radius: 5px;
+box-shadow: 1px 1px 1px #070F29;
+max-width: 143px;
+
+:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 3px 2px #070F29;
+}
+
+@media (max-width: 768px) {
+    max-width: 132px;
+}
+`
+
 
 const Sidebar = ({ author, authorFluid }) => (
   <div>
+        <ButtonContainer><Link to="/blog" className="button next">Blog Homepage</Link></ButtonContainer>
         <ContainerForm>                
           <h2>Newsletters</h2>
           {/* <p>Receive new articles straight to your inbox.</p> */}
@@ -99,7 +128,11 @@ const Sidebar = ({ author, authorFluid }) => (
                 <input type="submit" value="Subscribe" className="button" />                                                                     
             </ul>
             </form>   
-        </ContainerForm> 
+        </ContainerForm>
+        {/* messenger button */}
+        <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                  <StyledButtonImage src={fbmessenger} alt="message" /></AStyled>                           
+              <div style={{clear: "right"}}/>  
 
          <HeaderRecent>Recent Posts</HeaderRecent>
              
@@ -121,6 +154,7 @@ const Sidebar = ({ author, authorFluid }) => (
                      ))}
                  </div>
              )}/>
+             
         <ButtonContainer><Link to="/freebook" className="button next">Get your free ebook here</Link></ButtonContainer>
   </div>
 )

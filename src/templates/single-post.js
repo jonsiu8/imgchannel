@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 
-import fbmessenger from '../assets/images/messageus.png'
+// import fbmessenger from '../assets/images/messageus.png'
 
 const PageContainer = styled.body`
     background-color: #ffffff;
@@ -13,7 +13,7 @@ const PageContainer = styled.body`
 ` 
 const BlogContainer = styled.div`
     h2 {
-        color: #333333;
+        color: #1a1a1a;
         margin: 0;
         padding: 0px;
         font-family: Georgia, serif;
@@ -40,16 +40,16 @@ const BlogContainer = styled.div`
 const BlogHtml = styled.div`
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
+    color: #1a1a1a;
 
     h1, h2, h3, h4, h5,h6 {
-        color: #333333;
+        color: #1a1a1a;
         margin: 0 0 0.4em 0;
         line-height: 1.3em;
     } 
 
     p, b, strong, i, mark, small, del, ins, sub, sup {
-        color: #333333;
+        color: #1a1a1a;
         font-size: 1.07em;
         font-family: Arial, Helvetica, sans-serif;
         margin 0 0 .75em 0;
@@ -57,7 +57,7 @@ const BlogHtml = styled.div`
     }
 
     em {
-      color: #333333;
+      color: #1a1a1a;
       font-size: .95em;
       font-family: Arial, Helvetica, sans-serif;
       margin 0 0 .75em 0;
@@ -72,7 +72,7 @@ const BlogHtml = styled.div`
 
     @media (max-width: 768px) {
       p, b, strong, i, em, mark, small, del, ins, sub, sup {
-        color: #333333;
+        color: #1a1a1a;
         font-size: 1.125em;
         font-family: Arial, Helvetica, sans-serif;
         margin 0 0 .75em 0;
@@ -80,7 +80,7 @@ const BlogHtml = styled.div`
       }
 
       em {
-        color: #333333;
+        color: #1a1a1a;
         font-size: .98em;
         font-family: Arial, Helvetica, sans-serif;
         margin 0 0 .75em 0;
@@ -116,29 +116,6 @@ max-width: 143px;
 }
 `
 
-export const query = graphql`
-    query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            excerpt
-            timeToRead
-            frontmatter {
-                title
-                date(formatString: "DDMMMYYYY")
-                author
-                featuredImage {
-                    childImageSharp {
-                      sizes(maxWidth: 630) {
-                        ...GatsbyImageSharpSizes
-                      }
-                    }
-                    publicURL
-                }
-            }
-            html
-        }
-    }
-`
-
 const Blog = (props) => {
     
     return (
@@ -168,17 +145,15 @@ const Blog = (props) => {
                             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
                             <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | {props.data.markdownRemark.frontmatter.date} | {props.data.markdownRemark.timeToRead}<i>-min read</i>
                             </p>          
-                            <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>    
-
-                            {/* messenger button */}
-                            <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
-                                <Styledimg src={fbmessenger} alt="message" /></AStyled>                           
-                           <div style={{clear: "right"}}/>                           
-
+                            <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>                                     
                     </div>
                     <div className="col-3">
                       <Sidebar/>
+                      {/* messenger button */}
+                      {/* <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
+                                <Styledimg src={fbmessenger} alt="message" /></AStyled>                           
+                           <div style={{clear: "right"}}/>   */}
                     </div>
                     <div className="col-2"/>
                 </div>
@@ -188,5 +163,29 @@ const Blog = (props) => {
         </Layout>
     )
 }
+
+export const query = graphql`
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            excerpt
+            timeToRead
+            frontmatter {
+                title
+                date(formatString: "DDMMMYYYY")
+                author
+                featuredImage {
+                    childImageSharp {
+                      sizes(maxWidth: 630) {
+                        ...GatsbyImageSharpSizes
+                      }
+                    }
+                    publicURL
+                }
+            }
+            id
+            html
+        }
+    }
+`
 
 export default Blog

@@ -1,12 +1,9 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import styled from "styled-components"
+import React from "react"
 import { graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
-import Layout from '../components/layout'
 import PaginationLinks from '../components/PaginationLinks'
-
-import previewpic from '../assets/images/ogimage-blogpage.png'
+import Img from 'gatsby-image'
+import styled from "styled-components"
+import Layout from '../components/layout'
 
 const PageContainer = styled.body`
     background-color: #ffffff;
@@ -80,54 +77,38 @@ const Excerpt = styled.p`
       font-size: 1.1em;
 }
 `
+ 
+const postList = (props) => {
+const posts = props.data.allMarkdownRemark.edges
+const { currentPage, numberOfPages } = props.pageContext
 
-// const HrBlog = styled.hr`
-//     border: 1px dotted white;
-//     border-radius: 1px;
-// `
-
-const BlogPage = (props) => {
-  const postsPerPage = 6;
-  const numberOfPages = Math.ceil(props.data.allMarkdownRemark.totalCount / postsPerPage);
-  return(
-    <Layout>        
-        <Helmet>
-            <title>Blog Page</title>
-            <meta name="description" content="Blog - IMG Channel" />
-            <meta property="og:title" content="Blog"/>
-            <meta property="og:description" content="If you think financial education is expensive try ingnorance."/>
-            <meta property="og:image:type" content="image/png" />
-            <meta property="og:image" content={previewpic} />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
-            <meta property="og:image:alt" content="blogger" />
-        </Helmet>
-
-
+    return(
+      <Layout>
         <PageContainer>
+
         <section id="banner" className="style3">
             <div className="inner">
                 <header className="major">
-                    <h1>Blog Homepage</h1>
+                    <h1>Blog</h1>
                 </header>
                 <div className="content">
                     <p>If you think financial education is expensive try ingnorance.</p>
                 </div>
             </div>
         </section>
-
-        <div id="main" className="alt">
+        
+      <div id="main" className="alt">
             <section id="one">
                 <div className="inner">
                     <div className="grid-wrapper">
-                            {props.data.allMarkdownRemark.edges.map((edge) => {
+                            {posts.map((edge) => {
                                 return (                           
                                     <div className="col-4">                                                                       
                                         {/* <span className="image left"><img src={edge.node.frontmatter.featuredImage.publicURL} alt="" /></span> */}
                                         <Link to ={`/blog/${edge.node.fields.slug}`}>
                                             <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
                                             <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle>
-                                        </Link>                                         
+                                        </Link>                                                                        
                                         <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | {edge.node.frontmatter.date} | 
                                               {" "} {edge.node.timeToRead}<i>-min read</i>
                                         </Author>
@@ -143,47 +124,49 @@ const BlogPage = (props) => {
                                     </div>                 
                                 )
                             })}
+                            
                     </div>
-                    <PaginationLinks currentPage={1} numberOfPages={numberOfPages}/>
+                    <PaginationLinks currentPage={currentPage} numberOfPages={numberOfPages}/>
                     <ButtonContainer><Link to="/freebook" className="button next">Get your free ebook here</Link></ButtonContainer>
                 </div>
             </section>
         </div>
         </PageContainer>
-    </Layout>
-  )
+        </Layout>
+    )
 }
 
-export default BlogPage
-
-export const query = graphql`
-    query  {
-        allMarkdownRemark (
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 6
-          ) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        date(formatString: "DDMMMYYYY") 
-                        author
-                        featuredImage {
-                            childImageSharp {
-                              sizes(maxWidth: 630) {
-                                ...GatsbyImageSharpSizes
-                              }
-                            }
-                            publicURL
+export const postListQuery = graphql`
+    query postListQuery($skip: Int!, $limit: Int!){
+        allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order:DESC }
+            limit: $limit
+            skip: $skip
+        ){
+          edges {
+            node {
+                frontmatter {
+                    title
+                    date(formatString: "DDMMMYYYY") 
+                    author
+                    featuredImage {
+                        childImageSharp {
+                          sizes(maxWidth: 630) {
+                            ...GatsbyImageSharpSizes
+                          }
                         }
+                        publicURL
                     }
-                    fields {
-                        slug
-                    }
-                    excerpt(pruneLength: 130)
-                    timeToRead
                 }
+                fields {
+                    slug
+                }
+                excerpt(pruneLength: 130)
+                timeToRead
             }
+          }
         }
     }
-    `
+`
+
+export default postList

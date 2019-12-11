@@ -42,6 +42,7 @@ const HeroBannerParag = styled.p`
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
+    line-height: 1.125em;
 
   @media (max-width: 768px) {
     font-size: 0.8em;
@@ -55,6 +56,7 @@ const HeroBannerTitle = styled.h2`
   border-bottom: none;
   font-size: 41px;
   color: white;
+  line-height: 1.125em;
 
   @media (max-width: 800px) {
     font-size: 35px;
@@ -86,7 +88,7 @@ class HomeIndex extends React.Component {
                         <HeroBannerTitle>A Campaign for Financial Literacy</HeroBannerTitle>
                  
                         <HeroBannerParag>“An investment in knowledge pays the best interest.“ <i>-Benjamin Franklin</i></HeroBannerParag>   
-                        {/* <Link to="/blog" className="button small">Go to Blog</Link>                  */}
+                        <Link to="/blog" className="button next">Go to Blog Page</Link>                 
                         {/*<ul className="actions">
                             <li><a href="#one" className="button next scrolly">Learn More</a></li>
                         </ul>*/}

@@ -20,6 +20,13 @@ const authors = [
         facebook: 'https://www.facebook.com/',
         instagram: 'https://www.instagram.com/',
     },
+    {
+      name:'Stela Florence',
+      imageUrl: 'jess.jpg',
+      bio: 'Jess is a Associate Financial Planner and EVC from IMG Cebu',
+      facebook: 'https://www.facebook.com/',
+      instagram: 'https://www.instagram.com/',
+  },
 ]
 
 module.exports = authors
