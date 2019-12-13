@@ -8,7 +8,7 @@ import PaginationLinks from '../components/PaginationLinks'
 
 import previewpic from '../assets/images/ogimage-blogpage.png'
 
-const PageContainer = styled.body`
+const PageContainer = styled.div`
     background-color: #ffffff;
     height: 100%;
 ` 

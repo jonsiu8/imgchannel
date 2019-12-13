@@ -7,7 +7,7 @@ import Sidebar from '../components/sidebar'
 
 // import fbmessenger from '../assets/images/messageus.png'
 
-const PageContainer = styled.body`
+const PageContainer = styled.div`
     background-color: #ffffff;
     height: 100%;
 ` 
