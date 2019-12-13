@@ -5,7 +5,7 @@ import styled from "styled-components"
 const StyledLink = styled(Link)`
   color: #3277B3;
   display: inline;
-  margin: .3em;
+  margin: .2em;
   padding 3px;
   text-decoration: none;
   :hover {
@@ -36,6 +36,7 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
               ← previous
             </StyledLink>
           )}
+
           {Array.from({ length: numberOfPages }, (_, i) => (
             <li
               key={`pagination-number${i + 1}`}
@@ -46,7 +47,7 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
               <StyledLink
                 to={`blog/${i === 0 ? '' : 'page/' + (i + 1)}`}
                 style={{
-                  padding: 1,
+                  padding: 4,
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
                   background: i + 1 === currentPage ? '#3277B3' : '',
@@ -56,6 +57,7 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
               </StyledLink>
             </li>
           ))}
+          
           {!isLast && (
             <StyledLink to={nextPage} rel="next">
               next page →

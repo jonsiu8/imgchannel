@@ -184,6 +184,7 @@ export const query = graphql`
                     timeToRead
                 }
             }
+            totalCount
         }
     }
     `

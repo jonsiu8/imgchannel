@@ -90,32 +90,6 @@ const BlogHtml = styled.div`
     }
 `
 
-const AStyled = styled.a`
-:link {color: #ffffff;}    
-:visited {color: #ffffff;}    
-:hover {color: #ffffff;}    
-:active {color: #ffffff;}
-float: right;
-`
-
-const Styledimg = styled.img`
-margin: .4em 0 0 0;
-padding: 1px;
-border: none;
-border-radius: 5px;
-box-shadow: 1px 1px 1px #070F29;
-max-width: 143px;
-
-:hover {
-  opacity: 0.9;
-  box-shadow: 0 0 3px 2px #070F29;
-}
-
-@media (max-width: 768px) {
-    max-width: 132px;
-}
-`
-
 const Blog = (props) => {
     
     return (
