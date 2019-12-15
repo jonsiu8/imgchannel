@@ -1,7 +1,7 @@
 ---
 title: "How IMG Impacts My Life"
 date: "2019-12-14"
-author: " Ramelito Inopiquez"
+author: "Ramelito Inopiquez"
 featuredImage: './readingfeatured.png'
 ---
 It has been 3 years while I was working as an ESL teacher in one of the biggest english schools in Cebu when I met IMG. I love what I do and in all those years, everything was okay. The salary was good, much better than my previous job. But, it was still not enough.

@@ -111,7 +111,7 @@ const BlogPage = (props) => {
                     <h1>Blog Homepage</h1>
                 </header>
                 <div className="content">
-                    <p>If you think financial education is expensive try ingnorance.</p>
+                    <p>If you think financial education is expensive try ingnorance.  List of Authors <Link to="/contributors">here</Link>.</p>
                 </div>
             </div>
         </section>
