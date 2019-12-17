@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
+import Helmet from 'react-helmet'
 import authors from '../util/authors'
 import styled from "styled-components"
 import { slugify } from '../util/utilityFunctions'
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
+
+import previewpic from '../assets/images/ogimage-contributors.jpg'
 
 const PageContainer = styled.div`
     background-color: #ffffff;
@@ -90,6 +93,17 @@ const SpanIcon = styled.span`
 
 const Contributors = (props) => (
   <Layout>
+        <Helmet>
+            <title>Conributors</title>
+            <meta name="description" content="Contributors - IMG Channel" />
+            <meta property="og:title" content="Contributors"/>
+            <meta property="og:description" content="IMG Channel Blog Authors"/>
+            <meta property="og:image:type" content="image/jpg" />
+            <meta property="og:image" content={previewpic} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="book and pen" />
+        </Helmet>
        <section id="banner" className="style3">
           <div className="inner">
               <header className="major">

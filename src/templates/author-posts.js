@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import styled from "styled-components"
 import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
-import authors from '../util/authors'
 
 import previewpic from '../assets/images/ogimage-blogpage.png'
 
