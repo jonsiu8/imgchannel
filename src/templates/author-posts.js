@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 import styled from "styled-components"
 import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
+import authors from '../util/authors'
 
 import previewpic from '../assets/images/ogimage-blogpage.png'
 
@@ -11,6 +12,12 @@ const PageContainer = styled.div`
     background-color: #ffffff;
     height: 100%;
 ` 
+
+const PageHeader = styled.h1`
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+`
 
 const StyledImg = styled(Img)`
   display: block;
@@ -74,7 +81,7 @@ const Excerpt = styled.p`
 
 const authorPosts = ({ data, pageContext }) => {
     // const { totalCount } = data.allMarkdownRemark
-    // const author = authors.find(x => x.name === pageContext.authorName)
+    //const author = authors.find(x => x.name === pageContext.authorName)
     // const pageHeader = `${totalCount} Posts by: ${pageContext.authorName}`
 
     return (
@@ -95,12 +102,12 @@ const authorPosts = ({ data, pageContext }) => {
       <PageContainer>
       <section id="banner" className="style3">
           <div className="inner">
-              <header className="major">
-                  <h1>Author Posts</h1>
+              <header>
+                  <PageHeader>Posts by {pageContext.authorName}</PageHeader>
               </header>
-              <div className="content">
+              {/* <div className="content">
                   <p>If you think financial education is expensive try ingnorance.</p>
-              </div>
+              </div> */}
           </div>
       </section>
 
@@ -116,9 +123,9 @@ const authorPosts = ({ data, pageContext }) => {
                                           <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
                                           <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle>
                                       </Link>                                         
-                                      <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | {edge.node.frontmatter.date} | 
-                                            {" "} {edge.node.timeToRead}<i>-min read</i>
-                                      </Author>
+                                        <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | {edge.node.timeToRead}<i> -min read</i> <br/>
+                                                <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date}
+                                        </Author>
                                       <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
                                       <hr/>
 
@@ -154,7 +161,7 @@ export const authorQuery = graphql`
                 node {
                     frontmatter {
                         title
-                        date(formatString: "DDMMMYYYY") 
+                        date(formatString: "MMM Do YYYY") 
                         author
                         featuredImage {
                             childImageSharp {

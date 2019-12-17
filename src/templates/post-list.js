@@ -109,8 +109,8 @@ const { currentPage, numberOfPages } = props.pageContext
                                             <StyledImg sizes={edge.node.frontmatter.featuredImage.childImageSharp.sizes} />
                                             <HeaderTitle>{edge.node.frontmatter.title}</HeaderTitle>
                                         </Link>                                                                        
-                                        <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | {edge.node.frontmatter.date} | 
-                                              {" "} {edge.node.timeToRead}<i>-min read</i>
+                                        <Author><IconSpan className="icon fa-user-circle"/> {edge.node.frontmatter.author} | {edge.node.timeToRead}<i> -min read</i> <br/>
+                                                <IconSpan className="icon fa-calendar"/> {edge.node.frontmatter.date}
                                         </Author>
                                         <Excerpt dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
                                         <hr/>
@@ -147,7 +147,7 @@ export const postListQuery = graphql`
             node {
                 frontmatter {
                     title
-                    date(formatString: "DDMMMYYYY") 
+                    date(formatString: "MMM Do YYYY") 
                     author
                     featuredImage {
                         childImageSharp {

@@ -7,18 +7,18 @@ const authors = [
         designation3: '',
     },
     {
-      name:'Ramelito Inopiquez',
-      imageUrl: 'authraminopiquez',
-      designation1: 'IMG Senior Marketing Director',
-      designation2: 'Associate Financial Planner',
-      designation3: '',
-    },
-    {
       name:'Jess Faller, Jr.',
       imageUrl: 'authjessfaller',
       designation1: 'IMG EVC Marketing Director',
       designation2: 'Associate Financial Planner',
       designation3: 'Certified Financial Educator',
+    },
+    {
+      name:'Ramelito Inopiquez',
+      imageUrl: 'authraminopiquez',
+      designation1: 'IMG Senior Marketing Director',
+      designation2: 'Associate Financial Planner',
+      designation3: '',
     },
     {
         name:'Rosey Sardido',

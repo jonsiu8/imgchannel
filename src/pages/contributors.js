@@ -118,7 +118,7 @@ const Contributors = (props) => (
             </div>
 
             <div className="col-3">
-                <span><ImgProfile fluid={props.data.authraminopiquez.childImageSharp.fluid} /></span>
+                <span><ImgProfile fluid={props.data.authjessfaller.childImageSharp.fluid} /></span>
                 <AuthorName>{authors[1].name}</AuthorName> 
                   <Ulist>                             
                     <li><SpanIcon className="icon fa-circle"/> {authors[1].designation1}</li>
@@ -130,7 +130,7 @@ const Contributors = (props) => (
             </div>
 
             <div className="col-3">
-                <span><ImgProfile fluid={props.data.authjessfaller.childImageSharp.fluid} /></span>
+                <span><ImgProfile fluid={props.data.authraminopiquez.childImageSharp.fluid} /></span>
                 <AuthorName>{authors[2].name}</AuthorName> 
                   <Ulist>                             
                     <li><SpanIcon className="icon fa-circle"/> {authors[2].designation1}</li>
