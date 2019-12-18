@@ -41,7 +41,7 @@ const RecentContainer = styled.div`
     margin: 0 0 0.2em 0;
     font-size: 1em;
     font-family: Georgia, serif;
-    line-height: 1.125em;
+    line-height: 1.35em;
     :hover {
       color: #3277B3;
       }
