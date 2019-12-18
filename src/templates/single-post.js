@@ -122,14 +122,14 @@ const Blog = (props) => {
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>                                     
                     </div>
-                    <div className="col-3">
+                    <div className="col-4">
                       <Sidebar/>
                       {/* messenger button */}
                       {/* <AStyled href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer">
                                 <Styledimg src={fbmessenger} alt="message" /></AStyled>                           
                            <div style={{clear: "right"}}/>   */}
                     </div>
-                    <div className="col-2"/>
+                    <div className="col-1"/>
                 </div>
               </div>
             </div>                       

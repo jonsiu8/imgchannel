@@ -28,29 +28,58 @@ const ContainerForm = styled.div`
 `
 
 const RecentContainer = styled.div`
-  display: block;
-    margin: 0;
-  p, b {
+  display: flex;
+  margin: 0 0 1.5em 0;
+
+  div { 
+    //border: 1px #000000 solid;
+  }
+
+  h3 {
     color: #3277B3;
-    margin: 0 0 0 0;
-    font-size: 1.05em;
+    color: #1a1a1a;
+    margin: 0 0 0.2em 0;
+    font-size: .9em;
     font-family: Georgia, serif;
     line-height: 1.125em;
     :hover {
-      color: green;
+      color: #3277B3;
       }
   }
 
-    @media (max-width: 768px) {
-      p, b {
-        font-size: 1.2em;        
-      }
+  .box1 {
+    flex: 1.5;
+    align-items: center;
+    margin: 0 0 0 0;
+  }
+
+  .box2 {
+    flex: 4;
+    align-items: center;
+    margin: 0 0 0 .5em;
+  }
+
+  p {
+    color: #666666;
+    margin: 0 0 0 0;
+    font-size: .7em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+  }
+
+  @media (max-width: 768px) {
+    h3 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: .8em;        
+    }
   }
 `
 
 const StyledImg = styled(Img)`
-  display: block;
-  margin: 0 0 .5em 0;
+  margin: 0 0 0 0;
   padding 0;
   max-width: 180px;
 
@@ -75,29 +104,29 @@ const ButtonContainer = styled.div`
 `
 
 const AStyled = styled.a`
-:link {color: #ffffff;}    
-:visited {color: #ffffff;}    
-:hover {color: #ffffff;}    
-:active {color: #ffffff;}
-float: right;
+  :link {color: #ffffff;}    
+  :visited {color: #ffffff;}    
+  :hover {color: #ffffff;}    
+  :active {color: #ffffff;}
+  float: right;
 `
 
 const StyledButtonImage = styled.img`
-margin: .4em 0 0 0;
-padding: 1px;
-border: none;
-border-radius: 5px;
-box-shadow: 1px 1px 1px #070F29;
-max-width: 143px;
+  margin: .4em 0 0 0;
+  padding: 1px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #070F29;
+  max-width: 143px;
 
-:hover {
-  opacity: 0.9;
-  box-shadow: 0 0 3px 2px #070F29;
-}
+  :hover {
+    opacity: 0.9;
+    box-shadow: 0 0 3px 2px #070F29;
+  }
 
-@media (max-width: 768px) {
-    max-width: 132px;
-}
+  @media (max-width: 768px) {
+      max-width: 132px;
+  }
 `
 
 
@@ -139,23 +168,35 @@ const Sidebar = ({ author, authorFluid }) => (
              <StaticQuery query={sidebarQuery} render={(data) => (
                  <div>
                      {data.allMarkdownRemark.edges.map(({node}) => (
-                      <RecentContainer key={node.id}>
+                      // <RecentContainer key={node.id}>
+                      //   <Link to ={`/blog/${node.fields.slug}`}>
+                      //     <StyledImg fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                      //   </Link>
+                      //   <Link to ={`/blog/${node.fields.slug}`}>
+                      //     <p><b>{node.frontmatter.title}</b></p>
+                      //     <p><i>{node.frontmatter.date}</i> | <i>{node.timeToRead}-min read</i></p>
+                      //   </Link> 
+                      //   <hr/>  
+                      // </RecentContainer>
 
-                        <Link to ={`/blog/${node.fields.slug}`}>
-                          <StyledImg fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>
-                        </Link>
-                  
-                        <Link to ={`/blog/${node.fields.slug}`}>
-                          <p><b>{node.frontmatter.title}</b></p>
-                          <p><i>{node.frontmatter.date}</i> | <i>{node.timeToRead}-min read</i></p>
-                        </Link> 
-                        <hr/>  
+                      <RecentContainer key={node.id}>                        
+                          <div className="box1">
+                            <Link to ={`/blog/${node.fields.slug}`}>
+                              <StyledImg fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                            </Link>
+                          </div>
+                          <div className="box2">
+                            <Link to ={`/blog/${node.fields.slug}`}>
+                              <h3>{node.frontmatter.title}</h3>
+                              <p>{node.frontmatter.date} | {node.timeToRead}-min read</p>
+                            </Link>
+                          </div>                                                 
                       </RecentContainer>
                      ))}
                  </div>
              )}/>
              
-        <ButtonContainer><Link to="/freebook" className="button next">Get your free ebook here</Link></ButtonContainer>
+        <ButtonContainer><Link to="/freebook" className="button next">Free ebook here</Link></ButtonContainer>
   </div>
 )
 
