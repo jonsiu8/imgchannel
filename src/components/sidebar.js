@@ -39,7 +39,7 @@ const RecentContainer = styled.div`
     color: #3277B3;
     color: #1a1a1a;
     margin: 0 0 0.2em 0;
-    font-size: .9em;
+    font-size: 1em;
     font-family: Georgia, serif;
     line-height: 1.125em;
     :hover {
@@ -62,18 +62,18 @@ const RecentContainer = styled.div`
   p {
     color: #666666;
     margin: 0 0 0 0;
-    font-size: .7em;
+    font-size: .75em;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.125em;
   }
 
   @media (max-width: 768px) {
     h3 {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     p {
-        font-size: .8em;        
+        font-size: .9em;        
     }
   }
 `
@@ -212,7 +212,7 @@ const sidebarQuery = graphql`
                     timeToRead
                     frontmatter{
                         title
-                        date(formatString: "DDMMMYYYY")                    
+                        date(formatString: "MMM Do YYYY")                    
                         featuredImage{
                             childImageSharp{
                                 fluid(maxWidth:300){

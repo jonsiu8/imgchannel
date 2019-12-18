@@ -37,6 +37,27 @@ const BlogContainer = styled.div`
         h2 { font-size: 1.8em;}
       }
 ` 
+
+const IconSpan = styled.span`
+    margin: 0.2em 0 0 0;
+    padding 0;
+    color: #3277B3;
+    font-size: 0.9em;
+`
+
+const Author = styled.p`
+    display: block;
+    margin: .2em 0 .3em 0;
+    padding 0;
+    color: #3277B3;
+    font-size: .9em;
+    font-family: Georgia, serif;
+    line-height: 1.5em;
+    @media (max-width: 768px) {
+        font-size: 1em;
+  }
+`
+
 const BlogHtml = styled.div`
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -117,8 +138,10 @@ const Blog = (props) => {
                             </p>         */}
 
                             <h2>{props.data.markdownRemark.frontmatter.title}</h2>
-                            <p className="icon fa-user-circle"> {props.data.markdownRemark.frontmatter.author} | {props.data.markdownRemark.frontmatter.date} | {props.data.markdownRemark.timeToRead}<i>-min read</i>
-                            </p>          
+                            <Author>
+                              <IconSpan className="icon fa-user-circle"/> {props.data.markdownRemark.frontmatter.author} | {props.data.markdownRemark.timeToRead}<i>-min read</i><br/>
+                              <IconSpan className="icon fa-calendar"/> {props.data.markdownRemark.frontmatter.date}
+                            </Author>          
                             <BlogHtml dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html}}></BlogHtml>
                         </BlogContainer>                                     
                     </div>
