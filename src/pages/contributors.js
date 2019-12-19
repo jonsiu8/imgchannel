@@ -41,7 +41,7 @@ const AuthorContainer = styled.div`
   }
 
   .box1 {
-    flex: 1.5;
+    flex: 1.4;
     align-items: center;
     margin: 0 0 0 0;
   }
@@ -49,7 +49,7 @@ const AuthorContainer = styled.div`
   .box2 {
     flex: 4;
     align-items: center;
-    margin: 0 0 0 .5em;
+    margin: 0 0 0 .4em;
   }
 
   p {
@@ -94,17 +94,17 @@ const Ulist = styled.ul`
 
   li {
       font-size: 0.9em;
-      margin: 0 0 .15em 0;
+      margin: 0 0 .2em 0;
       line-height: 1.2em;
   }
 
     @media (max-width: 768px) {
-         font-size: 1.1em;
+         font-size: 1.05em;
      }
 `
 
 const ImgProfile = styled(Img)`
-    margin: .5em 0 .5em 0;
+    margin: 0 0 0 0;
     padding: 0;
     max-width: 110px;
     border: 3px solid #3277B3;
@@ -116,7 +116,7 @@ const ImgProfile = styled(Img)`
 
 const SpanIcon = styled.span`
   color: #3277B3;
-  font-size: .7em;
+  font-size: .65em;
 `
 
 const Contributors = (props) => (
@@ -175,7 +175,7 @@ const Contributors = (props) => (
                     <Ulist>                             
                       <li><SpanIcon className="icon fa-circle"/> {authors[1].designation1}</li>
                       <li><SpanIcon className="icon fa-circle"/> {authors[1].designation2}</li> 
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[1].designation3}</li> */}
+                      <li><SpanIcon className="icon fa-circle"/> {authors[1].designation3}</li>
                       <a className="button small" href={`/author/${slugify(authors[1].name)}`}>View posts</a>
                     </Ulist>  
                 </div>
