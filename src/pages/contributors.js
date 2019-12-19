@@ -41,7 +41,7 @@ const AuthorContainer = styled.div`
   }
 
   .box1 {
-    flex: 1.4;
+    flex: 1.35;
     align-items: center;
     margin: 0 0 0 0;
   }
@@ -156,8 +156,8 @@ const Contributors = (props) => (
                     <AuthorName>{authors[0].name}</AuthorName> 
                     <Ulist>                             
                       <li><SpanIcon className="icon fa-circle"/> {authors[0].designation1}</li>
-                      <li><SpanIcon className="icon fa-circle"/> {authors[0].designation2}</li> 
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[0].designation3}</li> */}
+                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[0].designation2}</li> 
+                      <li><SpanIcon className="icon fa-circle"/> {authors[0].designation3}</li> */}
                       <a className="button small" href={`/author/${slugify(authors[0].name)}`}>View posts</a>
                     </Ulist>  
                 </div>
@@ -192,7 +192,7 @@ const Contributors = (props) => (
                     <AuthorName>{authors[2].name}</AuthorName> 
                     <Ulist>                             
                       <li><SpanIcon className="icon fa-circle"/> {authors[2].designation1}</li>
-                      <li><SpanIcon className="icon fa-circle"/> {authors[2].designation2}</li> 
+                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[2].designation2}</li>  */}
                       {/* <li><SpanIcon className="icon fa-circle"/> {authors[1].designation3}</li> */}
                       <a className="button small" href={`/author/${slugify(authors[2].name)}`}>View posts</a>
                     </Ulist>  

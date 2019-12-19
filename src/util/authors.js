@@ -3,7 +3,7 @@ const authors = [
         name:'Stela Florence Coronica',
         imageUrl: 'authstelacoronica',
         designation1: 'IMG Senior Marketing Director',
-        designation2: 'Associate Financial Planner',
+        designation2: '',
         designation3: '',
     },
     {
@@ -17,7 +17,7 @@ const authors = [
       name:'Ramelito Inopiquez',
       imageUrl: 'authraminopiquez',
       designation1: 'IMG Senior Marketing Director',
-      designation2: 'Associate Financial Planner',
+      designation2: '',
       designation3: '',
     },
     {

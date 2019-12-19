@@ -168,7 +168,7 @@ export const query = graphql`
             timeToRead
             frontmatter {
                 title
-                date(formatString: "DDMMMYYYY")
+                date(formatString: "MMM Do YYYY")
                 author
                 featuredImage {
                     childImageSharp {
