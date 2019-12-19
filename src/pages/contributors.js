@@ -119,20 +119,21 @@ const SpanIcon = styled.span`
   font-size: .65em;
 `
 
-const Contributors = (props) => (
-  <Layout>
-        <Helmet>
-            <title>Conributors</title>
-            <meta name="description" content="Contributors - IMG Channel" />
-            <meta property="og:title" content="Contributors"/>
-            <meta property="og:description" content="IMG Channel Blog Authors"/>
-            <meta property="og:image:type" content="image/jpg" />
-            <meta property="og:image" content={previewpic} />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
-            <meta property="og:image:alt" content="book and pen" />
-        </Helmet>
-       <section id="banner" className="style3">
+const Contributors = (props) => {
+  return (
+    <Layout>
+      <Helmet>
+          <title>Conributors</title>
+          <meta name="description" content="Contributors - IMG Channel" />
+          <meta property="og:title" content="Contributors"/>
+          <meta property="og:description" content="IMG Channel Blog Authors"/>
+          <meta property="og:image:type" content="image/jpg" />
+          <meta property="og:image" content={previewpic} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="book and pen" />
+      </Helmet>
+      <section id="banner" className="style3">
           <div className="inner">
               <header className="major">
                   <h1>Contributors</h1>
@@ -142,109 +143,41 @@ const Contributors = (props) => (
               </div>
           </div>
       </section>
-    <PageContainer>    
-    <div id="main" className="alt">
-      <div className="inner">
-        <div className="grid-wrapper">
-
-            <div className="col-4">
-              <AuthorContainer>
-                <div className="box1">
-                    <ImgProfile fluid={props.data.authstelacoronica.childImageSharp.fluid} />                   
+      <PageContainer>    
+      <div id="main" className="alt">
+        <div className="inner">
+          <div className="grid-wrapper">
+            {
+              authors.map((author) =>(              
+                <div className="col-4">
+                  <AuthorContainer>
+                    <div className="box1">
+                      <ImgProfile fluid={props.data[author.imageUrl].childImageSharp.fluid} />                   
+                    </div>
+                    <div className="box2">
+                      <AuthorName>{author.name}</AuthorName> 
+                      <Ulist>                             
+                        <li><SpanIcon className="icon fa-circle"/> {author.designation1}</li>
+                        {!(author.designation2 === '') && (
+                          <li><SpanIcon className="icon fa-circle"/> {author.designation2}</li>
+                        )}
+                        {!(author.designation3 === '') && (
+                          <li><SpanIcon className="icon fa-circle"/> {author.designation3}</li>
+                        )}   
+                        <a className="button small" href={`/author/${slugify(author.name)}`}>View posts</a>
+                      </Ulist>  
+                    </div>
+                  </AuthorContainer>
+                  <hr/>
                 </div>
-                <div className="box2">
-                    <AuthorName>{authors[0].name}</AuthorName> 
-                    <Ulist>                             
-                      <li><SpanIcon className="icon fa-circle"/> {authors[0].designation1}</li>
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[0].designation2}</li> 
-                      <li><SpanIcon className="icon fa-circle"/> {authors[0].designation3}</li> */}
-                      <a className="button small" href={`/author/${slugify(authors[0].name)}`}>View posts</a>
-                    </Ulist>  
-                </div>
-              </AuthorContainer>
-              <hr/>
-            </div>
-
-            <div className="col-4">
-                <AuthorContainer>
-                <div className="box1">
-                    <ImgProfile fluid={props.data.authjessfaller.childImageSharp.fluid} />                   
-                </div>
-                <div className="box2">
-                    <AuthorName>{authors[1].name}</AuthorName> 
-                    <Ulist>                             
-                      <li><SpanIcon className="icon fa-circle"/> {authors[1].designation1}</li>
-                      <li><SpanIcon className="icon fa-circle"/> {authors[1].designation2}</li> 
-                      <li><SpanIcon className="icon fa-circle"/> {authors[1].designation3}</li>
-                      <a className="button small" href={`/author/${slugify(authors[1].name)}`}>View posts</a>
-                    </Ulist>  
-                </div>
-              </AuthorContainer>
-                <hr/>
-            </div>
-
-            <div className="col-4">
-                <AuthorContainer>
-                <div className="box1">
-                    <ImgProfile fluid={props.data.authraminopiquez.childImageSharp.fluid} />                   
-                </div>
-                <div className="box2">
-                    <AuthorName>{authors[2].name}</AuthorName> 
-                    <Ulist>                             
-                      <li><SpanIcon className="icon fa-circle"/> {authors[2].designation1}</li>
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[2].designation2}</li>  */}
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[1].designation3}</li> */}
-                      <a className="button small" href={`/author/${slugify(authors[2].name)}`}>View posts</a>
-                    </Ulist>  
-                </div>
-              </AuthorContainer>
-                <hr/>
-            </div>
-
-            <div className="col-4">
-                <AuthorContainer>
-                <div className="box1">
-                    <ImgProfile fluid={props.data.authroseysardido.childImageSharp.fluid} />                   
-                </div>
-                <div className="box2">
-                    <AuthorName>{authors[3].name}</AuthorName> 
-                    <Ulist>                             
-                      <li><SpanIcon className="icon fa-circle"/> {authors[3].designation1}</li>
-                      <li><SpanIcon className="icon fa-circle"/> {authors[3].designation2}</li> 
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[3].designation3}</li> */}
-                      <a className="button small" href={`/author/${slugify(authors[3].name)}`}>View posts</a>
-                    </Ulist>  
-                </div>
-              </AuthorContainer>
-                <hr/>
-            </div>
-
-            <div className="col-4">
-                <AuthorContainer>
-                <div className="box1">
-                    <ImgProfile fluid={props.data.authjonsiu.childImageSharp.fluid} />                   
-                </div>
-                <div className="box2">
-                    <AuthorName>{authors[4].name}</AuthorName> 
-                    <Ulist>                             
-                      <li><SpanIcon className="icon fa-circle"/> {authors[4].designation1}</li>
-                      <li><SpanIcon className="icon fa-circle"/> {authors[4].designation2}</li> 
-                      {/* <li><SpanIcon className="icon fa-circle"/> {authors[4].designation3}</li> */}
-                      <a className="button small" href={`/author/${slugify(authors[4].name)}`}>View posts</a>
-                    </Ulist>  
-                </div>
-              </AuthorContainer>
-                <hr/>
-            </div>
-
-        </div>
-      </div>        
-    </div>
-          
-    
-    </PageContainer>
-  </Layout>
-)
+              ))}      
+          </div>
+        </div>        
+      </div>
+      </PageContainer>
+    </Layout>
+  )
+}
 
 export default Contributors
 

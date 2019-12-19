@@ -89,6 +89,8 @@ const BlogHtml = styled.div`
 
     li {
         margin: 0 0 .6em 0;
+        font-size: 1em;
+        line-height: 1.4em;
     }    
 
     @media (max-width: 768px) {
@@ -107,6 +109,12 @@ const BlogHtml = styled.div`
         margin 0 0 .75em 0;
         line-height: 1.5em;
       }
+
+      li {
+        margin: 0 0 .6em 0;
+        font-size: 1.1em;
+        line-height: 1.35em;
+    }    
 
     }
 `
