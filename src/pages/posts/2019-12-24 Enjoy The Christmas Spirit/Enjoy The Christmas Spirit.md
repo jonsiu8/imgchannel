@@ -8,7 +8,7 @@ The Christmas season is very important for all people.  You don’t have to be a
 
 ![giftwrapping](./giftwrapping.jpg)
 
-I’m actually ok with people spending more during Christmas because they want to give.  Don’t feel guilty about spending to be part of the holiday spirit.  But just like anything else, overdoing something is terrible.
+I’m ok with people spending more during Christmas because they want to give.  Don’t feel guilty about spending to be part of the holiday spirit.  But just like anything else, overdoing something is terrible.
 
 ## Remember these tips to make the most of your Christmas giving experience:
 
