@@ -45,7 +45,7 @@ const HeroBannerParag = styled.p`
     line-height: 1.125em;
 
   @media (max-width: 768px) {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 `;
 
