@@ -1,5 +1,5 @@
 ---
-title: "Make New Year’s Resolutions Even If It Doesn’t Work"
+title: "Make New Year’s Resolutions Even If They Don’t Work"
 date: "2019-12-29"
 author: "Jon F. Siu"
 featuredImage: './newyearfireworks2020.jpg'
