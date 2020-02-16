@@ -10,8 +10,10 @@ export function onRenderBody(
   { setHeadComponents }
 ) {
  setHeadComponents([
-     <script
-        src="https://imgchannel.com/replainscript.js"
-      />,
+  <script
+      key="1"
+      type="text/javascript"
+      src="https://www.imgchannel.com/replainscript.js"
+    />,
   ]);
 }
