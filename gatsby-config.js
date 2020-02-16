@@ -14,12 +14,6 @@ module.exports = {
         name: `images`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: "https://www.imgchannel.com/replainscript.js",
-      },
-    },
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
