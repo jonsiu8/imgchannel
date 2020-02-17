@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: "https://filedn.com/lXcp1DYmRijpixduwqHOKqS/imgch/replainscript%20.js",
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "6000573762",
