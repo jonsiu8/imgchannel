@@ -14,12 +14,12 @@ module.exports = {
         name: `images`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: 'https://filedn.com/lXcp1DYmRijpixduwqHOKqS/imgch/replainscript%20.js',
-      },
-    },
+    //{
+    //  resolve: 'gatsby-plugin-load-script',
+    //  options: {
+    //    src: 'https://filedn.com/lXcp1DYmRijpixduwqHOKqS/imgch/replainscript%20.js',
+    //  },
+    //},
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
