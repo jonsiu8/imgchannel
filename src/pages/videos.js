@@ -72,8 +72,8 @@ const Videos = (props) => (
                     <StyledImg fluid={props.data.image01.childImageSharp.fluid} />
                     <HeaderTitle>Videos</HeaderTitle>
                     <SubHeader>Welcome</SubHeader>
-                    <smartvideo src="https://filedn.com/lbtLn3QHC3uFtEJuHxif8Vz/imgchannel/videos/everypeso%20-%20intro%20video%20draft%201.2.mp4" width="1280" height="720" 
-                    class="swarm-fluid" controls></smartvideo>
+                    <smartvideo src="https://filedn.com/lbtLn3QHC3uFtEJuHxif8Vz/imgchannel/videos/everypeso%20-%20intro%20video%20draft%201.2.mp4" width="854" height="480" 
+                    class="swarm-fluid" controls muted autoplay></smartvideo>
                     <StyledLink to="/" className="button small next">BACK TO HOME</StyledLink>
                 </div>
             </section>
