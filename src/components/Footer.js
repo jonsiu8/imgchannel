@@ -12,6 +12,9 @@ const Footer = (props) => (
                 className="icon alt fa-instagram"><span className="label">messenger</span></a></li>
                 <li><a href="https://m.me/imgch/" target="_blank" rel="noopener noreferrer" 
                 className="icon alt fa-comment"><span className="label">messenger</span></a></li>
+
+                
+                
                
                 {/*<li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
                 <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
