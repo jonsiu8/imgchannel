@@ -208,5 +208,8 @@ export const pageQuery = graphql`
     authstelacoronica: file(relativePath: { eq: "authstelacoronica.jpg" }) {
       ...fluidImage
     }
+    authfrauabangan: file(relativePath: { eq: "authfrauabangan.jpg" }) {
+      ...fluidImage
+    }
   }
   `

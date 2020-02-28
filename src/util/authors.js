@@ -1,5 +1,12 @@
 const authors = [
     {
+      name:'Frauline Abangan',
+      imageUrl: 'authfrauabangan',
+      designation1: 'IMG Senior Marketing Director',
+      designation2: '',
+      designation3: '',
+    },
+    {
         name:'Stela Florence Coronica',
         imageUrl: 'authstelacoronica',
         designation1: 'IMG Senior Marketing Director',
