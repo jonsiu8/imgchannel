@@ -53,7 +53,7 @@ Many people cannot do this. Pride is important, right? But I think a person who 
 
 There are many paths she could have settled for. For some young women, it is easier to take comfort in the arms of their boyfriend and marry young to try to recreate that picture-perfect family that was denied of them. Other young women would look for security, find an old rich man to make sure they would never live in poverty again.
 
-![perfume bottles](.\perfume-bottles.jpg)
+![perfume bottles](./perfume-bottles.jpg)
 
 However, this lady chose a more difficult path. She chose to work and sell all kinds of things to help pay for her college tuition -- from various food items to beauty products. She was able to find a job as a sales associate at an SM store. She sold perfume. She would stand for hours at the department store feeling stressed all the time.
 
