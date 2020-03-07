@@ -192,7 +192,7 @@ const Financialeducator = (props) => (
                         <div className="grid-wrapper">
                             <div className="col-4">             
                                 <h3>Compensation</h3>
-                                <span className="image left"><img src={compensation} alt="" /></span>
+                                <span className="image left"><img data-src={compensation} alt="" /></span>
                                 <p>Once you are a member and passed the basic accreditation requirements, you can potentially earn referral bonuses and commissions
                                     by serving people through financial education.</p>
                                 <p>As an IMG partner, you may start earning a part time income of P10,000 to P50,000
